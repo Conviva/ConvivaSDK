@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SDKSwiftApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O9b-Zm-HhA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YN4-1p-S4N">
+                                <rect key="frame" x="16" y="20" width="55" height="30"/>
+                                <state key="normal" title="Init SDK"/>
+                                <connections>
+                                    <action selector="initSDKClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="buh-AI-GeU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8R-PI-tZ3">
+                                <rect key="frame" x="89" y="20" width="97" height="30"/>
+                                <state key="normal" title="Clean Up SDK"/>
+                                <connections>
+                                    <action selector="cleanupSDKClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0jD-Ye-RKk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6b-I2-663">
+                                <rect key="frame" x="201" y="20" width="103" height="30"/>
+                                <state key="normal" title="Create Session"/>
+                                <connections>
+                                    <action selector="createSessionClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y3I-Nw-otb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67O-Gr-koX">
+                                <rect key="frame" x="121" y="58" width="85" height="30"/>
+                                <state key="normal" title="Report Error"/>
+                                <connections>
+                                    <action selector="reportErrorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GrX-Hs-RBg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID0-hH-MD3">
+                                <rect key="frame" x="16" y="96" width="120" height="30"/>
+                                <state key="normal" title="Update Metadata"/>
+                                <connections>
+                                    <action selector="updateMetaDataClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MGZ-QN-4S6"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="3" translatesAutoresizingMaskIntoConstraints="NO" id="3kq-6k-IXh">
+                                <rect key="frame" x="16" y="134" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Preroll"/>
+                                    <segment title="MidRoll"/>
+                                    <segment title="PostRoll"/>
+                                    <segment title="NoRoll"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTL-aN-ciu">
+                                <rect key="frame" x="16" y="58" width="97" height="30"/>
+                                <state key="normal" title="Clean Session"/>
+                                <connections>
+                                    <action selector="cleanupSessionClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zln-o5-Jbf"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HrX-XR-2PC">
+                                <rect key="frame" x="16" y="175" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zT9-ed-HKG"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cs1-ZU-Tsh">
+                                <rect key="frame" x="213" y="58" width="78" height="30"/>
+                                <state key="normal" title="Send Event"/>
+                                <connections>
+                                    <action selector="sendEventClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="v1q-lh-9Ee"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YN4-1p-S4N" firstAttribute="baseline" secondItem="g8R-PI-tZ3" secondAttribute="baseline" id="2jG-Tp-iVn"/>
+                            <constraint firstItem="3kq-6k-IXh" firstAttribute="trailing" secondItem="O9b-Zm-HhA" secondAttribute="trailingMargin" id="4i7-OE-O4B"/>
+                            <constraint firstItem="3kq-6k-IXh" firstAttribute="trailing" secondItem="HrX-XR-2PC" secondAttribute="trailing" id="4yy-bh-08S"/>
+                            <constraint firstItem="YN4-1p-S4N" firstAttribute="top" secondItem="KlK-Nd-6b0" secondAttribute="top" id="6ec-tT-2sT"/>
+                            <constraint firstItem="3kq-6k-IXh" firstAttribute="leading" secondItem="HrX-XR-2PC" secondAttribute="leading" id="7Ti-HG-4W5"/>
+                            <constraint firstItem="YN4-1p-S4N" firstAttribute="leading" secondItem="zTL-aN-ciu" secondAttribute="leading" id="8G9-7V-XgO"/>
+                            <constraint firstItem="zTL-aN-ciu" firstAttribute="leading" secondItem="ID0-hH-MD3" secondAttribute="leading" id="9IJ-es-zlm"/>
+                            <constraint firstItem="3kq-6k-IXh" firstAttribute="top" secondItem="ID0-hH-MD3" secondAttribute="bottom" constant="8" symbolic="YES" id="HWV-zt-efi"/>
+                            <constraint firstItem="ID0-hH-MD3" firstAttribute="top" secondItem="zTL-aN-ciu" secondAttribute="bottom" constant="8" symbolic="YES" id="NFu-uo-vl8"/>
+                            <constraint firstItem="zTL-aN-ciu" firstAttribute="top" secondItem="YN4-1p-S4N" secondAttribute="bottom" constant="8" symbolic="YES" id="Ou4-w5-mZe"/>
+                            <constraint firstItem="cs1-ZU-Tsh" firstAttribute="leading" secondItem="67O-Gr-koX" secondAttribute="trailing" constant="7" id="Uf8-nF-OyT"/>
+                            <constraint firstItem="zTL-aN-ciu" firstAttribute="baseline" secondItem="67O-Gr-koX" secondAttribute="baseline" id="Usc-cW-48n"/>
+                            <constraint firstItem="y6b-I2-663" firstAttribute="centerX" secondItem="cs1-ZU-Tsh" secondAttribute="centerX" id="WAb-5g-R4W"/>
+                            <constraint firstItem="YN4-1p-S4N" firstAttribute="leading" secondItem="O9b-Zm-HhA" secondAttribute="leadingMargin" id="WLl-iF-OAi"/>
+                            <constraint firstItem="g8R-PI-tZ3" firstAttribute="baseline" secondItem="y6b-I2-663" secondAttribute="baseline" id="aMN-p4-IAp"/>
+                            <constraint firstItem="67O-Gr-koX" firstAttribute="baseline" secondItem="cs1-ZU-Tsh" secondAttribute="baseline" id="fFW-lQ-Fxf"/>
+                            <constraint firstItem="y6b-I2-663" firstAttribute="leading" secondItem="g8R-PI-tZ3" secondAttribute="trailing" constant="15" id="kcs-ci-zhS"/>
+                            <constraint firstItem="HrX-XR-2PC" firstAttribute="top" secondItem="3kq-6k-IXh" secondAttribute="bottom" constant="13" id="vAN-xS-G8k"/>
+                            <constraint firstItem="ID0-hH-MD3" firstAttribute="leading" secondItem="3kq-6k-IXh" secondAttribute="leading" id="ybG-MG-7Te"/>
+                            <constraint firstItem="67O-Gr-koX" firstAttribute="leading" secondItem="zTL-aN-ciu" secondAttribute="trailing" constant="8" symbolic="YES" id="yuy-dG-0gg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KlK-Nd-6b0"/>
+                    </view>
+                    <connections>
+                        <outlet property="adSegment" destination="3kq-6k-IXh" id="V0W-jx-dkb"/>
+                        <outlet property="customerKeyTF" destination="HrX-XR-2PC" id="PhC-Zi-Ggx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

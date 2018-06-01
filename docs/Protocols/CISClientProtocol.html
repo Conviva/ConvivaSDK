@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CISClientProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/CISClientProtocol" class="dashAnchor"></a>
+    <a title="CISClientProtocol Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ConvivaSDK Docs</a> (96% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ConvivaSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CISClientProtocol Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CISClientCreator.html">CISClientCreator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CISClientSettingCreator.html">CISClientSettingCreator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CISConstants.html">CISConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CISContentMetadata.html">CISContentMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CISSystemFactoryCreator.html">CISSystemFactoryCreator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CISSystemInterfaceCreator.html">CISSystemInterfaceCreator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CISSystemSettings.html">CISSystemSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IOSHttpInterface">IOSHttpInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IOSLoggingInterface">IOSLoggingInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IOSMetadataInterface">IOSMetadataInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IOSStorageInterface">IOSStorageInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOSSystemInterfaceFactory.html">IOSSystemInterfaceFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOSSystemTimer.html">IOSSystemTimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IOSTimeInterface">IOSTimeInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IOSTimerInterface">IOSTimerInterface</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CWS_FALSE">CWS_FALSE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CWS_TRUE">CWS_TRUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@ConvivaSDKVersionNumber">ConvivaSDKVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@ConvivaSDKVersionString">ConvivaSDKVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@NO_SESSION_KEY">NO_SESSION_KEY</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AdPlayer.html">AdPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AdPosition.html">AdPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AdServingType.html">AdServingType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AdStream.html">AdStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AdTechnology.html">AdTechnology</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AdType.html">AdType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DeviceType.html">DeviceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorSeverity.html">ErrorSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorType.html">ErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Events.html">Events</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerState.html">PlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamType.html">StreamType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CISCallbackProtocol.html">CISCallbackProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)CISCallback_RunnableProtocol">CISCallback_RunnableProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISCancelProtocol.html">CISCancelProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISClientProtocol.html">CISClientProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISClientSettingProtocol.html">CISClientSettingProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISHTTPProtocol.html">CISHTTPProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISIClientMeasureInterface.html">CISIClientMeasureInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISIModuleVersion.html">CISIModuleVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISLoggingProtocol.html">CISLoggingProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISMetadataProtocol.html">CISMetadataProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISPlayerStateManagerProtocol.html">CISPlayerStateManagerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISRunnableProtocol.html">CISRunnableProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISStorageProtocol.html">CISStorageProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)CISSystemFactoryProtocol">CISSystemFactoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)CISSystemInterfaceProtocol">CISSystemInterfaceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISTimeProtocol.html">CISTimeProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISTimerProtocol.html">CISTimerProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CISClientProtocol</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">CISClientProtocol</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>An instance of a client.
+The class conforming to this protocol manages the SDK lifecycle and video sessions.<br>
+Generally, in an application, a single instance of class conforming to this protocol is required.<br>
+The class instance conforming to this protocol can be used to manage, create PlayerStateManager sessions and perform other important tasks.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)createSessionWithMetadata:"></a>
+                    <a name="//apple_ref/objc/Method/-createSessionWithMetadata:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)createSessionWithMetadata:">-createSessionWithMetadata:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a Conviva monitoring session.
+Use when the viewer requests playback for video content.
+Unless your application can display multiple videos concurrently, you should only ever have one active monitoring session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="nf">createSessionWithMetadata</span><span class="p">:(</span><span class="n"><a href="../Classes/CISContentMetadata.html">CISContentMetadata</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">cisContentMetadata</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createSession</span><span class="p">(</span><span class="n">with</span> <span class="nv">cisContentMetadata</span><span class="p">:</span> <span class="kt"><a href="../Classes/CISContentMetadata.html">CISContentMetadata</a></span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cisContentMetadata</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>contentMetadata An instance of ContentMetadata containing the content metadata for this session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Opaque identifier for the newly created session. Will be NO_SESSION_KEY if session creation failed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)createAdSession:adMetadata:"></a>
+                    <a name="//apple_ref/objc/Method/-createAdSession:adMetadata:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)createAdSession:adMetadata:">-createAdSession:adMetadata:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a Conviva Ad monitoring session.
+Use when an ad playback starts for a particular content session.
+Unless your application can display multiple videos concurrently, you should only ever have one active monitoring session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="nf">createAdSession</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">contentSessionKey</span>
+            <span class="nf">adMetadata</span><span class="p">:(</span><span class="n"><a href="../Classes/CISContentMetadata.html">CISContentMetadata</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">adMetadata</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createAdSession</span><span class="p">(</span><span class="n">_</span> <span class="nv">contentSessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">adMetadata</span><span class="p">:</span> <span class="kt"><a href="../Classes/CISContentMetadata.html">CISContentMetadata</a></span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentSessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session in which advertisement playback is requested</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adMetadata</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An instance of CISContentMetadata containing the ad metadata for this session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Opaque identifier for the newly created ad session. Will be NO_SESSION_KEY if session creation failed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)cleanUp"></a>
+                    <a name="//apple_ref/objc/Method/-cleanUp" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)cleanUp">-cleanUp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Terminates a monitoring session.
+Use when playback for video content ends, fails or is cancelled by the viewer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">cleanUp</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cleanUp</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)getPlayerStateManager"></a>
+                    <a name="//apple_ref/objc/Method/-getPlayerStateManager" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)getPlayerStateManager">-getPlayerStateManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides a PlayerStateManager instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/CISPlayerStateManagerProtocol.html">CISPlayerStateManagerProtocol</a></span><span class="o">&gt;</span><span class="p">)</span><span class="n">getPlayerStateManager</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getPlayerStateManager</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/CISPlayerStateManagerProtocol.html">CISPlayerStateManagerProtocol</a></span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of PlayerStateManager.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)attachPlayer:playerStateManager:"></a>
+                    <a name="//apple_ref/objc/Method/-attachPlayer:playerStateManager:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)attachPlayer:playerStateManager:">-attachPlayer:playerStateManager:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Attach a video player to the monitoring session.
+Use when a video player becomes relevant for the current session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">attachPlayer</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">sessionKey</span>
+    <span class="nf">playerStateManager</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/CISPlayerStateManagerProtocol.html">CISPlayerStateManagerProtocol</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">playerStateManager</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">attachPlayer</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">playerStateManager</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CISPlayerStateManagerProtocol.html">CISPlayerStateManagerProtocol</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>playerStateManager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An instance of PlayerStateManager currently gathering data from a video player.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)reportError:errorMessage:errorSeverity:"></a>
+                    <a name="//apple_ref/objc/Method/-reportError:errorMessage:errorSeverity:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)reportError:errorMessage:errorSeverity:">-reportError:errorMessage:errorSeverity:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports an error for this monitoring session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">reportError</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">sessionKey</span>
+       <span class="nf">errorMessage</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">errorMessage</span>
+      <span class="nf">errorSeverity</span><span class="p">:(</span><span class="n"><a href="../Enums/ErrorSeverity.html">ErrorSeverity</a></span><span class="p">)</span><span class="nv">severity</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">reportError</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">errorSeverity</span> <span class="nv">severity</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorSeverity.html">ErrorSeverity</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errorMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error message to be reported.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>severity</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The severity of the error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)updateContentMetadata:metadata:"></a>
+                    <a name="//apple_ref/objc/Method/-updateContentMetadata:metadata:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)updateContentMetadata:metadata:">-updateContentMetadata:metadata:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update missing content metadata for an existing monitoring session.
+Metadata that was previously set will not be updated.
+This method will not update streamUrl,defaultResource and cdnName,for mentioned attributes a seperate update api is provided.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateContentMetadata</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">sessionKey</span>
+                     <span class="nf">metadata</span><span class="p">:(</span><span class="n"><a href="../Classes/CISContentMetadata.html">CISContentMetadata</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">contentMetadata</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateContentMetadata</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="n">metadata</span> <span class="nv">contentMetadata</span><span class="p">:</span> <span class="kt"><a href="../Classes/CISContentMetadata.html">CISContentMetadata</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contentMetadata</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>New content metadata for the monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)detachPlayer:"></a>
+                    <a name="//apple_ref/objc/Method/-detachPlayer:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)detachPlayer:">-detachPlayer:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Detach the video player from the monitoring session.
+Use when video player currently attached is no longer relevant for the current session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">detachPlayer</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">sessionKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">detachPlayer</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)contentPreload:"></a>
+                    <a name="//apple_ref/objc/Method/-contentPreload:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)contentPreload:">-contentPreload:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification that we will be preloading content with the video player.
+Use when a video player is loading content but is not yet displaying video for the viewer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">contentPreload</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">sessionKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">contentPreload</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)contentStart:"></a>
+                    <a name="//apple_ref/objc/Method/-contentStart:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)contentStart:">-contentStart:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification that the attached video player is no longer preloading, and has started displaying video for the viewer.
+Only usable if preceded by contentPreload.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">contentStart</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">sessionKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">contentStart</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)sendCustomEvent:eventname:withAttributes:"></a>
+                    <a name="//apple_ref/objc/Method/-sendCustomEvent:eventname:withAttributes:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)sendCustomEvent:eventname:withAttributes:">-sendCustomEvent:eventname:withAttributes:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Send a custom event to Conviva.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sendCustomEvent</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">sessionKey</span>
+              <span class="nf">eventname</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">eventName</span>
+         <span class="nf">withAttributes</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">attributes</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sendCustomEvent</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="n">eventname</span> <span class="nv">eventName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">withAttributes</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span> <span class="o">=</span> <span class="p">[:])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session. Use NO_SESSION_KEY if you do not yet have a monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>eventName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the custom event.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>attributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary of key-value pairs associated with the event.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)cleanupSession:"></a>
+                    <a name="//apple_ref/objc/Method/-cleanupSession:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)cleanupSession:">-cleanupSession:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Terminates a monitoring session.
+Use when playback for video content ends, fails or is cancelled by the viewer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">cleanupSession</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">sessionKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cleanupSession</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)releasePlayerStateManager:"></a>
+                    <a name="//apple_ref/objc/Method/-releasePlayerStateManager:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)releasePlayerStateManager:">-releasePlayerStateManager:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Properly frees a PlayerStateManager instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">releasePlayerStateManager</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/CISPlayerStateManagerProtocol.html">CISPlayerStateManagerProtocol</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">playerStateManager</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">releasePlayerStateManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">playerStateManager</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CISPlayerStateManagerProtocol.html">CISPlayerStateManagerProtocol</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>playerStateManager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An instance of PlayerStateManager to be free up.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)adStart:adStream:adPlayer:adPosition:"></a>
+                    <a name="//apple_ref/objc/Method/-adStart:adStream:adPlayer:adPosition:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)adStart:adStream:adPlayer:adPosition:">-adStart:adStream:adPlayer:adPosition:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notify Conviva that an ad is about to start for the monitoring session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">adStart</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">sessionKey</span>
+       <span class="nf">adStream</span><span class="p">:(</span><span class="n"><a href="../Enums/AdStream.html">AdStream</a></span><span class="p">)</span><span class="nv">adStream</span>
+       <span class="nf">adPlayer</span><span class="p">:(</span><span class="n"><a href="../Enums/AdPlayer.html">AdPlayer</a></span><span class="p">)</span><span class="nv">adPlayer</span>
+     <span class="nf">adPosition</span><span class="p">:(</span><span class="n"><a href="../Enums/AdPosition.html">AdPosition</a></span><span class="p">)</span><span class="nv">adPosition</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">adStart</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">adStream</span><span class="p">:</span> <span class="kt"><a href="../Enums/AdStream.html">AdStream</a></span><span class="p">,</span> <span class="nv">adPlayer</span><span class="p">:</span> <span class="kt"><a href="../Enums/AdPlayer.html">AdPlayer</a></span><span class="p">,</span> <span class="nv">adPosition</span><span class="p">:</span> <span class="kt"><a href="../Enums/AdPosition.html">AdPosition</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adStream</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether the ad is embedded in the content stream.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adPlayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether the ad is played by the same player as the original video content.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>adPosition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether the ad is a preroll, midroll or postroll.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)adEnd:"></a>
+                    <a name="//apple_ref/objc/Method/-adEnd:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)adEnd:">-adEnd:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notify Conviva that an ad has ended for the monitoring session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">adEnd</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">sessionKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">adEnd</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)getAttachedPlayer:"></a>
+                    <a name="//apple_ref/objc/Method/-getAttachedPlayer:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)getAttachedPlayer:">-getAttachedPlayer:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return a PlayerStateManager instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/CISPlayerStateManagerProtocol.html">CISPlayerStateManagerProtocol</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nf">getAttachedPlayer</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">sessionKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getAttachedPlayer</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/CISPlayerStateManagerProtocol.html">CISPlayerStateManagerProtocol</a></span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISClientProtocol(im)isPlayerAttached:"></a>
+                    <a name="//apple_ref/objc/Method/-isPlayerAttached:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISClientProtocol(im)isPlayerAttached:">-isPlayerAttached:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check if any PlayerStateManager is already attached to a session.
+Return true if a PlayerStateManager is currently attached to that session, false otherwise.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isPlayerAttached</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">sessionKey</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isPlayerAttached</span><span class="p">(</span><span class="n">_</span> <span class="nv">sessionKey</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sessionKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the monitoring session.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://git.corp.conviva.com/device/conviva-ios-sdk" target="_blank" rel="external">Conviva, Inc.</a>. All rights reserved. (Last updated: 2018-05-31)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CISPlayerStateManagerProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/CISPlayerStateManagerProtocol" class="dashAnchor"></a>
+    <a title="CISPlayerStateManagerProtocol Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">ConvivaSDK Docs</a> (96% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">ConvivaSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CISPlayerStateManagerProtocol Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CISClientCreator.html">CISClientCreator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CISClientSettingCreator.html">CISClientSettingCreator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CISConstants.html">CISConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CISContentMetadata.html">CISContentMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CISSystemFactoryCreator.html">CISSystemFactoryCreator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CISSystemInterfaceCreator.html">CISSystemInterfaceCreator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CISSystemSettings.html">CISSystemSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IOSHttpInterface">IOSHttpInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IOSLoggingInterface">IOSLoggingInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IOSMetadataInterface">IOSMetadataInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IOSStorageInterface">IOSStorageInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOSSystemInterfaceFactory.html">IOSSystemInterfaceFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IOSSystemTimer.html">IOSSystemTimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IOSTimeInterface">IOSTimeInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)IOSTimerInterface">IOSTimerInterface</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CWS_FALSE">CWS_FALSE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CWS_TRUE">CWS_TRUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@ConvivaSDKVersionNumber">ConvivaSDKVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@ConvivaSDKVersionString">ConvivaSDKVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@NO_SESSION_KEY">NO_SESSION_KEY</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AdPlayer.html">AdPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AdPosition.html">AdPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AdServingType.html">AdServingType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AdStream.html">AdStream</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AdTechnology.html">AdTechnology</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AdType.html">AdType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DeviceType.html">DeviceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorSeverity.html">ErrorSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ErrorType.html">ErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Events.html">Events</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlayerState.html">PlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StreamType.html">StreamType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CISCallbackProtocol.html">CISCallbackProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)CISCallback_RunnableProtocol">CISCallback_RunnableProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISCancelProtocol.html">CISCancelProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISClientProtocol.html">CISClientProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISClientSettingProtocol.html">CISClientSettingProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISHTTPProtocol.html">CISHTTPProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISIClientMeasureInterface.html">CISIClientMeasureInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISIModuleVersion.html">CISIModuleVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISLoggingProtocol.html">CISLoggingProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISMetadataProtocol.html">CISMetadataProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISPlayerStateManagerProtocol.html">CISPlayerStateManagerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISRunnableProtocol.html">CISRunnableProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISStorageProtocol.html">CISStorageProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)CISSystemFactoryProtocol">CISSystemFactoryProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)CISSystemInterfaceProtocol">CISSystemInterfaceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISTimeProtocol.html">CISTimeProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CISTimerProtocol.html">CISTimerProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CISPlayerStateManagerProtocol</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">CISPlayerStateManagerProtocol</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Helper class to store and relay pertinent video player data to Conviva.
+Lifecycle is tied to an instance of the video player.<br>
+Collects/Reports player&rsquo;s data to SDK.<br>
+The lifecycle of the class conforming to this protocol is managed by application client instance.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)getDuration"></a>
+                    <a name="//apple_ref/objc/Method/-getDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)getDuration">-getDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the latest duration collected by this PlayerStateManager instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="n">getDuration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">getDuration</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Latest duration collected. -1 if not available.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setDuration:"></a>
+                    <a name="//apple_ref/objc/Method/-setDuration:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setDuration:">-setDuration:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the duration of the video stream played by the related video player.
+If you know the duration of the video stream in advance, consider setting ContentMetadata.duration instead.
+DO NOT USE DEPRECATED</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDuration</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">duration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setDuration</span><span class="p">(</span><span class="n">_</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>duration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stream duration.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)getPlayerType"></a>
+                    <a name="//apple_ref/objc/Method/-getPlayerType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)getPlayerType">-getPlayerType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the last player type collected by this PlayerStateManager instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">getPlayerType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">getPlayerType</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Last player type collected. Nil if not available.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setPlayerType:"></a>
+                    <a name="//apple_ref/objc/Method/-setPlayerType:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setPlayerType:">-setPlayerType:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the type of player monitored via the PlayerInterface instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPlayerType</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">plType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setPlayerType</span><span class="p">(</span><span class="n">_</span> <span class="nv">plType</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>plType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Type of the player.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)getPlayerVersion"></a>
+                    <a name="//apple_ref/objc/Method/-getPlayerVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)getPlayerVersion">-getPlayerVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the last player framework version collected by this PlayerStateManager instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">getPlayerVersion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">getPlayerVersion</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Last player framework version collected. Nil if not available.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setPlayerVersion:"></a>
+                    <a name="//apple_ref/objc/Method/-setPlayerVersion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setPlayerVersion:">-setPlayerVersion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the version of the related video player.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPlayerVersion</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">plVer</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setPlayerVersion</span><span class="p">(</span><span class="n">_</span> <span class="nv">plVer</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>plVer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A version of the player.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)getPlayerState"></a>
+                    <a name="//apple_ref/objc/Method/-getPlayerState" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)getPlayerState">-getPlayerState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the current state of the video player monitored by the PlayerInterface instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n"><a href="../Enums/PlayerState.html">PlayerState</a></span><span class="p">)</span><span class="n">getPlayerState</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">getPlayerState</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/PlayerState.html">PlayerState</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The current state of the video player under monitoring.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setPlayerState:"></a>
+                    <a name="//apple_ref/objc/Method/-setPlayerState:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setPlayerState:">-setPlayerState:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the new player state of the related video player.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPlayerState</span><span class="p">:(</span><span class="n"><a href="../Enums/PlayerState.html">PlayerState</a></span><span class="p">)</span><span class="nv">newState</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setPlayerState</span><span class="p">(</span><span class="n">_</span> <span class="nv">newState</span><span class="p">:</span> <span class="kt"><a href="../Enums/PlayerState.html">PlayerState</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>New player state for the video player under monitoring.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)getBitrateKbps"></a>
+                    <a name="//apple_ref/objc/Method/-getBitrateKbps" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)getBitrateKbps">-getBitrateKbps</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the last bitrate collected from the related video player.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSInteger</span><span class="p">)</span><span class="n">getBitrateKbps</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">getBitrateKbps</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The current known bitrate of the video player under monitoring. -1 if not available.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setBitrateKbps:"></a>
+                    <a name="//apple_ref/objc/Method/-setBitrateKbps:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setBitrateKbps:">-setBitrateKbps:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the new bitrate of the video stream played by the related video player.
+We recommend reporting manifest/nominal bitrates.
+For protocols like Smooth Streaming, you may have to sum audio and video bitrates to get the total bitrate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setBitrateKbps</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">newBitrateKbps</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setBitrateKbps</span><span class="p">(</span><span class="n">_</span> <span class="nv">newBitrateKbps</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newBitrateKbps</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>New player state for the video player under monitoring.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setAvgBitrateKbps:"></a>
+                    <a name="//apple_ref/objc/Method/-setAvgBitrateKbps:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setAvgBitrateKbps:">-setAvgBitrateKbps:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the new average bitrate of the video stream played by the related video player.
+We recommend reporting manifest/average bitrates.
+For protocols like Smooth Streaming, you may have to sum audio and video bitrates to get the total bitrate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAvgBitrateKbps</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">newAvgBitrateKbps</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setAvgBitrateKbps</span><span class="p">(</span><span class="n">_</span> <span class="nv">newAvgBitrateKbps</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newAvgBitrateKbps</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>New player state for the video player under monitoring.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)sendError:errorSeverity:"></a>
+                    <a name="//apple_ref/objc/Method/-sendError:errorSeverity:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)sendError:errorSeverity:">-sendError:errorSeverity:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports an error while playing a video stream in the related video player.
+These include networking errors, download errors, parsing errors, decoding/decrypting errors, DRM errors.
+For best use, the error message should not include variables like user IDs and memory addresses.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sendError</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">errMessage</span> <span class="nf">errorSeverity</span><span class="p">:(</span><span class="n"><a href="../Enums/ErrorSeverity.html">ErrorSeverity</a></span><span class="p">)</span><span class="nv">severity</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">sendError</span><span class="p">(</span><span class="n">_</span> <span class="nv">errMessage</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">errorSeverity</span> <span class="nv">severity</span><span class="p">:</span> <span class="kt"><a href="../Enums/ErrorSeverity.html">ErrorSeverity</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>errMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error message or error code for this error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>severity</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The severity of this error. See enum in CISConstant.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setCISIClientMeasureInterface:"></a>
+                    <a name="//apple_ref/objc/Method/-setCISIClientMeasureInterface:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setCISIClientMeasureInterface:">-setCISIClientMeasureInterface:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setter for CISIClientMeasureInterface.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCISIClientMeasureInterface</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/CISIClientMeasureInterface.html">CISIClientMeasureInterface</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">clientMeasureInterface</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setCISIClientMeasureInterface</span><span class="p">(</span><span class="n">_</span> <span class="nv">clientMeasureInterface</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CISIClientMeasureInterface.html">CISIClientMeasureInterface</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>clientMeasureInterface</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Instance of clientMeasureInterface protocol implementing class, the player proxy classes will implement CISIClientMeasureInterface.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setVideoResolutionWidth:"></a>
+                    <a name="//apple_ref/objc/Method/-setVideoResolutionWidth:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setVideoResolutionWidth:">-setVideoResolutionWidth:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the video resolution width of video stream played by the related video player.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setVideoResolutionWidth</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">videoWidth</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setVideoResolutionWidth</span><span class="p">(</span><span class="n">_</span> <span class="nv">videoWidth</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoWidth</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Video resolution width.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setVideoResolutionHeight:"></a>
+                    <a name="//apple_ref/objc/Method/-setVideoResolutionHeight:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setVideoResolutionHeight:">-setVideoResolutionHeight:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the video resolution height of video stream played by the related video player.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setVideoResolutionHeight</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">videoHeight</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setVideoResolutionHeight</span><span class="p">(</span><span class="n">_</span> <span class="nv">videoHeight</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoHeight</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Video resolution height.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setCDNServerIPAddress:"></a>
+                    <a name="//apple_ref/objc/Method/-setCDNServerIPAddress:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setCDNServerIPAddress:">-setCDNServerIPAddress:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the Edge Server CDN IP Address for the video stream played.
+DO NOT USE DEPRECATED</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setCDNServerIPAddress</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cdnServerIP</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setCDNServerIPAddress</span><span class="p">(</span><span class="n">_</span> <span class="nv">cdnServerIP</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cdnServerIP</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>CDN server IP address.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setSignalStrength:"></a>
+                    <a name="//apple_ref/objc/Method/-setSignalStrength:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setSignalStrength:">-setSignalStrength:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the signal strength of the connected network.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setSignalStrength</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">signalStrength</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setSignalStrength</span><span class="p">(</span><span class="n">_</span> <span class="nv">signalStrength</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signalStrength</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Signal strength of the connected network device.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setLinkEncryption:"></a>
+                    <a name="//apple_ref/objc/Method/-setLinkEncryption:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setLinkEncryption:">-setLinkEncryption:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the link encryption type of the connected network.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setLinkEncryption</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">linkEncryptionType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setLinkEncryption</span><span class="p">(</span><span class="n">_</span> <span class="nv">linkEncryptionType</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>linkEncryptionType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Link encryption type of the network.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setConnectionType:"></a>
+                    <a name="//apple_ref/objc/Method/-setConnectionType:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setConnectionType:">-setConnectionType:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the connection type of the connected network.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setConnectionType</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">connectionType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setConnectionType</span><span class="p">(</span><span class="n">_</span> <span class="nv">connectionType</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>connectionType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Connection type of the network.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setSeekStart:"></a>
+                    <a name="//apple_ref/objc/Method/-setSeekStart:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setSeekStart:">-setSeekStart:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the player seek start.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setSeekStart</span><span class="p">:(</span><span class="kt">int64_t</span><span class="p">)</span><span class="nv">seekToPosition</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setSeekStart</span><span class="p">(</span><span class="n">_</span> <span class="nv">seekToPosition</span><span class="p">:</span> <span class="kt">Int64</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seekToPosition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Position to seek in milliseconds.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)setSeekEnd:"></a>
+                    <a name="//apple_ref/objc/Method/-setSeekEnd:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)setSeekEnd:">-setSeekEnd:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports the player seek end.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setSeekEnd</span><span class="p">:(</span><span class="kt">int64_t</span><span class="p">)</span><span class="nv">seekPosition</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">setSeekEnd</span><span class="p">(</span><span class="n">_</span> <span class="nv">seekPosition</span><span class="p">:</span> <span class="kt">Int64</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>seekPosition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Position at end of seek in milliseconds.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)isPlayerSeeking"></a>
+                    <a name="//apple_ref/objc/Method/-isPlayerSeeking" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)isPlayerSeeking">-isPlayerSeeking</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reports YES only when setSeekStart() was called.Default Value is NO.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isPlayerSeeking</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">isPlayerSeeking</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)updateStreamUrl:"></a>
+                    <a name="//apple_ref/objc/Method/-updateStreamUrl:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)updateStreamUrl:">-updateStreamUrl:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notify Conviva that the stream Url has changed for the monitoring session.
+DO NOT USE DEPRECATED</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateStreamUrl</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">newStreamUrl</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">updateStreamUrl</span><span class="p">(</span><span class="n">_</span> <span class="nv">newStreamUrl</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newStreamUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>StreamUrl to be updated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)updateCDNName:"></a>
+                    <a name="//apple_ref/objc/Method/-updateCDNName:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)updateCDNName:">-updateCDNName:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notify Conviva that the CDN Name has changed for the monitoring session.
+DO NOT USE DEPRECATED</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateCDNName</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">newCDNName</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">updateCDNName</span><span class="p">(</span><span class="n">_</span> <span class="nv">newCDNName</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newCDNName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>New CDN to be updated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)updateResource:"></a>
+                    <a name="//apple_ref/objc/Method/-updateResource:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)updateResource:">-updateResource:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notify Conviva that the Resource has changed for the monitoring session.
+DO NOT USE DEPRECATED</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateResource</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">newResource</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">updateResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">newResource</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newResource</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>New Resource to be updated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)updateContentMetadata:"></a>
+                    <a name="//apple_ref/objc/Method/-updateContentMetadata:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)updateContentMetadata:">-updateContentMetadata:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates ContentMetadata.
+DO NOT USE DEPRECATED.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateContentMetadata</span><span class="p">:(</span><span class="n"><a href="../Classes/CISContentMetadata.html">CISContentMetadata</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">newcontentInfo</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">update</span><span class="p">(</span><span class="n">_</span> <span class="nv">newcontentInfo</span><span class="p">:</span> <span class="kt"><a href="../Classes/CISContentMetadata.html">CISContentMetadata</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newcontentInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the new metadata info to be updated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)CISPlayerStateManagerProtocol(im)reset"></a>
+                    <a name="//apple_ref/objc/Method/-reset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)CISPlayerStateManagerProtocol(im)reset">-reset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Discard the video quality data contained in this PlayerStateManager instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">reset</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://git.corp.conviva.com/device/conviva-ios-sdk" target="_blank" rel="external">Conviva, Inc.</a>. All rights reserved. (Last updated: 2018-05-31)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
