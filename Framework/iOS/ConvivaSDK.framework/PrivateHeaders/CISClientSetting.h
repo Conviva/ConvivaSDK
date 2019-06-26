@@ -10,9 +10,12 @@
 
 @interface CISClientSetting : NSObject<CISClientSettingProtocol>
 
+@property(nonatomic, assign, readonly) NSUInteger cismaxHeartbeatInfos; // maximum length of the hbinfos array
+
 -(instancetype)init NS_UNAVAILABLE;
 -(instancetype)initWithCustomerKey:(NSString *)CustomerKey error:(NSError **)error NS_DESIGNATED_INITIALIZER;
 -(void)sanitize;
 - (NSString *)updateGatewayURLError;
+-(void)updateMaxHeartbeatInfos:(NSNumber *)newValue;
 
 @end

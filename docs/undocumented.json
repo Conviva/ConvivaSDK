@@ -1,75 +1,75 @@
 {
   "warnings": [
     {
-      "file": "/Users/device/builds/e6dd848f/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISCancelProtocol.h",
+      "file": "/Users/gtiwari/builds/31369e36/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISCancelProtocol.h",
       "line": 9,
       "symbol": "CISCancelProtocol.-cancel",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/device/builds/e6dd848f/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISConstants.h",
+      "file": "/Users/gtiwari/builds/31369e36/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISConstants.h",
       "line": 241,
       "symbol": "CISConstants.+getAdTechnologyStringValue:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/device/builds/e6dd848f/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISConstants.h",
+      "file": "/Users/gtiwari/builds/31369e36/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISConstants.h",
       "line": 242,
       "symbol": "CISConstants.+getAdTypeStringValue:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/device/builds/e6dd848f/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISConstants.h",
+      "file": "/Users/gtiwari/builds/31369e36/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISConstants.h",
       "line": 243,
       "symbol": "CISConstants.+getAdServingTypeStringValue:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/device/builds/e6dd848f/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISConstants.h",
+      "file": "/Users/gtiwari/builds/31369e36/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISConstants.h",
       "line": 244,
       "symbol": "CISConstants.+getErrorTypeStringValue:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/device/builds/e6dd848f/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISConstants.h",
+      "file": "/Users/gtiwari/builds/31369e36/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISConstants.h",
       "line": 245,
       "symbol": "CISConstants.+getEventsStringValue:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/device/builds/e6dd848f/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISConstants.h",
+      "file": "/Users/gtiwari/builds/31369e36/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/CISConstants.h",
       "line": 246,
       "symbol": "CISConstants.+getAdPositionStringValue:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/device/builds/e6dd848f/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/ConvivaSDK-iOS-umbrella.h",
+      "file": "/Users/gtiwari/builds/31369e36/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/ConvivaSDK-iOS-umbrella.h",
       "line": 46,
       "symbol": "ConvivaSDKVersionNumber",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/device/builds/e6dd848f/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/ConvivaSDK-iOS-umbrella.h",
+      "file": "/Users/gtiwari/builds/31369e36/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/ConvivaSDK-iOS-umbrella.h",
       "line": 47,
       "symbol": "ConvivaSDKVersionString",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/device/builds/e6dd848f/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/IOSSystemTimer.h",
+      "file": "/Users/gtiwari/builds/31369e36/0/device/conviva-ios-sdksrc/Example/Pods/build/Framework/iOS/ConvivaSDK.framework/Headers/IOSSystemTimer.h",
       "line": 18,
       "symbol": "IOSSystemTimer.-init",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/device/builds/e6dd848f/0/device/conviva-ios-sdksrc"
+  "source_directory": "/Users/gtiwari/builds/31369e36/0/device/conviva-ios-sdksrc"
 }

@@ -1,6 +1,9 @@
 # Changelog
 
-
+## 2.141.3 (06/28/2019)
+* Fixes an issue which was preventing proper session closing.
+* There are metadata values which need to be updated before first video frame appears (Viewer ID, Stream Type, Player Name, Content Length, Custom Tags).
+* If any/all of these metadata values are not reported at the time of session creation, we log a warning for the same metadata value(s) from this release.
 
 ## 2.141.2 (11/29/2018)
 * Supports iOS/tvOS 12
