@@ -1,5 +1,7 @@
 # Changelog
 
+
+
 ## 2.141.2 (11/29/2018)
 * Supports iOS/tvOS 12
 * Fixes an issue where video monitoring session was not seen on Experience Insights when gatewayURL was not provided.
