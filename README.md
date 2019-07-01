@@ -50,5 +50,5 @@ To add the ConvivaSDK library to your project manually:
     * @import ConvivaSDK; ( Objective-C)
     * import ConvivaSDK (Swift)
 
-Note: * Refer https://community.conviva.com/ for integration guidelines.
-          * Refer https://convivasdk.github.io/Doc/ for API documentation.
+Note:  * Refer https://community.conviva.com/ for integration guidelines.             
+           * Refer https://convivasdk.github.io/Doc/ for API documentation.
