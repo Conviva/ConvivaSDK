@@ -76,6 +76,12 @@
 -(NSInteger) getBitrateKbps;
 
 /**
+ * Reports the Edge Server CDN IP Address for the video stream played.
+ * @param cdnServerIP CDN server IP address.
+ */
+- (void)setCDNServerIP:(NSString *)cdnServerIP;
+
+/**
  * Reports the new bitrate of the video stream played by the related video player.
  * We recommend reporting manifest/nominal bitrates.
  * For protocols like Smooth Streaming, you may have to sum audio and video bitrates to get the total bitrate.

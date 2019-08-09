@@ -40,6 +40,8 @@ FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
 
 -(void)setPlayerState:(PlayerState)newState;
 
+- (void)setCDNServerIP:(NSString *)cdnServerIP;
+
 /// @brief Signal a change in the bitrate
 -(void)setBitrateKbps:(NSInteger)bitrateKbps;
 
