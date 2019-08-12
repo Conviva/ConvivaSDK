@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.141.4 (08/23/2019)
+* Supports iOS 12.3.
+* Introduces new API to report CDN server IP.
+
 ## 2.141.3 (06/28/2019)
 * Fixes an issue which was preventing proper session closing.
 * There are metadata values which need to be updated before first video frame appears (Viewer ID, Stream Type, Player Name, Content Length, Custom Tags).
