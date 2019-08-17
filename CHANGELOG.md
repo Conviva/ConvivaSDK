@@ -2,7 +2,7 @@
 
 ## 2.141.4 (08/23/2019)
 * Supports iOS 12.3.
-* Introduces new API to report CDN server IP.
+* Introduces a new API for customers to set CDN Edge Server IP Address.
 
 ## 2.141.3 (06/28/2019)
 * Fixes an issue which was preventing proper session closing.
