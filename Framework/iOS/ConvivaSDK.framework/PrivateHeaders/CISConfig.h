@@ -23,5 +23,9 @@ FOUNDATION_EXPORT NSString *const CLIENT_ID; //  clientId
 -(void)registerCallback:(void (^)(void))callback;
 -(id)getConfigValue:(NSString *) key;
 -(void)setConfigValue:(NSString *)key value:(id)value;
+
+-(id)getClientIdFromKeyChain;
+-(void)setClientIdInKeyChain:(NSString *)newClientId;
+
 -(void)save;
 @end

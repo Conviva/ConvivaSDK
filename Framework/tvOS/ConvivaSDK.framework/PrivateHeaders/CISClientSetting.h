@@ -8,6 +8,10 @@
 #import <Foundation/Foundation.h>
 #import "CISClientSettingProtocol.h"
 
+FOUNDATION_EXPORT NSString *const FINGER_PRINT_PREFIX;
+FOUNDATION_EXPORT NSString *const AD_IDENTIFIER;
+FOUNDATION_EXPORT NSString *const VENDOR_IDENTIFIER;
+
 @interface CISClientSetting : NSObject<CISClientSettingProtocol>
 
 @property(nonatomic, assign, readonly) NSUInteger cismaxHeartbeatInfos; // maximum length of the hbinfos array
@@ -17,5 +21,10 @@
 -(void)sanitize;
 - (NSString *)updateGatewayURLError;
 -(void)updateMaxHeartbeatInfos:(NSNumber *)newValue;
+
+
+- (NSArray *)getSupportedUniqueIdentifiers;
+- (NSDictionary *)getFingerPrintUserPreferenceForDataCollection;
+- (NSDictionary *)getFingerPrintUserPreferenceForDataDeletion;
 
 @end

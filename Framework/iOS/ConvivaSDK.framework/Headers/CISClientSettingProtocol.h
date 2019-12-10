@@ -51,4 +51,28 @@
  */
 -(NSString *)getGatewayUrl;
 
+/**
+ * @brief Set user preferences for data collection.
+ * @param userPrefs pass key value pair as user preferences.
+ * Currently Supported keys: "idfa", "idfv".
+ * Expected Values:
+ * YES - Will collect id for mentioned key.
+ * NO - Will stop collecting id for mentioned key.
+ * Sample Usage:
+ * [clientSettings setUserPreferenceForDataCollection:[NSDictionary dictionaryWithObjectsAndKeys: @YES, @"idfa", @NO, @"idfv", nil]];
+ */
+-(void)setUserPreferenceForDataCollection:(NSDictionary *)userPrefs;
+
+/**
+ * @brief Set user preferences for data collection.
+ * @param userPrefs pass key value pair as user preferences.
+ * Currently Supported keys: "idfa", "idfv".
+ * Expected Values:
+ * YES - Will stop collecting id for mentioned key and delete previously collected data.
+ * NO - Will not have any effect.
+ * Sample Usage:
+ * [clientSettings setUserPreferenceForDataDeletion:[NSDictionary dictionaryWithObjectsAndKeys: @NO, @"idfa", @YES, @"idfv", nil]];
+*/
+-(void)setUserPreferenceForDataDeletion:(NSDictionary *)userPrefs;
+
 @end
