@@ -1,10 +1,10 @@
 # Changelog
 
-## 2.141.6 (04/22/2020)
+## 2.142.6 (04/22/2020)
 * Fixes an issue where same version is reported for both AdIdentifier enabled and disabled frameworks.
 
-## 2.141.5 (12/13/2019)
-* Supports Data collection and Data compliance as per GDPR and CCPA.
+## 2.142.5 (12/13/2019)
+* Supports Data collection and Data compliance as per GDPR and CCPA. Does not collect AD Identifier to comply with Apple guide lines.
 * Introduces new API setUserPreferenceForDataCollection() for setting user preferences to opt-out of user data collection.
 * Introduces new API setUserPreferenceForDataDeletion() for setting user preferences to delete previously collected user data.
 
