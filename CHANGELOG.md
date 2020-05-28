@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.0.1 (05/29/2020)
+* Simplified SDK with simple and fewer api's and less integration steps. Does not collect AD Identifier to comply with Apple guide lines.
+
 ## 4.0.0 (05/29/2020)
 * Simplified SDK with simple and fewer api's and less integration steps. 
 
