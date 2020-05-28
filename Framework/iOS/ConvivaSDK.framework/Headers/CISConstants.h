@@ -97,7 +97,12 @@ typedef NS_ENUM(NSInteger,ErrorSeverity){
     /** The error could prevent playback altogether. */
     ERROR_FATAL = 0,
     /** The error should not affect playback. */
-    ERROR_WARNING
+    ERROR_WARNING = 1,
+    
+    /** The error could prevent playback altogether. Only for AVFoundation module backward compatability. Do not use in other cases. */
+    SEVERITY_FATAL = 0,
+    /** The error could prevent playback altogether. Only for AVFoundation module backward compatability. Do not use in other cases.*/
+    SEVERITY_WARNING = 1
 };
 
 /**
@@ -215,7 +220,26 @@ typedef NS_ENUM(NSInteger,Events){
     /** Ad start. */
     POD_START,
     /** Ad end. */
-    POD_END
+    POD_END,
+    /**
+    * "Conviva.UserWaitStarted"
+    */
+    USER_WAIT_STARTED,
+
+    /**
+    * "Conviva.UserWaitEnded"
+    */
+    USER_WAIT_ENDED,
+
+    /**
+    * "Conviva.BumperVideoStarted"
+    */
+    BUMPER_VIDEO_STARTED,
+
+    /**
+    * "Conviva.BumperVideoEnded"
+    */
+    BUMPER_VIDEO_ENDED
 };
 
 
@@ -244,4 +268,5 @@ FOUNDATION_EXPORT int const NO_SESSION_KEY;
 +(NSString *)getErrorTypeStringValue:(ErrorType)errorType;
 +(NSString *)getEventsStringValue:(Events)events;
 +(NSString *)getAdPositionStringValue:(AdPosition)adPosition;
++(AdPosition)getAdPositionEnumValue:(NSString*)adPosition;
 @end

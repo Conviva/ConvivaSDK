@@ -30,6 +30,7 @@
 -(BOOL)isAdSession;
 -(void)attachPlayer:(CISPlayerStateManager *)playerStateManager;
 -(void)adStart:(AdStream)adStream adPlayer:(AdPlayer)adPlayer adPosition:(AdPosition)adPosition;
+-(void)adStart;
 -(void)adEnd;
 -(void)detachPlayer;
 -(void)contentPreload;

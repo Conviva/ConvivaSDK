@@ -12,6 +12,7 @@
 #import "CISStreamerError.h"
 #import "CISConstants.h"
 #import "CISNetworkUtil.h"
+#import "CISClientSetting.h"
 
 FOUNDATION_EXPORT NSString *const METADATA_DURATION;
 FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
@@ -24,13 +25,18 @@ FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
 @property(nonatomic, copy) NSString *cdnServerIPAddress;
 
 - (instancetype)init NS_UNAVAILABLE;
--(instancetype)initWithSessionID:(int)sessionId  cisEventQueue:(CISEventQueue *)eventQueue  cisContentMetadata:(CISContentMetadata *)contentMetadata cisSystemFactory:(CISSystemFactory *)systemFactory networkUtil:(CISNetworkUtil *)networkUtil sessionType:(SessionType)sessionType NS_DESIGNATED_INITIALIZER;
+-(instancetype)initWithSessionID:(int)sessionId
+                   cisEventQueue:(CISEventQueue *)eventQueue
+              cisContentMetadata:(CISContentMetadata *)contentMetadata
+                cisSystemFactory:(CISSystemFactory *)systemFactory
+                     networkUtil:(CISNetworkUtil *)networkUtil
+                     sessionType:(SessionType)sessionType NS_DESIGNATED_INITIALIZER;
 
 -(void)start:(NSTimeInterval)timeNow;
 
 //-(void)updateHb:(NSMutableDictionary **)heartbeat;
 
--(void)updateHb:(NSMutableDictionary **)heartbeat cisprotocol:(CISCWSProtocolHelper *)proto;
+-(void)updateHb:(NSMutableDictionary **)heartbeat cisprotocol:(CISCWSProtocolHelper *)proto cisClientSettings:(CISClientSetting*)cisClientSetting;
 
 -(void) attachPlayer:(CISPlayerStateManager *) psm;
 
@@ -54,6 +60,8 @@ FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
 -(void)releasePlayerStateManager;
 
 -(void)adStart:(AdStream)adStream adPlayer:(AdPlayer)adPlayer adPosition:(AdPosition)adPosition;
+
+-(void)adStart;
 
 -(void)adEnd;
 
@@ -103,5 +111,5 @@ FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
  
 -(CISPlayerStateManager*) getAttachedPlayer;
 
-
+- (void) markOfflinePlayback;
 @end

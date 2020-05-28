@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A538550DCCC0146A1D8CE72 /* Pods_SDKSwiftApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FA45153E7A47582E52AD48 /* Pods_SDKSwiftApp.framework */; };
+		3B821881154AA62D3DFFDDA7 /* Pods_SDKSwiftApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5977159CD2A5324D5CC761 /* Pods_SDKSwiftApp.framework */; };
 		6FF9D51C1FCD6F5800B59AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9D51B1FCD6F5800B59AD9 /* AppDelegate.swift */; };
 		6FF9D51E1FCD6F5800B59AD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF9D51D1FCD6F5800B59AD9 /* ViewController.swift */; };
 		6FF9D5231FCD6F5800B59AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9D5221FCD6F5800B59AD9 /* Assets.xcassets */; };
@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F5977159CD2A5324D5CC761 /* Pods_SDKSwiftApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDKSwiftApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF9D5181FCD6F5800B59AD9 /* SDKSwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKSwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF9D51B1FCD6F5800B59AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FF9D51D1FCD6F5800B59AD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		96111E1E20A010DB5A79E150 /* Pods-SDKSwiftApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKSwiftApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDKSwiftApp/Pods-SDKSwiftApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AE55B3B32015AA7200492F3C /* libtvOSSdkCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtvOSSdkCore.a; path = "../../../sdk/build/ConvivaSDK_tvOS/tvOSConvivaSDK/Release-lib/libtvOSSdkCore.a"; sourceTree = "<group>"; };
 		AECF22511FE2374F008724AC /* libiOSSdkCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiOSSdkCore.a; path = "../../../sdk/build/ConvivaSDK_iOS/iOSConvivaSDK/Release-lib/libiOSSdkCore.a"; sourceTree = "<group>"; };
-		F0FA45153E7A47582E52AD48 /* Pods_SDKSwiftApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDKSwiftApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A538550DCCC0146A1D8CE72 /* Pods_SDKSwiftApp.framework in Frameworks */,
+				3B821881154AA62D3DFFDDA7 /* Pods_SDKSwiftApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 			children = (
 				AE55B3B32015AA7200492F3C /* libtvOSSdkCore.a */,
 				AECF22511FE2374F008724AC /* libiOSSdkCore.a */,
-				F0FA45153E7A47582E52AD48 /* Pods_SDKSwiftApp.framework */,
+				0F5977159CD2A5324D5CC761 /* Pods_SDKSwiftApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,8 +123,6 @@
 				6FF9D5141FCD6F5800B59AD9 /* Sources */,
 				6FF9D5151FCD6F5800B59AD9 /* Frameworks */,
 				6FF9D5161FCD6F5800B59AD9 /* Resources */,
-				9EB5FDFEDB93CCC1B7E912A0 /* [CP] Embed Pods Frameworks */,
-				D3D6DF2771C7A8625F099681 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,36 +181,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9EB5FDFEDB93CCC1B7E912A0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDKSwiftApp/Pods-SDKSwiftApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D3D6DF2771C7A8625F099681 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDKSwiftApp/Pods-SDKSwiftApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D68F597D96518D4EE3D2CFC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,7 +359,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.conviva.pulse.SDKSwiftApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDKSwiftApp-Swift.h";
@@ -413,7 +381,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.conviva.pulse.SDKSwiftApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SDKSwiftApp-Swift.h";

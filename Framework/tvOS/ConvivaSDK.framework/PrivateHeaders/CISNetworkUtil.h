@@ -29,5 +29,6 @@ FOUNDATION_EXPORT NSString *const NETWORK_TYPEWIFI;
 //  DE-2572 Remove SSID Support since this is a PII
 //- (NSString *)getWifiSSID;
 
+- (BOOL)isWifiConnAvailable;
 
 @end

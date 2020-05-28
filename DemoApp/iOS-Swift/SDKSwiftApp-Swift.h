@@ -11,6 +11,6 @@
 #import "XYZPlayerInterface.h"
 #import "XYZPlayer.h"
 #import <Foundation/Foundation.h>
-
+@import ConvivaSDK;
 
 #endif /* Header_h */

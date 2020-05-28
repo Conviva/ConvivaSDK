@@ -7,36 +7,31 @@
 //
 
 import UIKit
+import ConvivaSDK
 
 class ViewController: UIViewController, UITextFieldDelegate {
-    var client : CISClientProtocol!
-    var psmVideoInstance : CISPlayerStateManagerProtocol!
-    var psmAdInstance : CISPlayerStateManagerProtocol!
-    var videoSessionID : Int32!
-    var adSessionID : Int32!
-    var xyzVideoPlayerInterface : XYZPlayerInterface!
-    var xyzAdPlayerInterface : XYZPlayerInterface!
+    
+    var analytics:CISAnalytics?
+    var videoAnalytics:CISVideoAnalytics?
+    var adAnalytics:CISAdAnalytics?
+   
     var xyzVideoPlayer : XYZPlayer!
     var xyzAdPlayer: XYZPlayer!
-    var contentMetaData: CISContentMetadata!
-    var adMetaData: CISContentMetadata!
-
+    
     @IBOutlet weak var adSegment: UISegmentedControl!
     @IBOutlet weak var customerKeyTF: UITextField!
     
     var adPlayingBeforeBackground : Bool = false
     
     var adTimer: Timer?
-    var isRecreateAdSession = false
+    
     var backgroundUpdateTask = UIBackgroundTaskIdentifier()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        videoSessionID = NO_SESSION_KEY
-        adSessionID = NO_SESSION_KEY
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -45,9 +40,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func createSessionClicked (_ sender: Any){
         adSessionTasks(false)
     }
-
+    
     func adSessionTasks(_ adPlayingBeforeBG: Bool)  {
-        if(client != nil){
+        if let _ = self.analytics {
             createVideoSession()
             endBackgroundTask()
             registerBackgroundTask()
@@ -60,14 +55,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 let keys = ["g test key 1", "g test key 2", "g test key 3"]
                 let values = ["test value1", "test value2", "test value3"]
                 let attributes : NSDictionary = [keys : values]
-                client.sendCustomEvent(videoSessionID, eventname: "Sample Event Video", withAttributes: attributes as Any as! [AnyHashable : Any])
+                
+                self.videoAnalytics?.reportPlaybackEvent("Sample Event Video", withAttributes: attributes as Any as? [AnyHashable : Any])
                 
                 // Create Ad session
                 createAdSession()
                 let key = ["AdDuration"]
                 let value = ["60"]
                 let attribute : NSDictionary = [key : value]
-                client.sendCustomEvent(adSessionID, eventname: "Sample Event Ad", withAttributes: attribute as Any as! [AnyHashable : Any])
+                
+                
+                self.adAnalytics?.reportAdPlayerEvent("Sample Event Video", details: attribute as Any as? [AnyHashable : Any])
                 
                 attachAdPlayer()
                 setAdStates()
@@ -101,11 +99,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 if (adPlayingBeforeBG){
                     postrollStarted()
                 }else{
-                attachVideoPlayer()
-                setVideoStates()
-                // Create timer to be fired for postroll start
-                //let postrollStarted : Selector = NSSelectorFromString("postrollStarted")
-                createTimer(#selector(ViewController.postrollStarted),40)
+                    attachVideoPlayer()
+                    setVideoStates()
+                    // Create timer to be fired for postroll start
+                    //let postrollStarted : Selector = NSSelectorFromString("postrollStarted")
+                    createTimer(#selector(ViewController.postrollStarted),40)
                 }
                 break
                 
@@ -122,33 +120,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func sendEventClicked() {
-    
-    if (client != nil){
-    
-    if(videoSessionID != NO_SESSION_KEY) {
-     client.sendCustomEvent(videoSessionID, eventname: "Sample Event Video 1", withAttributes: ["Duration" : "10"])
+        
+        self.videoAnalytics?.reportPlaybackEvent("Sample Event Video", withAttributes: ["Duration" : "10"])
+        self.adAnalytics?.reportAdPlayerEvent("Sample Event Video", details: ["Ad-Duration" : "20"])
     }
     
-    if(self.adSessionID != NO_SESSION_KEY) {
-        client.sendCustomEvent(videoSessionID, eventname: "Sample Event Ad 1", withAttributes: ["Ad-Duration" : "20"])
-        }
-      }
+    @objc func midrollStarted(){
+        // Create Timer for midroll done
+        print("midrollStarted")
+        cancelAdTimer()
+        adStarted()
+        detachVideoPlayer()
+        createAdSession()
+        attachAdPlayer()
+        setAdStates()
+        //let midrollDone : Selector = NSSelectorFromString("midrollDone")
+        createTimer(#selector(ViewController.midrollDone),20)
     }
     
-  @objc func midrollStarted(){
-    // Create Timer for midroll done
-    print("midrollStarted")
-    cancelAdTimer()
-    adStarted()
-    detachVideoPlayer()
-    createAdSession()
-    attachAdPlayer()
-    setAdStates()
-    //let midrollDone : Selector = NSSelectorFromString("midrollDone")
-    createTimer(#selector(ViewController.midrollDone),20)
-    }
-    
-  @objc  func midrollDone (){
+    @objc  func midrollDone (){
         cancelAdTimer()
         cleanupAd()
         adEnded()
@@ -156,7 +146,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         setVideoStates()
     }
     
-  @objc func preRollDone(){
+    @objc func preRollDone(){
         cancelAdTimer()
         cleanupAd()
         adEnded()
@@ -164,7 +154,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         setVideoStates()
     }
     
-  @objc func postrollStarted(){
+    @objc func postrollStarted(){
         // Create Timer for postRoll done
         cancelAdTimer()
         detachVideoPlayer()
@@ -176,7 +166,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         createTimer(#selector(ViewController.postrollDone),20)
     }
     
-  @objc  func postrollDone(){
+    @objc  func postrollDone(){
         cancelAdTimer()
         adEnded()
         cleanupAd()
@@ -184,19 +174,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func setAdStates()  {
-        if(xyzAdPlayerInterface != nil){
-            xyzAdPlayerInterface.report(.CONVIVA_BUFFERING)
-            xyzAdPlayerInterface.report(.CONVIVA_PLAYING)
-            xyzAdPlayerInterface.reportPlayerBitrate(200)
-        }
+    
+        self.adAnalytics?.reportAdMetric(CIS_SSDK_PLAYBACK_METRIC_PLAYER_STATE, value: NSNumber(integerLiteral: Int(PlayerState.CONVIVA_BUFFERING.rawValue)));
+        
+        self.adAnalytics?.reportAdMetric(CIS_SSDK_PLAYBACK_METRIC_PLAYER_STATE, value: NSNumber(integerLiteral: Int(PlayerState.CONVIVA_PLAYING.rawValue)));
+        
+        self.adAnalytics?.reportAdMetric(CIS_SSDK_PLAYBACK_METRIC_BITRATE, value: NSNumber(integerLiteral: 200));
+
     }
     
     func  setVideoStates()  {
-        if(xyzVideoPlayerInterface != nil){
-            xyzVideoPlayerInterface.report(.CONVIVA_BUFFERING)
-            xyzVideoPlayerInterface.report(.CONVIVA_PLAYING)
-            xyzVideoPlayerInterface.reportPlayerBitrate(100)
-        }
+        
+        self.videoAnalytics?.reportPlaybackMetric(CIS_SSDK_PLAYBACK_METRIC_PLAYER_STATE, value: NSNumber(integerLiteral: Int(PlayerState.CONVIVA_BUFFERING.rawValue)));
+        
+        self.videoAnalytics?.reportPlaybackMetric(CIS_SSDK_PLAYBACK_METRIC_PLAYER_STATE, value: NSNumber(integerLiteral: Int(PlayerState.CONVIVA_PLAYING.rawValue)));
+        
+        self.videoAnalytics?.reportPlaybackMetric(CIS_SSDK_PLAYBACK_METRIC_BITRATE, value: NSNumber(integerLiteral: 100));
     }
     
     func createTimer(_ selector : Selector , _ ti : TimeInterval)  {
@@ -217,18 +210,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @objc func appStateChangeHandler(_ notification : NSNotification)  {
         if(notification.name == NSNotification.Name.UIApplicationDidEnterBackground){
-            if(adSessionID != NO_SESSION_KEY){
-                adPlayingBeforeBackground = true
-                cleanupAd()
-                cancelAdTimer()
-            }
-            if(videoSessionID != NO_SESSION_KEY){
-                cleanupSessionClicked((Any).self)
-            }
+            self.analytics?.reportAppBackgrounded();
         }else{
- 
+            
             adSessionTasks(adPlayingBeforeBackground)
             adPlayingBeforeBackground = false
+            
+            self.analytics?.reportAppForegrounded();
             
         }
     }
@@ -242,58 +230,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func reportErrorClicked(_ sender: Any) {
-        if (client != nil && videoSessionID != NO_SESSION_KEY){
-            client.reportError(videoSessionID, errorMessage: "Video start error", errorSeverity: .ERROR_FATAL)
+
+        if let _ = self.videoAnalytics {
+            self.videoAnalytics?.reportPlaybackError("Video start error", errorSeverity: .ERROR_FATAL);
         }
     }
     
     @IBAction func initSDKClicked(_ sender: Any) {
-        let systemInterFactory : CISSystemInterfaceProtocol = IOSSystemInterfaceFactory.initializeWithSystemInterface()
-        let setting = CISSystemSettings.init()
-        setting.logLevel = .LOGLEVEL_NONE
-        let factory : CISSystemFactoryProtocol = CISSystemFactoryCreator.create(withCISSystemInterface: systemInterFactory, setting: setting)
         
-        let settingError : Error? = nil
-        let clientError : Error? = nil
-        
-        
-        var clientSetting : CISClientSettingProtocol
-        do {
-            clientSetting = try CISClientSettingCreator.create(withCustomerKey: "CUSTOMER_KEY")
-            clientSetting.setGatewayUrl("TOUCHSTONE_URL")
-            
-            do {
-                client = try CISClientCreator.create(withClientSettings: clientSetting, factory: factory)
-            }
-                
-            catch {
-                print(clientError!)
-            }
-        }
-            
-        catch {
-            print(settingError!)
-        }
-        
-        if (clientError != nil) {
-            print("[SAMPLE APP] [clientError] [ \(clientError!) ]")
-        }
-        else if (settingError != nil){
-            NSLog("[SAMPLE APP] [settingError] [ \(settingError!) ]")
-        }
-        else{
-            print("[SAMPLE APP] [SUCCESS] [INIT SUCCESS]")
-        }
+        let settings = [CIS_SSDK_SETTINGS_GATEWAY_URL:"GATEWAYURL",CIS_SSDK_SETTINGS_LOG_LEVEL:NSNumber(value: LogLevel.LOGLEVEL_WARNING.rawValue)] as [String : Any];
+
+        self.analytics = CISAnalyticsCreator.create(withCustomerKey: "KEY",settings:settings);
+
     }
     
     @IBAction func cleanupSDKClicked(_ sender: Any) {
         cleanupSessionClicked(self)
-        if (client != nil){
-            client.cleanUp()
-            client = nil
-        }
-        adSessionID = NO_SESSION_KEY
-        videoSessionID = NO_SESSION_KEY
+
+        self.analytics?.cleanup();
+        self.analytics = nil
         
         NotificationCenter.default.removeObserver(self)
     }
@@ -304,7 +259,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func adStarted() {
-        if (videoSessionID != NO_SESSION_KEY && client != nil){
+        if let _ = self.videoAnalytics {
             var adPos : AdPosition!
             
             switch (adSegment.selectedSegmentIndex) {
@@ -324,209 +279,170 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
             
             if (adSegment.selectedSegmentIndex != 3){
-                client.adStart(videoSessionID, adStream: .ADSTREAM_SEPARATE, adPlayer: .ADPLAYER_SEPARATE, adPosition: adPos)
+                
+                var adAttributes = [AnyHashable:Any]();
+                adAttributes["podIndex"] = "1";
+                adAttributes["podDuration"] = "10";
+                adAttributes["podPosition"] = CISConstants.getAdPositionStringValue(adPos);
+                
+                self.videoAnalytics?.reportAdBreakStarted(.ADPLAYER_SEPARATE, adType: .CLIENT_SIDE, adBreakInfo: adAttributes)
             }
         }
     }
     
     @IBAction func adEnded() {
-        if (videoSessionID != NO_SESSION_KEY && client != nil){
-            client.adEnd(videoSessionID)
-        }
         
+        if nil != videoAnalytics {
+            self.videoAnalytics!.reportAdBreakEnded();
+        }
+    }
+    
+    func buildContentInfo() ->  [AnyHashable : Any]{
+        
+        var contentInfo = [AnyHashable : Any]();
+        
+        contentInfo[CIS_SSDK_METADATA_ASSET_NAME] = "asset";
+        contentInfo[CIS_SSDK_METADATA_IS_LIVE] = NSNumber(booleanLiteral: true);
+        contentInfo[CIS_SSDK_METADATA_PLAYER_NAME] = "playername";
+        contentInfo[CIS_SSDK_METADATA_VIEWER_ID] = "viewerid";
+        contentInfo[CIS_SSDK_METADATA_DEFAULT_RESOURCE] = "resource";
+        contentInfo[CIS_SSDK_METADATA_DURATION] = NSNumber(integerLiteral: 100);
+        contentInfo[CIS_SSDK_METADATA_STREAM_URL] = "http://test.m3u8";
+        contentInfo[CIS_SSDK_PLAYER_FRAMEWORK_NAME] = "frameworkname";
+        contentInfo[CIS_SSDK_PLAYER_FRAMEWORK_VERSION] = "frameworkversion";
+        
+        let tags = NSMutableDictionary();
+        tags["key1"] = "val1";
+        tags["key2"] = "val2";
+        contentInfo["tags"] = tags;
+    
+        return contentInfo;
+    }
+        
+    func buildAdInfo() ->  [AnyHashable : Any] {
+        
+        var adInfo = [AnyHashable : Any]();
+        
+        adInfo[CIS_SSDK_METADATA_ASSET_NAME] = "adasset";
+        adInfo[CIS_SSDK_METADATA_IS_LIVE] = NSNumber(booleanLiteral: true);
+        adInfo[CIS_SSDK_METADATA_PLAYER_NAME] = "adplayername";
+        adInfo[CIS_SSDK_METADATA_VIEWER_ID] = "viewerid";
+        adInfo[CIS_SSDK_METADATA_DEFAULT_RESOURCE] = "resource";
+        adInfo[CIS_SSDK_METADATA_DURATION] = NSNumber(integerLiteral: 100);
+        adInfo[CIS_SSDK_METADATA_STREAM_URL] = "http://test.m3u8";
+        adInfo[CIS_SSDK_PLAYER_FRAMEWORK_NAME] = "frameworkname";
+        adInfo[CIS_SSDK_PLAYER_FRAMEWORK_VERSION] = "frameworkversion";
+        
+        
+        let tags = NSMutableDictionary();
+        tags["key1"] = "val1";
+        tags["key2"] = "val2";
+        adInfo["tags"] = tags;
+    
+        return adInfo;
     }
     
     @IBAction func updateMetaDataClicked(_ sender: Any) {
-        contentMetaData.defaultResource = "LEVEL3";
-        contentMetaData.streamType = .CONVIVA_STREAM_LIVE;
-        contentMetaData.applicationName = "New playerName";
-        contentMetaData.viewerId = "Supplied new viewer ID";
-        contentMetaData.duration = 100; //in seconds
-        contentMetaData.encodedFramerate = 60; //in fps
-        contentMetaData.streamUrl = "http://newstreamurl.conviva.com/";
-        contentMetaData.custom["tag1"] = "new_value1"
-        contentMetaData.custom["tag2"] = "new_value2"
         
-        if (videoSessionID != NO_SESSION_KEY && client != nil){
-            client.updateContentMetadata(videoSessionID, metadata: contentMetaData)
+        var contentInfo = [AnyHashable : Any]();
+        
+        contentInfo[CIS_SSDK_METADATA_IS_LIVE] = NSNumber(booleanLiteral: false);
+        contentInfo[CIS_SSDK_METADATA_PLAYER_NAME] = "playername";
+        contentInfo[CIS_SSDK_METADATA_VIEWER_ID] = "viewerid";
+        contentInfo[CIS_SSDK_METADATA_DEFAULT_RESOURCE] = "LEVEL3";
+        contentInfo[CIS_SSDK_METADATA_DURATION] = NSNumber(integerLiteral: 100);
+        contentInfo[CIS_SSDK_METADATA_STREAM_URL] = "http://test.m3u8";
+        
+        if nil != self.videoAnalytics {
+            self.videoAnalytics!.setContentInfo(contentInfo);
         }
-        contentMetaData = nil
     }
-
-
-// MAIN CONTENT VIDEO METHODS
+    
+    
+    // MAIN CONTENT VIDEO METHODS
     
     func createVideoSession() {
-        if (client != nil ){
-            videoSessionID = client.createSession(with: createVideoMetadataObject())
-            print(videoSessionID)
+        
+        if nil != self.analytics  {
+            self.videoAnalytics = self.analytics?.createVideoAnalytics();
+            self.videoAnalytics?.reportPlaybackRequested(self.buildContentInfo())
         }
     }
-
-    @IBAction func cleanupSessionClicked(_ sender: Any){
     
-        if(videoSessionID != NO_SESSION_KEY){
-            
-            client.cleanupSession(videoSessionID)
-            
-            videoSessionID = NO_SESSION_KEY
-            
-            if(xyzVideoPlayerInterface != nil){
-                
-            xyzVideoPlayerInterface.cleanupXYZPLayerInterface()
-            
-            xyzVideoPlayerInterface = nil
-            }
-            
-            cleanupVideoPsm()
-            
-            if(xyzVideoPlayer != nil){
-                xyzVideoPlayer.stop()
-                
-                xyzVideoPlayer = nil
-            }
-            
-        }
+    @IBAction func cleanupSessionClicked(_ sender: Any){
         
         cleanupAd()
         
+        if nil != self.videoAnalytics {
+            self.videoAnalytics!.reportPlaybackEnded();
+            self.videoAnalytics!.cleanup();
+            self.videoAnalytics = nil;
+        }
     }
     
     
     func attachVideoPlayer() {
-        if (client != nil){
+        if let _ = self.analytics {
             // CREATE PLAYER INSTANCE HERE OR BEFORE
             if (xyzVideoPlayer == nil){
                 xyzVideoPlayer = XYZPlayer.init(videoUrl: "SAMPLE_VIDEO_URL")
             }
             
-            if (psmVideoInstance == nil){
-                psmVideoInstance = client.getPlayerStateManager()
-            }
-            
-            // IF XYZPROXY IS NIL CREATE NEW
-            // PASS PLAYER INSTANCE HERE TO XYZPROXY
-            // ASSIGN PSM ICLIENT TO XYZ PROXY HERE
-            if (xyzVideoPlayerInterface == nil){
-                xyzVideoPlayerInterface = XYZPlayerInterface.init(playerStateManager: psmVideoInstance, xyzPlayer: xyzVideoPlayer)
-            }
-            
-            psmVideoInstance.setCISIClientMeasureInterface!(xyzVideoPlayerInterface)
-            
-            if (psmVideoInstance != nil && videoSessionID != NO_SESSION_KEY){
-                client.attachPlayer(videoSessionID, playerStateManager: psmVideoInstance)
-            }
+            let event = CISConstants.getEventsStringValue(.USER_WAIT_ENDED)!;
+            self.videoAnalytics?.reportPlaybackEvent(event,withAttributes: nil);
         }
     }
     
     func detachVideoPlayer()  {
-        if videoSessionID != NO_SESSION_KEY {
-            client.detachPlayer(videoSessionID)
-        }
+        let event = CISConstants.getEventsStringValue(.USER_WAIT_STARTED);
+        self.videoAnalytics?.reportPlaybackEvent(event!,withAttributes: nil);
     }
+
     
-    func createVideoMetadataObject() -> CISContentMetadata {
-        contentMetaData = CISContentMetadata()
-        contentMetaData.assetName = "iOS_SDK_INTEGRATION_SWIFT"
-        contentMetaData.applicationName = "Conviva_Orange_Player"
-        contentMetaData.custom["tag1"] = "value1"
-        contentMetaData.custom["tag2"] = "value2"
-        contentMetaData.viewerId = "Conviva-QE"
-        contentMetaData.defaultResource = "LEVEL3"
-        contentMetaData.streamType = .CONVIVA_STREAM_VOD
-        contentMetaData.streamUrl = "SAMPLE_URL"
-        return contentMetaData
-    }
-    
-    func cleanupVideoPsm() {
-        if (psmVideoInstance != nil) {
-            client.releasePlayerStateManager(psmVideoInstance)
-            psmVideoInstance = nil
-        }
-    }
-    
- // AD METHODS
+    // AD METHODS
     
     func createAdSession() {
-        if (client != nil ){
-            adSessionID = client.createAdSession(videoSessionID, adMetadata: createAdMetadataObject())
-            print(adSessionID)
+        if nil != self.analytics && nil != self.videoAnalytics {
+            self.adAnalytics = self.analytics?.createAdAnalytics(withVideoAnalytics: self.videoAnalytics!);
+            self.adAnalytics?.reportAdLoaded(self.buildAdInfo());
         }
     }
     
     func cleanupAd(){
-        if(adSessionID != NO_SESSION_KEY){
+        if nil != self.adAnalytics {
             
-            client.cleanupSession(adSessionID)
-            
-            adSessionID = NO_SESSION_KEY
-            
-            if(xyzAdPlayerInterface != nil){
-            xyzAdPlayerInterface.cleanupXYZPLayerInterface()
-            
-            xyzAdPlayerInterface = nil
-            }
-            
-            cleanupAdPsm()
+            self.adAnalytics?.cleanup();
             
             if(xyzAdPlayer != nil){
-            xyzAdPlayer.stop()
-            
-            xyzAdPlayer = nil
+                xyzAdPlayer.stop()
+                
+                xyzAdPlayer = nil
                 
             }
         }
     }
     
     func attachAdPlayer() {
-        if (client != nil){
+        
+        if let _ = self.analytics {
             // CREATE PLAYER INSTANCE HERE OR BEFORE
             if (xyzAdPlayer == nil){
                 xyzAdPlayer = XYZPlayer.init(videoUrl: "SAMPLE_VIDEO_URL")
+                self.adAnalytics?.reportAdStarted(self.buildAdInfo())
+            }else {
+                let event = CISConstants.getEventsStringValue(.USER_WAIT_STARTED)!;
+                self.adAnalytics?.reportAdPlayerEvent(event,details: nil);
             }
             
-            if (psmAdInstance == nil){
-                psmAdInstance = client.getPlayerStateManager()
-            }
-            
-            // IF XYZPROXY IS NIL CREATE NEW
-            // PASS PLAYER INSTANCE HERE TO XYZPROXY
-            // ASSIGN PSM ICLIENT TO XYZ PROXY HERE
-            if (xyzAdPlayerInterface == nil){
-                xyzAdPlayerInterface = XYZPlayerInterface.init(playerStateManager: psmAdInstance, xyzPlayer: xyzAdPlayer)
-            }
-            
-            psmAdInstance.setCISIClientMeasureInterface!(xyzAdPlayerInterface)
-            
-            if (psmAdInstance != nil && adSessionID != NO_SESSION_KEY){
-                client.attachPlayer(adSessionID, playerStateManager: psmAdInstance)
-            }
         }
+        
     }
-
+    
     func detachAdPlayer() {
-        if adSessionID != NO_SESSION_KEY {
-            client.detachPlayer(adSessionID)
-        }
+        let event = CISConstants.getEventsStringValue(.USER_WAIT_ENDED)!;
+        self.adAnalytics?.reportAdPlayerEvent(event,details: nil);
     }
     
-   func createAdMetadataObject ()-> CISContentMetadata{
-        adMetaData = CISContentMetadata()
-        adMetaData.assetName = "iOS_AD_SDK_ADS_INTEGRATION"
-        adMetaData.custom["tag1"] = "value1"
-        adMetaData.custom["tag2"] = "value2"
-        adMetaData.defaultResource = "LEVEL3"
-        adMetaData.streamType = .CONVIVA_STREAM_VOD
-        adMetaData.streamUrl = "SAMPLE_AD_URL"
-        return adMetaData
-    }
-    
-    func cleanupAdPsm() {
-        if (psmAdInstance != nil) {
-            client.releasePlayerStateManager(psmAdInstance)
-            psmAdInstance = nil
-        }
-    }
     
     func registerBackgroundTask()  {
         backgroundUpdateTask = UIApplication.shared.beginBackgroundTask(expirationHandler: {

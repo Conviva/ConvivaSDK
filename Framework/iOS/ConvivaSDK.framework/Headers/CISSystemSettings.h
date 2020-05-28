@@ -12,16 +12,19 @@
  * Log level setting for the SDK client.
  */
 typedef NS_ENUM(NSUInteger,LogLevel) {
-    /** Will display all log messages. */
+    
+    /** Will display debug,info,warn and error messages. */
     LOGLEVEL_DEBUG = 0,
-    /** Will only display warning and error log messages. */
+    /** Will only display info,warning and error log messages. */
     LOGLEVEL_INFO,
-    /** Will only display error log messages. */
+    /** Will  display warning,error log messages. */
     LOGLEVEL_WARNING,
-    /** Will display all log messages except debugging messages. */
+    /** Will display error messages. */
     LOGLEVEL_ERROR,
     /** Will not display any log messages. */
-    LOGLEVEL_NONE
+    LOGLEVEL_NONE,
+    /** Will display all log messages. */
+    LOGLEVEL_FUNC,
 };
 
 /**
@@ -34,6 +37,12 @@ typedef NS_ENUM(NSUInteger,LogLevel) {
  * We recommend using log level warning during development and lowering to debug when more information is required to troubleshoot specific issues.
  */
 @property(nonatomic) LogLevel logLevel;
+
+/**
+ * Enable/Disable console logs.
+ * Set true to enable console logs else false.  
+ */
+@property(nonatomic) BOOL enableConsoleLogs;
 
 /**
  * Whether to allow or catch runtime exceptions.<br>

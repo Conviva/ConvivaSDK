@@ -125,6 +125,12 @@
 -(void)adStart:(int)sessionKey adStream:(AdStream)adStream adPlayer:(AdPlayer)adPlayer adPosition:(AdPosition)adPosition;
 
 /**
+ * Notify Conviva that an ad is about to start for the monitoring session.
+ * @param sessionKey The identifier for the monitoring session.
+ */
+-(void)adStart:(int)sessionKey;
+
+/**
  * Notify Conviva that an ad has ended for the monitoring session.
  * @param sessionKey The identifier for the monitoring session.
  */
@@ -142,6 +148,11 @@
  * @param sessionKey The identifier for the monitoring session.
  */
 -(BOOL)isPlayerAttached:(int)sessionKey;
+
+/**
+ * Returns unique client id
+ */
+-(NSString*)getClientId;
 
 
 @end

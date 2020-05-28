@@ -86,4 +86,29 @@
  */
 -(NSInteger)getRenderedFramesPerSecond;
 
+/**
+ * Sets module name and version.
+ */
+-(void)setModuleName:(NSString*)name;
+
+/**
+ * Sets module name and version.
+ */
+-(void)setModuleVersion:(NSString*)version;
+
+/**
+ * Sets module name and version.
+ */
+-(void)setModuleNameAndVersion:(NSString*)name clientVersion:(NSString*)version;
+
+/**
+* Gets module name.
+*/
+-(NSString *)getModuleName;
+
+/**
+* Gets module version.
+*/
+-(NSString *)getModuleVersion;
+
 @end

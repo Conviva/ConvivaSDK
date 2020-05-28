@@ -1,7 +1,10 @@
 # Changelog
 
+## 4.0.0 (05/29/2020)
+* Simplified SDK with simple and fewer api's and less integration steps. 
+
 ## 2.142.6 (04/22/2020)
-* Fixes an issue where same version is reported for both AdIdentifier enabled and disabled frameworks.
+* Fixes an issue where same version is reported in heart beat for both Advertising Identifier enabled and disabled frameworks.
 
 ## 2.142.5 (12/13/2019)
 * Supports Data collection and Data compliance as per GDPR and CCPA. Does not collect AD Identifier to comply with Apple guide lines.

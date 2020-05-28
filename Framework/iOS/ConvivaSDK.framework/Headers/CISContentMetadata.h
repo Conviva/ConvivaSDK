@@ -88,4 +88,9 @@ typedef NS_ENUM(NSUInteger,StreamType) {
  */
 @property(nonatomic,assign) NSInteger encodedFramerate;
 
+/**
+ * Duration of the video content, in seconds.
+ */
+@property(nonatomic,assign) BOOL isOfflinePlayback;
+
 @end

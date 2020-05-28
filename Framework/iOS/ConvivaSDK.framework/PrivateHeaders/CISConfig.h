@@ -9,9 +9,10 @@
 #import "CISStorage.h"
 #import "CISLogger.h"
 #import "CISJSONOperator.h"
+#import "CISInternalConstant.h"
 
 FOUNDATION_EXPORT NSString *const SEND_LOG; //  sendLogs
-FOUNDATION_EXPORT NSString *const CLIENT_ID; //  clientId
+//FOUNDATION_EXPORT NSString *const CLIENT_ID; //  clientId
 
 @interface CISConfig : NSObject
 

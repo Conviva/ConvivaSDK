@@ -8,13 +8,16 @@
 #import <Foundation/Foundation.h>
 #import "CISClientSettingProtocol.h"
 
-FOUNDATION_EXPORT NSString *const FINGER_PRINT_PREFIX;
-FOUNDATION_EXPORT NSString *const AD_IDENTIFIER;
-FOUNDATION_EXPORT NSString *const VENDOR_IDENTIFIER;
+FOUNDATION_EXPORT NSString *const CONVIVA_FINGER_PRINT_PREFIX;
+FOUNDATION_EXPORT NSString *const CONVIVA_AD_IDENTIFIER;
+FOUNDATION_EXPORT NSString *const CONVIVA_VENDOR_IDENTIFIER;
 
 @interface CISClientSetting : NSObject<CISClientSettingProtocol>
 
 @property(nonatomic, assign, readonly) NSUInteger cismaxHeartbeatInfos; // maximum length of the hbinfos array
+@property(nonatomic, assign, readonly) BOOL cdnIpSetManually; // Whether CDN IP set manually (or) not
+
+@property(nonatomic, assign) BOOL enableConsoleLogs;
 
 -(instancetype)init NS_UNAVAILABLE;
 -(instancetype)initWithCustomerKey:(NSString *)CustomerKey error:(NSError **)error NS_DESIGNATED_INITIALIZER;
@@ -26,5 +29,9 @@ FOUNDATION_EXPORT NSString *const VENDOR_IDENTIFIER;
 - (NSArray *)getSupportedUniqueIdentifiers;
 - (NSDictionary *)getFingerPrintUserPreferenceForDataCollection;
 - (NSDictionary *)getFingerPrintUserPreferenceForDataDeletion;
+
+- (BOOL)canReportCdn;
+- (void)setReportCdn:(BOOL)reportCdn;
+- (void)updateCdnIpSetManually:(BOOL)newValue;
 
 @end

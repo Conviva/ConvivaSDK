@@ -76,3 +76,5 @@
 -(void)setUserPreferenceForDataDeletion:(NSDictionary *)userPrefs;
 
 @end
+
+typedef id<CISClientSettingProtocol> CISClientSettings;
