@@ -57,8 +57,9 @@ extern NSString *const kCISReachabilityChangedNotification;
 typedef enum {
     // Apple NetworkStatus Compatible Names.
     ConvivaNotReachable = 0,
+    ConvivaReachableViaWWAN = 1,
     ConvivaReachableViaWiFi = 2,
-    ConvivaReachableViaWWAN = 1
+    ConvivaReachableViaEthernet = 3
 } ConvivaNetworkStatus;
 
 @class CISReachability;

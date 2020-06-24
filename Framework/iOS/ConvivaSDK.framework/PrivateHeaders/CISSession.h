@@ -42,4 +42,6 @@
 -(NSString *)getApplicationName;
 -(int)getSID;
 -(CISPlayerStateManager*)getAttachedPlayer;
+
+- (void) setLibraryVersion:(NSString*)libVersion;
 @end

@@ -30,6 +30,8 @@
  */
 -(NSString*)getClientId;
 
--(int) getInternalSessionId:(int)sessionKey;
+- (int) getInternalSessionId:(int)sessionKey;
+
+- (void) setLibraryVersion:(NSString*)libVersion onSession:(int)sessionKey;
 
 @end

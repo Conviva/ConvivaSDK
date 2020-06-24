@@ -108,7 +108,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// \param fps Encoded frame rate.
 - (void)setEncodedFrameRate:(int)fps;
 
-
+/// @brief Tells whether simplified sdk/legacy sdk api's used.
+///
+- (BOOL) isSimplifiedSDKApiUsed;
 @end
 
 typedef id<CISPlayerEventsListenerProtocol> CISPlayerEventsListener;

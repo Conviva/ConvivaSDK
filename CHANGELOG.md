@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.0.3 (06/25/2020)
+* Support for auto detection of connection type (Ethernet) in tvOS.
+* Uses 2.143.xx series versioning for older integrations that uses Core SDK version 4.x.x+.
+* Bug Fixes.
+
+## 4.0.2 (06/25/2020)
+* Support for auto detection of connection type (Ethernet) in tvOS.
+* Uses 2.143.xx series versioning for older integrations that uses Core SDK version 4.x.x+.
+* Bug Fixes.
+
 ## 4.0.1 (05/29/2020)
 * Simplified SDK with simple and fewer api's and less integration steps. Does not collect AD Identifier to comply with Apple guide lines.
 
