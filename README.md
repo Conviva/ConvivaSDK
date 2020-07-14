@@ -22,13 +22,13 @@ release 2.141.0. Please follow these steps to migrate to 2.141.0 version
 ## Cocoapods Installation
     Add the following line to your pod file and run 'pod install'
 
-    pod 'ConvivaSDK','4.0.3'
+    pod 'ConvivaSDK','4.0.4'
     
 
 ## Manual Installation
 To add the ConvivaSDK library to your project manually:
 
-1.	Download the latest ConvivaSDK [here](https://github.com/Conviva/ConvivaSDK/archive/4.0.3.zip)
+1.	Download the latest ConvivaSDK [here](https://github.com/Conviva/ConvivaSDK/archive/4.0.4.zip)
 
 2.	Unzip the package and add ConvivaSDK.framework to “Link Binary with Libraries” under build phase.
     The package contains framework for both iOS and tvOS. Please make sure to include right framework for your platform.
@@ -39,6 +39,8 @@ To add the ConvivaSDK library to your project manually:
     * SystemConfiguration
     * MobileCoreServices
     * CoreTelephony (iOS only)
+    * Network (optional)
+    
 
 4.	Add “-ObjC” to “Other Linker Flags” of Xcode.
 

@@ -111,4 +111,7 @@
 */
 -(NSString *)getModuleVersion;
 
+-(void) enableAVLegacyIntegration:(BOOL)legacy;
+
+
 @end

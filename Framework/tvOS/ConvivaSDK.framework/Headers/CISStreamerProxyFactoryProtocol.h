@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "CISPlayerEventsListenerProtocol.h"
 #import "CISStreamerProxyProtocol.h"
-#import "CISLoggingProtocol.h"
+#import "CISLoggerProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,7 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 - (CISStreamerProxy)createStreamerProxy:(id)streamer
                    playerEventsListener:(CISPlayerEventsListener)playerEventsListener
-                                 logger:(id<CISLoggingProtocol>)logger;
+                                 logger:(id<CISLoggerProtocol>)logger;
+
+- (CISStreamerProxy)createStreamerProxy:(CISPlayerEventsListener)playerEventsListener
+                                 logger:(id<CISLoggerProtocol>)logger;
 
 @end
 

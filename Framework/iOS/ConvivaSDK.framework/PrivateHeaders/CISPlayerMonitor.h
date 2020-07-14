@@ -124,6 +124,8 @@
 
 - (void) setSessionId:(int)sessionId;
 
+- (int) getInternalSessionId;
+
 - (NSInteger) getVideoWidth;
 
 - (NSInteger) getVideoHeight;

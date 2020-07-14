@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.0.4 (07/15/2020)
+* Fixes attachplayer issue when detachplayer and attachplayer methods are called back to back for legacy integration
+* Supports Advertising identifier collection
+
+
 ## 4.0.3 (06/25/2020)
 * Support for auto detection of connection type (Ethernet) in tvOS.
 * Uses 2.143.xx series versioning for older integrations that uses Core SDK version 4.x.x+.
