@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.5 (07/15/2020)
+* Fixes attachplayer issue when detachplayer and attachplayer methods are called back to back for legacy integration
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
 ## 4.0.4 (07/15/2020)
 * Fixes attachplayer issue when detachplayer and attachplayer methods are called back to back for legacy integration
 * Supports Advertising identifier collection
