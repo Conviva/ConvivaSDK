@@ -93,6 +93,12 @@ Expected value: NSString
 */
 FOUNDATION_EXPORT NSString *const CIS_SSDK_PLAYBACK_METRIC_CONN_TYPE;
 
+/*
+Key for Dropped Frames Total.
+Expected value: [NSNumber intValue]
+*/
+FOUNDATION_EXPORT NSString *const CIS_SSDK_PLAYBACK_METRIC_DROPPED_FRAMES_TOTAL;
+
 /*------------------------ END OF PLAYBACK METRIC KEYS ----------------------------*/
 
 /*------------------------- METADATA CONSTANTS -------------------------*/

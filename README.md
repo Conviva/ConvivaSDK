@@ -23,21 +23,27 @@ release 2.141.0. Please follow these steps to migrate to 2.141.0 version
     Add the following line to your pod file and run 'pod install'
     
     // Without Advertising Identifier(IDFA) support
-    pod 'ConvivaSDK','4.0.5'
+    pod 'ConvivaSDK','4.0.7'
     
     OR 
     
     // With Advertising Identifier(IDFA) support
-    pod 'ConvivaSDK','4.0.4'
+    // Application must be built with XCode 12 or above.
+    // Application's plist file must have an entry for NSUserTrackingUsageDescription key with appropriate message.
+    // Example message:
+    // <key>NSUserTrackingUsageDescription</key>
+    // <string>App would like to access IDFA to uniquely identify the user.</string>
+    
+    pod 'ConvivaSDK','4.0.6'
     
 
 ## Manual Installation
 To add the ConvivaSDK library to your project manually:
 
 1.	Download the latest ConvivaSDK from below path.
-      * [Without Advertising Identifier(IDFA) support](https://github.com/Conviva/ConvivaSDK/archive/4.0.5.zip)
+      * [Without Advertising Identifier(IDFA) support](https://github.com/Conviva/ConvivaSDK/archive/4.0.7.zip)
       OR
-     *  [With Advertising Identifier(IDFA) support](https://github.com/Conviva/ConvivaSDK/archive/4.0.4.zip)
+     *  [With Advertising Identifier(IDFA) support](https://github.com/Conviva/ConvivaSDK/archive/4.0.6.zip)
 
 2.	Unzip the package and add ConvivaSDK.framework to “Link Binary with Libraries” under build phase.
     The package contains framework for both iOS and tvOS. Please make sure to include right framework for your platform.
@@ -48,7 +54,8 @@ To add the ConvivaSDK library to your project manually:
     * SystemConfiguration
     * MobileCoreServices
     * CoreTelephony (iOS only)
-    * Network (optional)
+    * Network (weak)
+    * AppTrackingTransparency(weak) - Required only for Advertising Identifier supported library (Application must be built with XCode 12 or above).
     
 
 4.	Add “-ObjC” to “Other Linker Flags” of Xcode.

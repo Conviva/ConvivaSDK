@@ -12,6 +12,7 @@
 
 FOUNDATION_EXPORT NSString *const CIS_SSDK_PLAYBACK_METRIC_AUTO_DETECTED_CDN_IP;
 
+FOUNDATION_EXPORT NSString *const CIS_SSDK_PLAYBACK_METRIC_AUTO_DETECTED_DROPPED_FRAMES_TOTAL;
 /**
  Time interval in seconds at which the Conviva will send available data to the Conviva platform.
  The default value is highly recommended in production environments.

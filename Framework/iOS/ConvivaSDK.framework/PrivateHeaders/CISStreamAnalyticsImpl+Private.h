@@ -48,6 +48,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) reportConnType:(NSString *)connType;
 
+- (void) reportDroppedFramesTotalCount:(int64_t)droppedFramesTotal;
+
 @end
 
 NS_ASSUME_NONNULL_END

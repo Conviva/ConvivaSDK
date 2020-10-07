@@ -111,6 +111,10 @@
 */
 -(NSString *)getModuleVersion;
 
+-(NSInteger)getDroppedFramesTotalCount;
+
+-(void)setDroppedFramesTotalCount:(NSInteger)droppedFramesTotalCount;
+
 -(void) enableAVLegacyIntegration:(BOOL)legacy;
 
 

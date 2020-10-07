@@ -64,7 +64,7 @@
 @property(copy, nonatomic) NSString *cdnName;
 
 /// A set of key-value pairs used in resource selection and policy evaluation
-@property(strong, nonatomic) NSMutableDictionary *tags;
+@property(strong, atomic) NSMutableDictionary *tags;
 
 /// Set to true if the session includes live content, and false otherwise.
 @property(assign, nonatomic) BOOL isLive;

@@ -29,7 +29,7 @@ typedef enum {
 +(CISNetworkUtils *)sharedInstance;
 -(void)startMonioring API_AVAILABLE(ios(12), tvos(12));
 -(void)stopMonitoring API_AVAILABLE(ios(12), tvos(12));
--(BOOL)isConnectedToWifi API_AVAILABLE(ios(12), tvos(12));
+-(BOOL)isConnectedToWifiOrEthernet API_AVAILABLE(ios(12), tvos(12));
 -(CISNetworkType)currentNetworkType API_AVAILABLE(ios(12), tvos(12));
 @end
 

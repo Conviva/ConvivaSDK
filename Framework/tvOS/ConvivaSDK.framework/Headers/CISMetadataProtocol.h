@@ -41,6 +41,20 @@
  */
 -(NSString *)getDeviceModel;
 
+/**
+* Screen scale factor. On retina devices it's value is 2.0.
+* Ex: 2.0, 3.0. It returns always one since we are using pixel api and not points api for getScreenResolution.
+* @return Screen scale factor.
+*/
+-(CGFloat)getScreenScaleFactor;
+
+/**
+* Width  and height of the screen in pixels.
+* Ex: 1242x 2688, 1125x2436
+* @return Width and height of the screen in pixels.
+*/
+-(CGSize) getScreenResolution;
+
 @optional
 
 /**
@@ -92,6 +106,7 @@
  * @return A platform name used by the device.
  */
 -(NSString *)getPlatformName;
+
 
 /**
  * Notification that Conviva no longer needs this MetadataProtocol.

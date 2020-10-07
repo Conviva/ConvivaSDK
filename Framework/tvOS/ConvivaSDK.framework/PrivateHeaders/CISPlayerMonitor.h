@@ -44,6 +44,7 @@
 
 @property (copy) NSString* linkEncryption;
 @property (copy) NSString* connType;
+@property (assign) NSInteger droppedFramesTotal;
 
 @property (assign) double signalStrength;
 
@@ -115,7 +116,11 @@
 - (NSString*) getConnType;
 
 - (void) updateConnType:(NSString*)connType;
-    
+
+- (NSInteger) getDroppedFramesTotalCount;
+
+- (void) updateDroppedFramesTotalCount:(NSInteger)droppedFramesTotalCount;
+
 - (NSInteger) getVideoFrameRate;
 
 - (void) updateVideoFrameRate:(NSInteger)frameRate;

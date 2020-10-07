@@ -61,6 +61,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, copy) NSString *connectionType,*connectionTypeExternal;
 
+@property(nonatomic, assign) NSInteger droppedFramesTotal;
+
 @property(nonatomic,weak) CISNetworkUtil *cisNetworkUtility;
 
 @property(nonatomic, strong) CISTimer *cisTimer;

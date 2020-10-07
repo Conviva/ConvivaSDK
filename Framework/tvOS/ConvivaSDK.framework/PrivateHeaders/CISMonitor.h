@@ -109,6 +109,8 @@ FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
 
 -(void)setConnectionTypeExternal:(NSString *)newConnectionType;
  
+-(void)setDroppedFramesTotalCount:(NSInteger)newDroppedFrames;
+
 -(CISPlayerStateManager*) getAttachedPlayer;
 
 - (void) markOfflinePlayback;

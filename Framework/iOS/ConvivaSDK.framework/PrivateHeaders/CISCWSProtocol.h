@@ -102,4 +102,6 @@ FOUNDATION_EXPORT int const CAPABILITY_OFFLINE_VIDEO ;
 // DE-2912
 -(void)setPlatformName:(NSDictionary *)systemMetadata hbdict:(NSDictionary **)hbDict;
 
+-(void)setDroppedFramesTotalCount:(NSInteger)droppedFramesTotalCount  hbdict:(NSDictionary **)hbDict;
+
 @end

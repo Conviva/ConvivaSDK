@@ -111,6 +111,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// @brief Tells whether simplified sdk/legacy sdk api's used.
 ///
 - (BOOL) isSimplifiedSDKApiUsed;
+
+/// @brief For setting dropped frames count
+///
+/// \param droppedFramesCount Total count of dropped frames
+- (void)setDroppedFramesCount:(NSInteger)droppedFramesCount;
+
 @end
 
 typedef id<CISPlayerEventsListenerProtocol> CISPlayerEventsListener;
