@@ -1,6 +1,7 @@
 # ConvivaSDK Framework
 
-The ConvivaSDK Framework supports cocoapods and manual installation. The library is delivered as Static Framework and deployment is supported on iOS 8 and above.
+The ConvivaSDK Framework supports cocoapods and manual installation. The library is delivered as Static Framework and deployment is supported on iOS 12 and above.
+**Supports iOS/tvOS 14 as well.**
 
 ## Migrating from Pre 2.141.0 version
 For customers who have already integrated pre 2.141.0 version of Conviva library, we recommend them to migrate to the latest 
