@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.0.9 (15/01/2021)
+* Fixes an inconsistent crash on network switch(Wifi to Cellular and viceversa)
+* Reports sdk version as 4.0.9L if legacy api used. If simplified api is used, it is reported as 4.0.9
+* Does not collect Advertising Identifier to comply with Apple guide lines
+
 ## 4.0.8 (15/01/2021)
 * Fixes an inconsistent crash on network switch(Wifi to Cellular and viceversa)
 * Reports sdk version as 4.0.8L if legacy api used. If simplified api is used, it is reported as 4.0.8
