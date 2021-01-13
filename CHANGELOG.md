@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.0.8 (15/01/2021)
+* Fixes an inconsistent crash on network switch(Wifi to Cellular and viceversa)
+* Reports sdk version as 4.0.8L if legacy api used. If simplified api is used, it is reported as 4.0.8
+* Supports Advertising identifier collection
+
 ## 4.0.7 (10/07/2020)
 * Supports iOS 14 
 * Support for auto collection of screen resolution

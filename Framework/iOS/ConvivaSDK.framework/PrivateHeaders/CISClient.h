@@ -34,4 +34,6 @@
 
 - (void) setLibraryVersion:(NSString*)libVersion onSession:(int)sessionKey;
 
+-(BOOL)canAccessAdIdentifier;
+
 @end
