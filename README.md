@@ -53,7 +53,6 @@ To add the ConvivaSDK library to your project manually:
      *  [With Advertising Identifier(IDFA) support](https://github.com/Conviva/ConvivaSDK/archive/4.0.10.zip)
 
 2.	Unzip the package and add ConvivaSDK.xcframework to “Link Binary with Libraries” under build phase.
-    The package contains framework for both iOS and tvOS. Please make sure to include right framework for your platform.
 
 3.	Add the following system frameworks to “Link Binary with Libraries” section in xcode.
 
