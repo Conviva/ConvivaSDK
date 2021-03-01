@@ -1,5 +1,17 @@
 # Changelog
 
+## 4.0.11 (01/03/2021)
+* Supports iOS 14.4
+* Added XCFramework Support.
+* Added Swift Package Manager Support.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
+## 4.0.10 (01/03/2021)
+*  Supports iOS 14.4
+* Added XCFramework Support.
+* Added Swift Package Manager Support.
+* Supports Advertising identifier collection.
+
 ## 4.0.9 (15/01/2021)
 * Fixes an inconsistent crash on network switch(Wifi to Cellular and viceversa)
 * Reports sdk version as 4.0.9L if legacy api used. If simplified api is used, it is reported as 4.0.9

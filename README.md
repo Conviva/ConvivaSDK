@@ -24,7 +24,7 @@ release 2.141.0. Please follow these steps to migrate to 2.141.0 version
     Add the following line to your pod file and run 'pod install'
     
     // Without Advertising Identifier(IDFA) support
-    pod 'ConvivaSDK','4.0.9'
+    pod 'ConvivaSDK','4.0.11'
     
     OR 
     
@@ -35,18 +35,24 @@ release 2.141.0. Please follow these steps to migrate to 2.141.0 version
     // <key>NSUserTrackingUsageDescription</key>
     // <string>App would like to access IDFA to uniquely identify the user.</string>
     
-    pod 'ConvivaSDK','4.0.8'
+    pod 'ConvivaSDK','4.0.10'
     
+## Swift Package Manager Installation
+1. Add the Package Dependency repository URL as https://github.com/Conviva/ConvivaSDK-SPM
+2. Select version as:
+    * 4.0.10 if it's with Advertising Identifier Support.
+    * 4.0.11 if it's without Advertising Identifier Support.
+
 
 ## Manual Installation
 To add the ConvivaSDK library to your project manually:
 
 1.	Download the latest ConvivaSDK from below path.
-      * [Without Advertising Identifier(IDFA) support](https://github.com/Conviva/ConvivaSDK/archive/4.0.9.zip)
+      * [Without Advertising Identifier(IDFA) support](https://github.com/Conviva/ConvivaSDK/archive/4.0.11.zip)
       OR
-     *  [With Advertising Identifier(IDFA) support](https://github.com/Conviva/ConvivaSDK/archive/4.0.8.zip)
+     *  [With Advertising Identifier(IDFA) support](https://github.com/Conviva/ConvivaSDK/archive/4.0.10.zip)
 
-2.	Unzip the package and add ConvivaSDK.framework to “Link Binary with Libraries” under build phase.
+2.	Unzip the package and add ConvivaSDK.xcframework to “Link Binary with Libraries” under build phase.
     The package contains framework for both iOS and tvOS. Please make sure to include right framework for your platform.
 
 3.	Add the following system frameworks to “Link Binary with Libraries” section in xcode.
@@ -66,7 +72,7 @@ To add the ConvivaSDK library to your project manually:
 
   Add the following import statements to your source code to refer Conviva classes.
 
-    * @import ConvivaSDK; ( Objective-C)
+    * @import ConvivaSDK; (Objective-C)
     * import ConvivaSDK (Swift)
 
 ## Note:  
