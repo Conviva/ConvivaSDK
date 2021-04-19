@@ -294,7 +294,7 @@
         
         if (self.adSegment.selectedSegmentIndex != 3){
         
-            NSDictionary *adAttributes = @{@"podIndex":@"1",@"podDuration":@"10",@"podPosition":[CISConstants getAdPositionStringValue:adPos]};
+            NSDictionary *adAttributes = @{CIS_SSDK_AD_BREAK_POD_INDEX:@"1",CIS_SSDK_AD_BREAK_POD_DURATION:@"10",CIS_SSDK_AD_BREAK_POD_POSITION:[CISConstants getAdPositionStringValue:adPos]};
 
             [self.videoAnalytics reportAdBreakStarted:ADPLAYER_SEPARATE adType:CLIENT_SIDE adBreakInfo:adAttributes];
 
@@ -317,7 +317,8 @@
                                     CIS_SSDK_METADATA_STREAM_URL:@"http://test.m3u8",
                                     CIS_SSDK_PLAYER_FRAMEWORK_NAME:@"frameworkname",
                                     CIS_SSDK_PLAYER_FRAMEWORK_VERSION:@"frameworkversion",
-                                    @"tags":@{@"key1":@"val1",@"key2":@"val2"}
+                                    @"key1":@"val1",
+                                    @"key2":@"val2"
                                     };
 
     return contentInfo;
@@ -334,7 +335,8 @@
                                     CIS_SSDK_METADATA_STREAM_URL:@"http://test.m3u8",
                                     CIS_SSDK_PLAYER_FRAMEWORK_NAME:@"frameworkname",
                                     CIS_SSDK_PLAYER_FRAMEWORK_VERSION:@"frameworkversion",
-                                    @"tags":@{@"adkey1":@"adval1",@"adkey2":@"adval2"}
+                                    @"adkey1":@"adval1",
+                                    @"adkey2":@"adval2"
                                     };
     
     return adInfo;
