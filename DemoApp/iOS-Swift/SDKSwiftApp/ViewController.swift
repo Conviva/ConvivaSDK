@@ -310,7 +310,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         contentInfo[CIS_SSDK_METADATA_STREAM_URL] = "http://test.m3u8";
         contentInfo[CIS_SSDK_PLAYER_FRAMEWORK_NAME] = "frameworkname";
         contentInfo[CIS_SSDK_PLAYER_FRAMEWORK_VERSION] = "frameworkversion";
-        
         contentInfo["key1"] = "val1";
         contentInfo["key2"] = "val2";
         
@@ -330,7 +329,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         adInfo[CIS_SSDK_METADATA_STREAM_URL] = "http://test.m3u8";
         adInfo[CIS_SSDK_PLAYER_FRAMEWORK_NAME] = "frameworkname";
         adInfo[CIS_SSDK_PLAYER_FRAMEWORK_VERSION] = "frameworkversion";
-        
         adInfo["key1"] = "val1";
         adInfo["key2"] = "val2";
         
