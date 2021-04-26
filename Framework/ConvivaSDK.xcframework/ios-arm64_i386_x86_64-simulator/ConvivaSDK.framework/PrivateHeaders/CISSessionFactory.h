@@ -23,6 +23,7 @@
 -(void)cleanUpSessionWithID:(int)sessionID  removeFromArray:(BOOL)remove;
 -(CISSession *)getSession:(int) sessionKey;
 -(CISSession *)getVideoSession:(int) sessionKey;
--(int)makeGlobalSession:(CISContentMetadata *)cisContentMetadata;
+-(int)makeGlobalSession:(CISContentMetadata *)cisContentMetadata sessionType:(SessionType)sessionType;
 -(int)makeAdSession:(CISContentMetadata *)cisContentMetadata contentSessionKey:(int)contentSessionKey;
+-(NSMutableArray *)getAllSessions;
 @end

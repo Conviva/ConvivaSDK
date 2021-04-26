@@ -18,6 +18,7 @@ FOUNDATION_EXPORT NSString *const NETWORK_TYPEWIFI;
 - (void)cleanup;
 
 - (void)setNetworkConnectionType:(NSString *)networkConnectionType;
+- (void)setNetworkConnectionTypeExternal:(NSString *)newConnectionType;
 - (void)setNetworkLinkEncryptionType:(NSString *)networkLinkEncryptionType;
 - (void)setNetworkSignalStrength:(double)networkSignalStrength;
 //  DE-2572 Remove SSID Support since this is a PII

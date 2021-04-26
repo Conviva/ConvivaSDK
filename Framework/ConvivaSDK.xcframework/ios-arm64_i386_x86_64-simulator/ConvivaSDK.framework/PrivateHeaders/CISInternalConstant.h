@@ -46,7 +46,11 @@ typedef NS_ENUM(NSInteger,SessionType){
     /** Global Session. */
     GLOBAL,
     /** Ad Session. */
-    AD
+    AD,
+    /** Global Hinted IPV4 Session. */
+    HINTED_IPV4,
+    /** Global Hinted IPV6 Session. */
+    HINTED_IPV6
 };
 
 @interface CISInternalConstant : NSObject

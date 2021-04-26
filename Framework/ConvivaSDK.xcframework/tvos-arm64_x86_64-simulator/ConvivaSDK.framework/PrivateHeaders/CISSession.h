@@ -19,12 +19,14 @@
 @interface CISSession : NSObject
 
 -(instancetype)init NS_UNAVAILABLE;
--(instancetype)initWithSessionID:(int)sessionId cisEventQueue:(CISEventQueue *)eventQueue cisContentMetaData:(CISContentMetadata *)contentMetadata cisMonitor:(CISMonitor *)monitor cisClient:(CISClient *)client  clientSetting:(CISClientSetting *)clientSettings  cisConfig:(CISConfig *)config  cisSystemFactory:(CISSystemFactory *)systemFactory sessionType:(SessionType)sessionType NS_DESIGNATED_INITIALIZER;
+-(instancetype)initWithSessionID:(int)sessionId cisEventQueue:(CISEventQueue *)eventQueue cisContentMetaData:(CISContentMetadata *)contentMetadata cisMonitor:(CISMonitor *)monitor cisClient:(CISClient *)client  clientSetting:(CISClientSetting *)clientSettings  cisConfig:(CISConfig *)config  cisSystemFactory:(CISSystemFactory *)systemFactory networkUtil:(CISNetworkUtil *)networkUtil sessionType:(SessionType)sessionType NS_DESIGNATED_INITIALIZER;
 -(void)start;
 // Fix for DE-2425
 -(void)assignStartTime;
 -(void)cleanUp;
 -(BOOL)isVideoSession;
+-(BOOL)isHintedGlobalSession;
+-(BOOL)isGlobalSession;
 // Fix for DE-2425
 -(void)registerCLIDUpdateNotification;
 -(BOOL)isAdSession;
@@ -48,4 +50,7 @@
 -(CISPlayerStateManager*)getAttachedPlayer;
 
 - (void) setLibraryVersion:(NSString*)libVersion;
+
+-(void)updateConnectionType:(NSString *)newConnectionType;
+
 @end
