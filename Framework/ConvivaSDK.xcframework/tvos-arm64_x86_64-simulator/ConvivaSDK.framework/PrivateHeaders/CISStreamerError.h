@@ -12,4 +12,5 @@
 -(instancetype)initWithErrorMsg:(NSString *)msg isFatal:(NSString *)isErrorFatal NS_DESIGNATED_INITIALIZER;
 - (NSString *)getErrorMessageString;
 - (NSString *)getIsErrorFatal;
+- (BOOL) isEqualTo:(CISStreamerError*)error;
 @end

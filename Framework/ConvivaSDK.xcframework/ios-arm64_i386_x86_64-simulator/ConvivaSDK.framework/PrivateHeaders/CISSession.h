@@ -31,7 +31,7 @@
 -(void)registerCLIDUpdateNotification;
 -(BOOL)isAdSession;
 -(void)attachPlayer:(CISPlayerStateManager *)playerStateManager;
--(void)attachPlayer:(CISPlayerStateManager *)playerStateManager monitorMetrics:(BOOL)monitorMetrics;
+-(void)attachPlayer;
 -(void)detachPlayer:(BOOL)monitorMetrics;
 
 -(void)adStart:(AdStream)adStream adPlayer:(AdPlayer)adPlayer adPosition:(AdPosition)adPosition;

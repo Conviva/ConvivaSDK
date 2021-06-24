@@ -153,8 +153,6 @@
 
 - (void) attachPlayer;
 
-- (void) attachPlayer:(BOOL)metricRequired;
-
 - (void) detachPlayer:(int)sessionKey metricRequired:(BOOL)metricRequired;
 
 - (UpdateHandler) getCallback ;

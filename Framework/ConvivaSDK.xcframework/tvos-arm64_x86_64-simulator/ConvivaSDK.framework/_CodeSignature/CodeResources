@@ -134,7 +134,7 @@
 		</data>
 		<key>Headers/CISUtility.h</key>
 		<data>
-		DnCYQbBiYGUGDrLHmxxMatXMhH4=
+		VnedfZg7cJOVP7el4VUOeus1/Rw=
 		</data>
 		<key>Headers/CISVideoAnalytics.h</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1wCAxjHsC3zfDqlrtXOX2JCe6Co=
+		C30lA6k67Q1l8LN792HHO3FyRXg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -226,7 +226,7 @@
 		</data>
 		<key>PrivateHeaders/CISBasePlayerMonitor.h</key>
 		<data>
-		TAyvyt2b7Hz6UWQgNt08+/P/FI8=
+		gQR2tA0OXphh85ynCNCjvySNYV4=
 		</data>
 		<key>PrivateHeaders/CISCWSProtocol.h</key>
 		<data>
@@ -242,7 +242,7 @@
 		</data>
 		<key>PrivateHeaders/CISClient.h</key>
 		<data>
-		xnhEBp6CbxeL8JIL/ZBb1m1u/rc=
+		2A/9/x/XiE7rhUF/rGIRYK+/c7I=
 		</data>
 		<key>PrivateHeaders/CISClientSetting.h</key>
 		<data>
@@ -298,7 +298,7 @@
 		</data>
 		<key>PrivateHeaders/CISMonitor.h</key>
 		<data>
-		okfVpjYhvsR18xPncnjzxjl8yS4=
+		sVm1k4Zd+jmSQnAuYnhSxPEQFHE=
 		</data>
 		<key>PrivateHeaders/CISNetworkUtil.h</key>
 		<data>
@@ -310,7 +310,7 @@
 		</data>
 		<key>PrivateHeaders/CISPlayerMonitor.h</key>
 		<data>
-		nR6fgW16DReZPPh8LopZyZtiiAw=
+		2eYV1+ir2NQBO74LNDQVbg+Si9U=
 		</data>
 		<key>PrivateHeaders/CISPlayerStateManager.h</key>
 		<data>
@@ -326,7 +326,7 @@
 		</data>
 		<key>PrivateHeaders/CISSession.h</key>
 		<data>
-		uJPDVVdup3j4TJHEkWEBIzPZolU=
+		urTeFOyQAghmyNKegHJdOVhGCGA=
 		</data>
 		<key>PrivateHeaders/CISSessionFactory.h</key>
 		<data>
@@ -350,7 +350,7 @@
 		</data>
 		<key>PrivateHeaders/CISStreamerError.h</key>
 		<data>
-		UUUxHxmFmJ8iAkVzS3eExPrDfNo=
+		o2CYdPbEfbSqZtab/U+PqrACHWI=
 		</data>
 		<key>PrivateHeaders/CISSystemFactory.h</key>
 		<data>
@@ -759,11 +759,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DnCYQbBiYGUGDrLHmxxMatXMhH4=
+			VnedfZg7cJOVP7el4VUOeus1/Rw=
 			</data>
 			<key>hash2</key>
 			<data>
-			okc8b01Z9iX8k+NE0cZNfm0lA5vgb4atJBP418gElcE=
+			lAO3HLrK1BoMjv8GRj2qj6o7sXIHyVgs4Jcnyhu6azE=
 			</data>
 		</dict>
 		<key>Headers/CISVideoAnalytics.h</key>
@@ -1001,11 +1001,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TAyvyt2b7Hz6UWQgNt08+/P/FI8=
+			gQR2tA0OXphh85ynCNCjvySNYV4=
 			</data>
 			<key>hash2</key>
 			<data>
-			uES+jRRVVX1iwKxs5Nk8b33ZS7kLJx8YTXMx7yKszmw=
+			mXMlIfoeG+zzM5qXJF16+loWno+nBtpse22GLBHcs/g=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISCWSProtocol.h</key>
@@ -1045,11 +1045,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xnhEBp6CbxeL8JIL/ZBb1m1u/rc=
+			2A/9/x/XiE7rhUF/rGIRYK+/c7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			FOSgcufJ7qqgOQzpdr38FG/x/xErVHOddHYd0ODfoFI=
+			GPnqsmgAg7CKZTfWsuyODxyemKq2KDhzFByGzdqJ4wc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISClientSetting.h</key>
@@ -1199,11 +1199,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			okfVpjYhvsR18xPncnjzxjl8yS4=
+			sVm1k4Zd+jmSQnAuYnhSxPEQFHE=
 			</data>
 			<key>hash2</key>
 			<data>
-			v5um2ysZV2Tj3Oyn7yyn4mrXGSHeyM4JdbH9O66CkAk=
+			roF0YGybMxdPnvq2rCHub0CC3hV0aqmCbBshqFWyzck=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISNetworkUtil.h</key>
@@ -1232,11 +1232,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nR6fgW16DReZPPh8LopZyZtiiAw=
+			2eYV1+ir2NQBO74LNDQVbg+Si9U=
 			</data>
 			<key>hash2</key>
 			<data>
-			fgyJ/r528aUkpVQH2NKaJ2orJvAOxIKnXnKxOznMPE8=
+			/yDhdSls16PIksVXqppYXyCm1VbQE5yTY26NR6QEcWA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISPlayerStateManager.h</key>
@@ -1276,11 +1276,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uJPDVVdup3j4TJHEkWEBIzPZolU=
+			urTeFOyQAghmyNKegHJdOVhGCGA=
 			</data>
 			<key>hash2</key>
 			<data>
-			KnZ2+6HCaweuNX1FTNPCmezKiZKT6/L2PjZt6MPuxY0=
+			31iG/Aq6n7gg++vX566ys8qvmp18esjOu5OVLUDFkrA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISSessionFactory.h</key>
@@ -1342,11 +1342,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UUUxHxmFmJ8iAkVzS3eExPrDfNo=
+			o2CYdPbEfbSqZtab/U+PqrACHWI=
 			</data>
 			<key>hash2</key>
 			<data>
-			LldGQDVbtR1m2oEXbLc4d3sScezWkH/DzcyUUlBH1/Y=
+			CGZ0zn/Ybn3nZhess4Wadf241kVDFHvz4JG5UlE/AhM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISSystemFactory.h</key>

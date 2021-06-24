@@ -34,16 +34,14 @@
 
 - (void) setLibraryVersion:(NSString*)libVersion onSession:(int)sessionKey;
 
--(BOOL)canAccessAdIdentifier;
+-(BOOL)canAccessDeviceUniqueIdentifiers;
 
 
 - (void)createIPV4IPV6GlobalSessions;
 
 - (void)updateConnectionType:(NSString*)newConnectionType;
 
--(void) attachPlayer:(int) sessionKey
-  playerStateManager:(id<CISPlayerStateManagerProtocol>) playerStateManager
-      monitorMetrics:(BOOL) monitorMetrics;
+-(void) attachPlayer:(int) sessionKey;
 
 -(void)detachPlayer:(int)sessionKey monitorMetrics:(BOOL) monitorMetrics;
 

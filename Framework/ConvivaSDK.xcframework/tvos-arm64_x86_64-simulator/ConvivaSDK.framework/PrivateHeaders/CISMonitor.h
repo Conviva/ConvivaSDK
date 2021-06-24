@@ -40,9 +40,11 @@ FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
 
 -(void) attachPlayer:(CISPlayerStateManager *) psm;
 
--(void) attachPlayer:(CISPlayerStateManager *) psm monitorMetrics:(BOOL)monitorMetrics;
+-(void) attachPlayer;
 
 -(void) detachPlayer:(BOOL)monitorMetrics;
+
+-(void) detachPlayer;
 
 -(void)updateEvent:(NSMutableDictionary *)ev;
 

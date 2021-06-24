@@ -1,5 +1,17 @@
 # Changelog
 
+## 4.0.15 (23/06/2021)
+* Supports iOS 14.5
+* Supports Mac Catalyst
+* Supports detailed error logging
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
+## 4.0.14 (23/06/2021)
+* Supports iOS 14.5
+* Supports Mac Catalyst
+* Supports detailed error logging
+* Supports Advertising identifier collection.
+
 ## 4.0.13 (26/04/2021)
 * Does not collect Advertising Identifier to comply with Apple guide lines.
 

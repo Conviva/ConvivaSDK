@@ -36,8 +36,6 @@
 
 - (void) attachPlayer;
 
-- (void) attachPlayer:(BOOL)metricRequired;
-
 - (void) detachPlayer:(int)sessionKey metricRequired:(BOOL)metricRequired;
 
 - (void) detach:(AdPlayer)adPlayer adType:(AdStream)adType;

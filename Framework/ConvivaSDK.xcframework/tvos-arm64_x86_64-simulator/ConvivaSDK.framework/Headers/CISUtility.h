@@ -23,6 +23,8 @@ FOUNDATION_EXPORT int const CIS_SIGNAL_STRENGTH_INVALID_VALUE;
 + (void)sanitiseTag:(NSMutableDictionary *)custom;
 + (NSString *)describeError:(NSError *)error;
 
++ (BOOL) isError:(NSError*)error1 equalTo:(NSError*)error2;
+
 + (id)getClientId;
 + (void)setClientId:(NSString *)newClientId;
 @end
