@@ -1,5 +1,17 @@
 # Changelog
 
+## 4.0.19 (30/09/2021)
+* Support iOS 15.x.
+* Auto collect App version.
+* Marked Legacy integration API’s as deprecated.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
+## 4.0.18 (30/09/2021)
+* Support iOS 15.x.
+* Auto collect App version.
+* Marked Legacy integration API’s as deprecated.
+* Supports Advertising identifier collection.
+
 ## 4.0.17 (02/07/2021)
 * Supports iOS 14.5
 * Supports Mac Catalyst

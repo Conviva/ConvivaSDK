@@ -55,51 +55,52 @@
 #define CDN_NAME_OTHER @"OTHER"
 ///@}
 
+DEPRECATED_MSG_ATTRIBUTE("This class will be removed soon, please migrate to Simplified SDK APIs. Refer to https://community.conviva.com/site/one-sensor/sensors/ios/index_one_sensor.gsp")
 @interface ConvivaContentInfo : NSObject<NSCopying>
 
 /// A unique identifier for the content, preferably human-readable.
-@property(copy, nonatomic) NSString *assetName;
+@property(copy, nonatomic) NSString *assetName DEPRECATED_ATTRIBUTE;
 
 /// A string identifying the CDN used to stream video.
-@property(copy, nonatomic) NSString *cdnName;
+@property(copy, nonatomic) NSString *cdnName DEPRECATED_ATTRIBUTE;
 
 /// A set of key-value pairs used in resource selection and policy evaluation
-@property(strong, atomic) NSMutableDictionary *tags;
+@property(strong, atomic) NSMutableDictionary *tags DEPRECATED_ATTRIBUTE;
 
 /// Set to true if the session includes live content, and false otherwise.
-@property(assign, nonatomic) BOOL isLive;
+@property(assign, nonatomic) BOOL isLive DEPRECATED_ATTRIBUTE;
 
 /// The URL from which the video is loaded.
-@property(copy, nonatomic) NSString *streamUrl;
+@property(copy, nonatomic) NSString *streamUrl DEPRECATED_ATTRIBUTE;
 
 /// A string identifying the viewer and is optional.
-@property(copy, nonatomic) NSString *viewerId;
+@property(copy, nonatomic) NSString *viewerId DEPRECATED_ATTRIBUTE;
 
 /// A string identifying the player in use, preferably human-readable.
-@property(copy, nonatomic) NSString *playerName;
+@property(copy, nonatomic) NSString *playerName DEPRECATED_ATTRIBUTE;
 
 /// @brief The resource name used when the streamer does not itself know the
 /// resource being played.
 /// @note If this is null, then the value of cdnName is used for reporting.
-@property(copy, nonatomic) NSString *resource;
+@property(copy, nonatomic) NSString *resource DEPRECATED_ATTRIBUTE;
 
 /// An integer identifying the content length
-@property(assign, nonatomic) NSInteger contentLength;
+@property(assign, nonatomic) NSInteger contentLength DEPRECATED_ATTRIBUTE;
 
 /// An integer identifying the encodedframe rate
-@property(assign, nonatomic) NSInteger encodedFramerate;
+@property(assign, nonatomic) NSInteger encodedFramerate DEPRECATED_ATTRIBUTE;
 
 /// @brief Timestamp when ConvivaContentInfo was instantiated
 /// @deprecated Not used
 @property(readonly, nonatomic) NSTimeInterval timestamp DEPRECATED_ATTRIBUTE;
 
 /// Set to true if the session Offline video, and false otherwise.
-@property(assign, nonatomic) BOOL isOfflinePlayback;
+@property(assign, nonatomic) BOOL isOfflinePlayback DEPRECATED_ATTRIBUTE;
 
 /// @brief Create a new ConvivaContentInfo with specified assetName.
 /// @note Missing tags parameter
-+ (id)createInfoForLightSessionWithAssetName:(NSString *)assetName;
++ (id)createInfoForLightSessionWithAssetName:(NSString *)assetName DEPRECATED_ATTRIBUTE;
 
-- (CISContentMetadata*) toCISContentMetadata;
+- (CISContentMetadata*) toCISContentMetadata DEPRECATED_ATTRIBUTE;
 
 @end

@@ -21,7 +21,7 @@
 ///
 /// The top level class for customer interaction is LivePass. Additional api
 /// is available in ConvivaLightSession.
-
+DEPRECATED_MSG_ATTRIBUTE("This class will be removed soon, please migrate to Simplified SDK APIs. Refer to https://community.conviva.com/site/one-sensor/sensors/ios/index_one_sensor.gsp")
 @interface LivePass : NSObject
 
 /// @brief Initialize the LivePass module
@@ -29,24 +29,24 @@
 /// See Conviva integration guide for details of how to use this method.
 /// \param customerKey a key assigned by Conviva to uniquely identify a
 ///   Conviva customer
-+ (void)initWithCustomerKey:(NSString *)customerKey;
++ (void)initWithCustomerKey:(NSString *)customerKey DEPRECATED_ATTRIBUTE;
 
 /// @brief Initialize LivePass with advanced settings parameters
 ///
 /// \param customerKey a key assigned by Conviva to uniquely identify a
 ///   Conviva customer
 /// \param settings a dictionary with string keys and object values
-+ (void)initWithCustomerKey:(NSString *)customerKey andSettings:(NSDictionary *)settings;
++ (void)initWithCustomerKey:(NSString *)customerKey andSettings:(NSDictionary *)settings DEPRECATED_ATTRIBUTE;
 
 /// @brief Cleanup all the sessions owned by LivePass
-+ (void)cleanup;
++ (void)cleanup DEPRECATED_ATTRIBUTE;
 
 /// @brief Create a session for LivePass
 ///
 /// \param streamer can be a subclass of ConvivaStreamerProxy, AVPlayer,
 ///   MPMoviePlayerController, or a null object
 /// \param contentInfo Info related to the content (url, etc)
-+ (ConvivaLightSession *)createSessionWithStreamer:(id)streamer andConvivaContentInfo:(ConvivaContentInfo *)contentInfo;
++ (ConvivaLightSession *)createSessionWithStreamer:(id)streamer andConvivaContentInfo:(ConvivaContentInfo *)contentInfo DEPRECATED_ATTRIBUTE;
 
 /// @brief Create a session for LivePass
 ///
@@ -56,7 +56,7 @@
 /// \param options Options that modify session behavior
 + (ConvivaLightSession *)createSessionWithStreamer:(id)streamer
                              andConvivaContentInfo:(ConvivaContentInfo *)contentInfo
-                                        andOptions:(NSDictionary *)options;
+                                        andOptions:(NSDictionary *)options DEPRECATED_ATTRIBUTE;
 
 /// @brief Create an ad session for LivePass
 ///
@@ -67,17 +67,17 @@
 + (ConvivaLightSession *) createAdSession:(id)adStreamer
                            contentSession:(ConvivaLightSession *)contentSession
                        convivaContentInfo:(ConvivaContentInfo *)adContentInfo
-                                  options:(NSDictionary *)options;
+                                  options:(NSDictionary *)options DEPRECATED_ATTRIBUTE;
 
 /// @brief Cleanup session. Should be called when a video session is over.
 ///
 /// \param session The session to be cleaned
-+ (void)cleanupSession:(ConvivaLightSession *)session;
++ (void)cleanupSession:(ConvivaLightSession *)session DEPRECATED_ATTRIBUTE;
 
 /// @brief Toggle on/off console traces.
 ///
 /// \param on pass true to enable console trace, false otherwise
-+ (void)toggleTraces:(BOOL)on;
++ (void)toggleTraces:(BOOL)on DEPRECATED_ATTRIBUTE;
 
 /// @brief This function is used to send Conviva Player Insights Event,
 /// not associated with a video session. Events have a name and a list of
@@ -86,18 +86,18 @@
 /// \param name A name for the event
 /// \param attributes A dictionary of key value pair associated with the
 ///   event
-+ (void)sendEvent:(NSString *)name withAttributes:(NSDictionary *)attributes;
++ (void)sendEvent:(NSString *)name withAttributes:(NSDictionary *)attributes DEPRECATED_ATTRIBUTE;
 
 /// Notify that ad has started
-+ (void)adStart:(ConvivaLightSession *)session;
++ (void)adStart:(ConvivaLightSession *)session DEPRECATED_ATTRIBUTE;
 /// Notify that ad has ended
-+ (void)adEnd:(ConvivaLightSession *)session;
++ (void)adEnd:(ConvivaLightSession *)session DEPRECATED_ATTRIBUTE;
 
 /// @brief The delegate object to use when handling network requests.
-+ (id <ConvivaRequestDelegate>)requestDelegate;
++ (id <ConvivaRequestDelegate>)requestDelegate DEPRECATED_ATTRIBUTE;
 /// @brief Sets the delegate object to use when handling network requests.
 /// Conviva does not store a strong reference to the delegate object.
-+ (void)setRequestDelegate:(id <ConvivaRequestDelegate>)delegate;
++ (void)setRequestDelegate:(id <ConvivaRequestDelegate>)delegate DEPRECATED_ATTRIBUTE;
 
 /// @brief True if library has been initialized
 ///
@@ -117,7 +117,7 @@
 /// Sample usage:
 /// [LivePass  setUserPreferenceForDataCollection: [NSDictionary dictionaryWithObjectsAndKeys: @YES, @"idfa", @NO, @"idfv", nil]];
 
-+ (void)setUserPreferenceForDataCollection:(NSDictionary *)userPrefs;
++ (void)setUserPreferenceForDataCollection:(NSDictionary *)userPrefs DEPRECATED_ATTRIBUTE;
 
 /// @brief Set user preferences for data deletion.
 /// \param userPrefs pass key-value pair as user preferences.
@@ -130,9 +130,9 @@
 
 /// Sample usage:
 /// [LivePass  setUserPreferenceForDataDeletion: [NSDictionary dictionaryWithObjectsAndKeys: @NO, @"idfa", @YES, @"idfv", nil]];
-+ (void)setUserPreferenceForDataDeletion:(NSDictionary *)userPrefs;
++ (void)setUserPreferenceForDataDeletion:(NSDictionary *)userPrefs DEPRECATED_ATTRIBUTE;
 
 /// @brief Useful for cross integration when customers want to use simplified sdk api's for ad integration.
-+ (id<CISClientProtocol>) getClient;
++ (id<CISClientProtocol>) getClient DEPRECATED_ATTRIBUTE;
 
 @end

@@ -146,23 +146,23 @@
 		</data>
 		<key>Headers/ConvivaContentInfo.h</key>
 		<data>
-		MzhFBFF+TcdPBetN6fp+FLT4DoA=
+		G3F8ed1OQmr+fw7BJJNcVeEovsA=
 		</data>
 		<key>Headers/ConvivaLightSession+Ad.h</key>
 		<data>
-		P8KqNK10OfpmVPoBgVTxWTvjFKs=
+		XbwKJfKK9MfGCf5TZxwvz7c8q0Q=
 		</data>
 		<key>Headers/ConvivaLightSession.h</key>
 		<data>
-		q++JDOsI+o38WH8NQksjsSzhT1U=
+		o2M3GQ0A3BKD7AHOsNueXMhcEJM=
 		</data>
 		<key>Headers/ConvivaPlayerState.h</key>
 		<data>
-		l5Wn0PnQb+dSN2whteRV64OesYw=
+		vqFQN/3m8lAOMFJfDC/3b/EISV4=
 		</data>
 		<key>Headers/ConvivaRequestDelegate.h</key>
 		<data>
-		asAtG3jWujnz7rw5ABYt1H6jmOI=
+		y/yLnWFJk8miOV65k3Gjk4PYXdg=
 		</data>
 		<key>Headers/ConvivaSDK-tvOS-umbrella.h</key>
 		<data>
@@ -202,11 +202,11 @@
 		</data>
 		<key>Headers/LivePass.h</key>
 		<data>
-		PeBB3UaLTeu3hpUBuulmMVmmohc=
+		UtZJ30P/HykZ7QGa9dF/6O4UJEM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rWBekjegmi4tc5QC2ldLIhdm/80=
+		ttweHwqXQ7VYH0gvLFz1GMVLBwI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -792,55 +792,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MzhFBFF+TcdPBetN6fp+FLT4DoA=
+			G3F8ed1OQmr+fw7BJJNcVeEovsA=
 			</data>
 			<key>hash2</key>
 			<data>
-			87pxlYbIoPDIpiVPt8KHsZrTbfYEkH2FfkSFOTvwmlE=
+			HiyPRHQKOhZrm7Ipcp8W/wGcDh7oQqM3BOThj4Alkjw=
 			</data>
 		</dict>
 		<key>Headers/ConvivaLightSession+Ad.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			P8KqNK10OfpmVPoBgVTxWTvjFKs=
+			XbwKJfKK9MfGCf5TZxwvz7c8q0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			9x/87HC4tkvuCwiuZ9SoKUNoddv9GFH1FnRsn/egJAM=
+			/Qp1W50NdUi2ynh0+9QNIIiQtWfsjZjNKca60IunQLs=
 			</data>
 		</dict>
 		<key>Headers/ConvivaLightSession.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q++JDOsI+o38WH8NQksjsSzhT1U=
+			o2M3GQ0A3BKD7AHOsNueXMhcEJM=
 			</data>
 			<key>hash2</key>
 			<data>
-			QO82RPYzfHxYx4+lUlJ7db7ci2o3xLmvDTCv/Ho5fDg=
+			X4Ef3bUAaZvhUiOZxbLoN/23jeFGcC+BT4F+XSJXPhg=
 			</data>
 		</dict>
 		<key>Headers/ConvivaPlayerState.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l5Wn0PnQb+dSN2whteRV64OesYw=
+			vqFQN/3m8lAOMFJfDC/3b/EISV4=
 			</data>
 			<key>hash2</key>
 			<data>
-			qo0JHcxCNe8y9jtmQKM5VOMipZycTCRPxI1zmvDQDMA=
+			nrb6K7RYYapDJfk9zFmhV/iI8rQisiYgTPj339TcEu4=
 			</data>
 		</dict>
 		<key>Headers/ConvivaRequestDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			asAtG3jWujnz7rw5ABYt1H6jmOI=
+			y/yLnWFJk8miOV65k3Gjk4PYXdg=
 			</data>
 			<key>hash2</key>
 			<data>
-			9Ptea9tBA8sCRV4bPkIVL8g+fPSV0s9AsyPKFCBKZA4=
+			zmr2ybSAJL48BpBj6YMnIRJSTUOExFcX3anCLZO5/h4=
 			</data>
 		</dict>
 		<key>Headers/ConvivaSDK-tvOS-umbrella.h</key>
@@ -946,11 +946,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PeBB3UaLTeu3hpUBuulmMVmmohc=
+			UtZJ30P/HykZ7QGa9dF/6O4UJEM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qh9s+WnBoGKxgoqvMab/WPJwbqjRGOUfw1VNYaBxWNA=
+			AFcboaw/5KYcSM3t6FHMgII9EQYPM5ZOeKFLkSbY5QM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
