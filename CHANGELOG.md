@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.20 (27/10/2021)
+* Fixed an inconsistent crash in network layer.
+* Supports Advertising identifier collection.
+
 ## 4.0.19 (30/09/2021)
 * Support iOS 15.x.
 * Auto collect App version.

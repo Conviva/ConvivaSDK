@@ -206,7 +206,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Cvcva3f+2UIoBsg4ja5WATEXmC0=
+		16bOAGGDX5nTmqJ1/YhoWn5zKJ4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -306,7 +306,7 @@
 		</data>
 		<key>PrivateHeaders/CISNetworkUtils.h</key>
 		<data>
-		6pbaUmN0C/pl9Y4efklGGeHeLuA=
+		NuP8P0PFbAliRF5nXCsNb2JgJGY=
 		</data>
 		<key>PrivateHeaders/CISPlayerMonitor.h</key>
 		<data>
@@ -1221,11 +1221,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6pbaUmN0C/pl9Y4efklGGeHeLuA=
+			NuP8P0PFbAliRF5nXCsNb2JgJGY=
 			</data>
 			<key>hash2</key>
 			<data>
-			pjP+GwU+ge2yx9IjqFLtR5glMwihcO9OtDgHHRCayu0=
+			MZHDj86j2MD2M2YOH/2btGOLr5dZPiCSh8fp1QkEFyI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISPlayerMonitor.h</key>

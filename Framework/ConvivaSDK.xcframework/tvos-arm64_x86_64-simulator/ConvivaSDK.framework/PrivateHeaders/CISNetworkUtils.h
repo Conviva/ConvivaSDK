@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Network/Network.h>
+#import "CISLogger.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,18 +22,22 @@ typedef enum {
     BOOL isMonitoring;
 }
 
-@property (nonatomic, copy) void (^netStatusChangeHandler)(void);
+@property (atomic, copy) void (^netStatusChangeHandler)(void);
 
 @property (nonatomic, strong) nw_path_monitor_t monitor;
 
 @property (nonatomic, strong) nw_path_t currentPath;
 
+@property (nonatomic, strong) CISLogger *cisLogger;
 
 +(CISNetworkUtils *)sharedInstance;
 -(void)startMonioring API_AVAILABLE(ios(12), tvos(12));
 -(void)stopMonitoring API_AVAILABLE(ios(12), tvos(12));
 -(BOOL)isConnectedToWifiOrEthernet API_AVAILABLE(ios(12), tvos(12));
 -(CISNetworkType)currentNetworkType API_AVAILABLE(ios(12), tvos(12));
+
+- (void)assignLogger:(CISLogger *)logger;
+
 @end
 
 NS_ASSUME_NONNULL_END
