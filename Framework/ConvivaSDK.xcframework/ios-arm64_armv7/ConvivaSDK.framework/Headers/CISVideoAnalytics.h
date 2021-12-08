@@ -83,7 +83,7 @@ NS_ASSUME_NONNULL_BEGIN
 * @param key Metric key.Please refer "PLAYBACK METRIC KEYS" section defined in CSSConstants.h for all possible keys.
 * @param value Metric value.
 */
-- (void) reportPlaybackMetric:(NSString*)key value:(id)value;
+- (void) reportPlaybackMetric:(NSString*)key value:(nullable id)value;
 
 /**
 * Set ad analytics object on video analytics to enable seamlessly passing common data from video analytics to ad analytcis.

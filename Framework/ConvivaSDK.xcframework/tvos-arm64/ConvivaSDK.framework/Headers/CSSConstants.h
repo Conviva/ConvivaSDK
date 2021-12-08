@@ -140,6 +140,12 @@ Expected value: NSString
 FOUNDATION_EXPORT NSString *const CIS_SSDK_METADATA_STREAM_URL ;
 
 /*
+Key for Ad Tag url.
+Expected value: NSString
+*/
+
+FOUNDATION_EXPORT NSString *const CIS_SSDK_METADATA_AD_TAG_URL;
+/*
 Key for Uniquely identifiable user id.
 Expected value: NSString
 */
@@ -212,6 +218,12 @@ Key for Player name used for ad playback .
 Expected value: NSString
 */
 FOUNDATION_EXPORT NSString *const CIS_SSDK_AD_BREAK_AD_PLAYER ;
+
+/*
+Key for ad type used for ad playback .
+Expected value: NSString
+*/
+FOUNDATION_EXPORT NSString *const CIS_SSDK_AD_BREAK_AD_TYPE;
 
 /*------------------------- END OF AD BREAK CONSTANTS -------------------------*/
 

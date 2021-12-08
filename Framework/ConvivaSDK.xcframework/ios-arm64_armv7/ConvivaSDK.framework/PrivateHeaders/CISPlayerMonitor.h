@@ -189,7 +189,7 @@
 
 - (NSDictionary*) getAdBreakInfo;
 
-- (void) onAdBreakStartInfoSet;
+- (void) onAdBreakStartInfoSet:(AdStream)adType;
 
 - (void) setAdBreakStartInfo:(AdPlayer)adPlayer adType:(AdStream)adType adBreakInfo:(NSDictionary*)adBreakInfo;
 

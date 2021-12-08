@@ -13,10 +13,11 @@
  * Use this to get an instance of SystemInterface.<br>
  * Alternatively, you can develop your own SystemInterface.
  */
+DEPRECATED_MSG_ATTRIBUTE("This class will be removed soon, please migrate to Simplified SDK APIs. Refer to https://community.conviva.com/site/one-sensor/sensors/ios/index_one_sensor.gsp")
 @interface IOSSystemInterfaceFactory : NSObject
 /**
  * Builds a system interface factory for iOS/tvOS.
  * @return CISSystemInterfaceProtocol instance for iOS/tvOS.
  */
-+(id<CISSystemInterfaceProtocol>)initializeWithSystemInterface;
++(id<CISSystemInterfaceProtocol>)initializeWithSystemInterface DEPRECATED_ATTRIBUTE;
 @end

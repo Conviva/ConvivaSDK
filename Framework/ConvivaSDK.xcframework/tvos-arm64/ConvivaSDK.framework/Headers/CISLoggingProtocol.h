@@ -7,6 +7,7 @@
 //
 
 #import "CISSystemSettings.h"
+#import "CISConstants.h"
 
 /**
  * Class conforming to this will be responsible for implementing required methods for logging,

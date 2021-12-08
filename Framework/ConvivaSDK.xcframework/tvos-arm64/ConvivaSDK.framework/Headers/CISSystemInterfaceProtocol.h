@@ -17,6 +17,7 @@
  * This class contains instance of classes implementing CISHTTPProtocol, CISTimeProtocol, CISTimerProtocol, CISLoggingProtocol,<br>
  * CISMetadataProtocol, CISStorageProtocol protocols required by the Conviva iOS SDK.
  */
+DEPRECATED_MSG_ATTRIBUTE("This class will be removed soon, please migrate to Simplified SDK APIs. Refer to https://community.conviva.com/site/one-sensor/sensors/ios/index_one_sensor.gsp")
 @protocol CISSystemInterfaceProtocol <NSObject>
 
 @end

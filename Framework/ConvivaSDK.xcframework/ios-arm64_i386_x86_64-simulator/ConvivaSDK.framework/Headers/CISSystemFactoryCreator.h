@@ -14,7 +14,7 @@
  * Provides access to system information and utilities according to chosen settings.<br>
  * Returns the CISSystemFactoryProtocol conforming class instance, required while creating a client instance.
  */
-
+DEPRECATED_MSG_ATTRIBUTE("This class will be removed soon, please migrate to Simplified SDK APIs. Refer to https://community.conviva.com/site/one-sensor/sensors/ios/index_one_sensor.gsp")
 @interface CISSystemFactoryCreator : NSObject
 
 /**
@@ -24,6 +24,6 @@
  * @return Returns CISSystemFactoryProtocol instance.
  */
 
-+(id<CISSystemFactoryProtocol>)createWithCISSystemInterface:(id<CISSystemInterfaceProtocol>)systemInterface setting:(CISSystemSettings *)systemSetting;
++(id<CISSystemFactoryProtocol>)createWithCISSystemInterface:(id<CISSystemInterfaceProtocol>)systemInterface setting:(CISSystemSettings *)systemSetting DEPRECATED_ATTRIBUTE;
 
 @end

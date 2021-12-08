@@ -22,6 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (CISStreamerProxy)createStreamerProxy:(CISPlayerEventsListener)playerEventsListener
                                  logger:(id<CISLoggerProtocol>)logger;
 
+- (CISStreamerProxy)createAdStreamerProxyWithInfo:(NSDictionary*)info
+                                    adAnalytics:(CISAdAnalytics)adAnalytics
+                                 videoAnalytics:(CISVideoAnalytics)videoAnalytics
+                                         logger:(id<CISLoggerProtocol>)logger;
+
 @end
 
 typedef id<CISStreamerProxyFactoryProtocol> CISStreamerProxyFactory;

@@ -13,7 +13,7 @@
  * Helper class required for creating a class instance conforming to protocol CISClientSettingProtocol.<br>
  * This is required while creating a client instance.
  */
-
+DEPRECATED_MSG_ATTRIBUTE("This class will be removed soon, please migrate to Simplified SDK APIs. Refer to https://community.conviva.com/site/one-sensor/sensors/ios/index_one_sensor.gsp")
 @interface CISClientSettingCreator : NSObject
 /**
  * Initializer for Client Setting.
@@ -21,6 +21,6 @@
  * @param error The error that can be used to check error if creating client setting encountered any error.
  * @return CISClientSettingProtocol instance.
  */
-+(id<CISClientSettingProtocol>)createWithCustomerKey:(NSString *)CustomerKey error:(NSError **)error;
++(id<CISClientSettingProtocol>)createWithCustomerKey:(NSString *)CustomerKey error:(NSError **)error DEPRECATED_ATTRIBUTE;
 
 @end

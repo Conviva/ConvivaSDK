@@ -31,6 +31,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (int) getSessionKey;
 
 /**
+* Returns Metadata.
+* @return Metadata.
+*/
+
+- (NSDictionary*) getMetadataInfo;
+
+/**
 * Reports playback metric.
 * @param key Metric key.Please refer "PLAYBACK METRIC KEYS" section defined in CSSConstants.h for all possible keys.
 * @param value Metric value.

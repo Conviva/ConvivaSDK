@@ -14,7 +14,7 @@
  * Helper class required for creating a class instance conforming to protocol CISClientProtocol.<br>
  * Generally, every application will have a class instance conforming to protocol CISClientProtocol, which can manage multiple sessions.
  */
-
+DEPRECATED_MSG_ATTRIBUTE("This class will be removed soon, please migrate to Simplified SDK APIs. Refer to https://community.conviva.com/site/one-sensor/sensors/ios/index_one_sensor.gsp")
 @interface CISClientCreator : NSObject
 /**
  * Most applications will only need one client, created during application initialization and released during application shutdown.
@@ -23,5 +23,5 @@
  * @param error The error that can be used to check error if creating client encountered any error.
  * @return Client instance.
  */
-+(id<CISClientProtocol>)createWithClientSettings:(id<CISClientSettingProtocol>)settings factory:(id<CISSystemFactoryProtocol>)factory error:(NSError**)error;
++(id<CISClientProtocol>)createWithClientSettings:(id<CISClientSettingProtocol>)settings factory:(id<CISSystemFactoryProtocol>)factory error:(NSError**)error DEPRECATED_ATTRIBUTE;
 @end

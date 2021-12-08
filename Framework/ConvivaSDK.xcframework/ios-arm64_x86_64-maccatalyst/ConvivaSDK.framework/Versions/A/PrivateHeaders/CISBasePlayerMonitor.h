@@ -66,11 +66,11 @@
 
 - (void) contentAdEnd;
 
-- (void) contentAdBreakStart;
+- (void) contentAdBreakStart:(AdStream)adType;
 
 - (void) contentAdBreakEnd;
 
-- (void) onAdBreakStartInfoSet;
+- (void) onAdBreakStartInfoSet:(AdStream)adType;
 
 - (void) onAdBreakEndInfoSet;
 

@@ -53,12 +53,6 @@
 #import "CISStreamerProxyProtocol.h"
 #import "CISVideoAnalytics.h"
 #import "CSSConstants.h"
-#import "ConvivaContentInfo.h"
-#import "ConvivaLightSession+Ad.h"
-#import "ConvivaLightSession.h"
-#import "ConvivaPlayerState.h"
-#import "ConvivaRequestDelegate.h"
-#import "LivePass.h"
 
 FOUNDATION_EXPORT double ConvivaSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char ConvivaSDKVersionString[];

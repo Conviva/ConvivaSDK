@@ -3,6 +3,25 @@
 #define CDN_NAME_AKAMAI @"AKAMAI"
 
 /**
+ * Log level setting for the SDK client.
+ */
+typedef NS_ENUM(NSUInteger,LogLevel) {
+    
+    /** Will display debug,info,warn and error messages. */
+    LOGLEVEL_DEBUG = 0,
+    /** Will only display info,warning and error log messages. */
+    LOGLEVEL_INFO,
+    /** Will  display warning,error log messages. */
+    LOGLEVEL_WARNING,
+    /** Will display error messages. */
+    LOGLEVEL_ERROR,
+    /** Will not display any log messages. */
+    LOGLEVEL_NONE,
+    /** Will display all log messages. */
+    LOGLEVEL_FUNC,
+};
+
+/**
  * All possible player states reported to Conviva.
  */
 typedef NS_ENUM(NSUInteger,PlayerState) {

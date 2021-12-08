@@ -81,6 +81,14 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (void) setContentSessionID:(int)sessionID;
 
+/**
+* This is used set the Ad framework object using which conviva can auto collect the data
+* For Ex: AdsLoader for Google IMA/DAI SDK.
+* @param adProxy object using which we can register for ad related events.
+* @param info Any miscellaneous data that can be shared. Ex: application tell us if pre-loading is enabled.
+*/
+- (void) setAdListener:(nullable id)adProxy andInfo:(NSDictionary*)info;
+
 @end
 
 typedef id<CISAdAnalyticsProtocol> CISAdAnalytics;

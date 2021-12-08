@@ -13,6 +13,7 @@
  * Class conforming to this protocol needs to implement required methods for SDK to fetch information.<br>
  * Generally, the player interface class will conform to this protocol.
  */
+DEPRECATED_MSG_ATTRIBUTE("This class will be removed soon, please migrate to Simplified SDK APIs. Refer to https://community.conviva.com/site/one-sensor/sensors/ios/index_one_sensor.gsp")
 @protocol CISIClientMeasureInterface <NSObject>
 @optional
 /**
@@ -20,14 +21,14 @@
  * Implemented by player interface, if player does not support pht return -1.
  * @return Returns current playhead time  for the related video player.
  */
--(NSInteger)getPHT;
+-(NSInteger)getPHT DEPRECATED_ATTRIBUTE;
 
 /**
  * Return the buffer length of a player instance in milliseconds.<br>
  * Implemented by player interface, if player does not support buffer length return -1.
  * @return Returns the current buffer length for the related video player.
  */
--(NSInteger)getBufferLength;
+-(NSInteger)getBufferLength DEPRECATED_ATTRIBUTE;
 
 /**
  * Return the encoded frames per second of a player instance in seconds.<br>
@@ -43,7 +44,7 @@
  * Implemented by player interface, if player does not support average frame rate return 0.
  * @return Returns average frames for the related video player.
  */
--(NSInteger)getAverageFrames;
+-(NSInteger)getAverageFrames DEPRECATED_ATTRIBUTE;
 
 /**
  * Return the rendered frames per second of a player instance in seconds.<br>
