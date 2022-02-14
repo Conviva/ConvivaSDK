@@ -182,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QaPSGZguBc+JjhJxPDbd1Y3UPUY=
+		t+2Jdbf3JHE7f06YDep+z6QVkBk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -226,7 +226,7 @@
 		</data>
 		<key>PrivateHeaders/CISConfig.h</key>
 		<data>
-		3Kqgu94397BQWz+bXzk/jQ3rZqk=
+		0Z+zeKF4YcrcJuWp0UjWY8wwQO4=
 		</data>
 		<key>PrivateHeaders/CISEventQueue.h</key>
 		<data>
@@ -969,11 +969,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Kqgu94397BQWz+bXzk/jQ3rZqk=
+			0Z+zeKF4YcrcJuWp0UjWY8wwQO4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZJ7ncuFvzDyAhBRQ06zIQi/HMUwnPoUG6vpXsBdI1PQ=
+			2ssCd3Zoml9breuycYYXhiY37JDbQgIAkwaBsVQVXO0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISEventQueue.h</key>

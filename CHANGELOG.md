@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.0.24 (02/14/2022)
+* Internal Improvements
+* Supports iOS 15.1
+* Supports Advertising identifier collection.
+
 ## 4.0.23 (08/12/2021)
 * Marked Legacy integration (2.x) API’s as deprecated.
 * Removed support of Legacy integration (3.x) API’s.
