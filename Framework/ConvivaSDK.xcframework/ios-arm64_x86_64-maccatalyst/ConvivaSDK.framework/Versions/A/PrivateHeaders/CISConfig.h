@@ -27,6 +27,7 @@ FOUNDATION_EXPORT NSString *const SEND_LOG; //  sendLogs
 
 -(id)getClientIdFromKeyChain;
 -(void)setClientIdInKeyChain:(NSString *)newClientId;
+-(void)updateKeychainAccessibilityAttributeIfRequired;
 
 - (NSInteger) getInstanceId;
 - (void) removeInstanceId;

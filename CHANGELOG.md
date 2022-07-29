@@ -1,5 +1,13 @@
 # Changelog
 
+## 4.0.29 (07/29/2022)
+* Supports auto detection of AirPlay start & end events.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
+## 4.0.28 (07/29/2022)
+* Supports auto detection of AirPlay start & end events.
+* Supports Advertising identifier collection.
+
 ## 4.0.27 (03/15/2022)
 * Internal Improvements
 * Does not collect Advertising Identifier to comply with Apple guide lines.

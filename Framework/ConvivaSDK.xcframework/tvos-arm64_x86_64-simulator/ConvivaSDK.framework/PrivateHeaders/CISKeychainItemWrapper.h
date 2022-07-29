@@ -61,5 +61,6 @@
 
 // Initializes and resets the default generic keychain item data.
 - (void)resetKeychainItem;
+- (void)updateKeychainAccessibilityAttributeIfRequired;
 
 @end

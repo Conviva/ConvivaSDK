@@ -68,6 +68,13 @@ typedef void (^UpdateHandler)(void);
 - (BOOL) isVideoAnalytics;
 
 /**
+* Tells whether its AirPlaying or not.
+* @return TRUE or FALSE.
+*/
+- (BOOL) isAirPlaying;
+
+
+/**
 * Performs required cleanup.
 */
 - (void) cleanup;

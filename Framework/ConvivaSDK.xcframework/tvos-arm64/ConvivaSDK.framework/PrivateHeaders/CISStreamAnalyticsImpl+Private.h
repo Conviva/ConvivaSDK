@@ -50,6 +50,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) reportDroppedFramesTotalCount:(int64_t)droppedFramesTotal;
 
+- (void)reportAirPlayEvents;
+
 @end
 
 NS_ASSUME_NONNULL_END

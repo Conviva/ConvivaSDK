@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/CISPlayerEventsListenerProtocol.h</key>
 		<data>
-		b4yhHyKAkzxhtULPT/18b1vDCTc=
+		mpqeZN9YYl7z2t1HrKV5/THllc4=
 		</data>
 		<key>Headers/CISPlayerStateManagerProtocol.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/CISStreamAnalytics.h</key>
 		<data>
-		zPJEplOxKpz5BuEudPsFvSMHXS0=
+		wGFzNN3fSWt9haD1qBTwwrDr4Bo=
 		</data>
 		<key>Headers/CISStreamerProxyFactoryProtocol.h</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Headers/CSSConstants.h</key>
 		<data>
-		dVVxTAkuNrPVXfN8/mahEzhFgpU=
+		ry/yYoLzobjb4SfTTTM+N6r9bPs=
 		</data>
 		<key>Headers/ConvivaSDK-iOS-umbrella.h</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		l5s1OyaJUFWifrypAYOId3eZBdY=
+		+ZpZyH14N/S7eemYPw04mZ0+8ng=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -226,7 +226,7 @@
 		</data>
 		<key>PrivateHeaders/CISConfig.h</key>
 		<data>
-		0Z+zeKF4YcrcJuWp0UjWY8wwQO4=
+		HumHlXKgep/GTdW6R5N/qwruSAI=
 		</data>
 		<key>PrivateHeaders/CISEventQueue.h</key>
 		<data>
@@ -262,7 +262,7 @@
 		</data>
 		<key>PrivateHeaders/CISKeychainItemWrapper.h</key>
 		<data>
-		plh5L/2pyRXm9p/7NEUvnxPhkjw=
+		LBa9X9Yv2o04fag6Axr4i1Yo3T0=
 		</data>
 		<key>PrivateHeaders/CISLogger.h</key>
 		<data>
@@ -318,7 +318,7 @@
 		</data>
 		<key>PrivateHeaders/CISStreamAnalyticsImpl+Private.h</key>
 		<data>
-		yuwYLNFbRK9nRRyxViMwWto9f48=
+		GcxLQTmmJOLU4dDLRgVdUZ1Xw7I=
 		</data>
 		<key>PrivateHeaders/CISStreamAnalyticsImpl.h</key>
 		<data>
@@ -573,11 +573,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b4yhHyKAkzxhtULPT/18b1vDCTc=
+			mpqeZN9YYl7z2t1HrKV5/THllc4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gUoYYvIQMmlT5yVAdQbHjI0SlQiCzJL124YSxh8MoAQ=
+			BsvUYWhtUfGV6pDAZ0mt3pEvzC1z451pJw0zqK9mDtA=
 			</data>
 		</dict>
 		<key>Headers/CISPlayerStateManagerProtocol.h</key>
@@ -617,11 +617,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zPJEplOxKpz5BuEudPsFvSMHXS0=
+			wGFzNN3fSWt9haD1qBTwwrDr4Bo=
 			</data>
 			<key>hash2</key>
 			<data>
-			wUTzARK2U8aFX6zEGUa10OYEtytPxmrqxa6kYfkfnGo=
+			EPsGLo9xSKL6EMQJuRlDe75AhH9+8TwL3ngks9yi3Pw=
 			</data>
 		</dict>
 		<key>Headers/CISStreamerProxyFactoryProtocol.h</key>
@@ -749,11 +749,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dVVxTAkuNrPVXfN8/mahEzhFgpU=
+			ry/yYoLzobjb4SfTTTM+N6r9bPs=
 			</data>
 			<key>hash2</key>
 			<data>
-			6z2wkD5j0LSqNK/bhJvMuHcCB9pqKaK0gd8/9mfXoKI=
+			jbpQuDGPJiAQtSCKNAwrv7LJZQMow3llft8Uwz7zFQA=
 			</data>
 		</dict>
 		<key>Headers/ConvivaSDK-iOS-umbrella.h</key>
@@ -969,11 +969,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0Z+zeKF4YcrcJuWp0UjWY8wwQO4=
+			HumHlXKgep/GTdW6R5N/qwruSAI=
 			</data>
 			<key>hash2</key>
 			<data>
-			2ssCd3Zoml9breuycYYXhiY37JDbQgIAkwaBsVQVXO0=
+			Vn6l5fUVSS2Twy6qIohM/X8QoDauvgC4n8CG2o1aZzU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISEventQueue.h</key>
@@ -1068,11 +1068,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			plh5L/2pyRXm9p/7NEUvnxPhkjw=
+			LBa9X9Yv2o04fag6Axr4i1Yo3T0=
 			</data>
 			<key>hash2</key>
 			<data>
-			RIr9mpOL2roDal3P1gR90zC5HwhZ+RN2hhwRlV4qgbk=
+			g4wxyVIWCw99X3ZBncyxh5hv3f7wVKJd3sTsDnamYb0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISLogger.h</key>
@@ -1222,11 +1222,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yuwYLNFbRK9nRRyxViMwWto9f48=
+			GcxLQTmmJOLU4dDLRgVdUZ1Xw7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			DIXbRPojwXlTd2kRNJraW1W8B+yqklQjyZzFukJKmSc=
+			8nDk8Mj35AGAoC98VaCr8cFTMezXoFLkpHn+co6WPKE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISStreamAnalyticsImpl.h</key>

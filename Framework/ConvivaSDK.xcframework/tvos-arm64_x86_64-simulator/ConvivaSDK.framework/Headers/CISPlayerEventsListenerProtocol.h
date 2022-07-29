@@ -117,6 +117,20 @@ NS_ASSUME_NONNULL_BEGIN
 /// \param droppedFramesCount Total count of dropped frames
 - (void)setDroppedFramesCount:(NSInteger)droppedFramesCount;
 
+
+/// @brief For reporting custom events
+///
+/// \param eventName Event name
+/// \param attributes Event attributes
+
+- (void) reportPlaybackEvent:(NSString*)eventName andAttributes:(nullable NSDictionary*)attributes;
+
+/**
+* Tells whether its AirPlaying or not.
+* @return TRUE or FALSE.
+*/
+- (BOOL) isAirPlaying;
+
 @end
 
 typedef id<CISPlayerEventsListenerProtocol> CISPlayerEventsListener;

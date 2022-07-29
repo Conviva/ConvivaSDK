@@ -237,6 +237,17 @@ FOUNDATION_EXPORT NSString *const CIS_SSDK_APP_BACKGROUND_EVENT;
 
 /*------------------------------ END OF APP EVENTS ----------------------------*/
 
+
+/*--------------------------------- AIRPLAY EVENTS --------------------------------*/
+
+/* Airplay start event */
+FOUNDATION_EXPORT NSString *const CIS_SSDK_AIRPLAY_STARTED_EVENT;
+
+/* Airplay end event*/
+FOUNDATION_EXPORT NSString *const CIS_SSDK_AIRPLAY_ENDED_EVENT;
+
+/*------------------------------ END OF AIRPLAY EVENTS ----------------------------*/
+
 /*---------------------------------- SETTINGS ---------------------------------*/
 
 /**
