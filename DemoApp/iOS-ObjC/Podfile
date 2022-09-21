@@ -6,6 +6,6 @@ target 'SampleApp' do
    use_frameworks!
 
   # Pods for SampleApp
-pod 'ConvivaSDK','4.0.30'
+pod 'ConvivaSDK','4.0.31'
 
 end
