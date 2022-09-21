@@ -46,6 +46,7 @@
 -(void)sendEvent:(NSString *)name  withAttributes:(NSDictionary *)attributes;
 -(NSString *)getViewerID;
 -(NSString *)getApplicationName;
+-(StreamType)getStreamType;
 -(int)getSID;
 -(CISPlayerStateManager*)getAttachedPlayer;
 
