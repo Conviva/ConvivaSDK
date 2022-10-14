@@ -281,9 +281,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if (adSegment.selectedSegmentIndex != 3){
                 
                 var adAttributes = [AnyHashable:Any]();
-                adAttributes["podIndex"] = "1";
-                adAttributes["podDuration"] = "10";
-                adAttributes["podPosition"] = CISConstants.getAdPositionStringValue(adPos);
+                adAttributes[CIS_SSDK_AD_BREAK_POD_INDEX] = "1";
+                adAttributes[CIS_SSDK_AD_BREAK_POD_DURATION] = "10";
+                adAttributes[CIS_SSDK_AD_BREAK_POD_POSITION] = CISConstants.getAdPositionStringValue(adPos);
                 
                 self.videoAnalytics?.reportAdBreakStarted(.ADPLAYER_SEPARATE, adType: .CLIENT_SIDE, adBreakInfo: adAttributes)
             }
@@ -310,12 +310,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         contentInfo[CIS_SSDK_METADATA_STREAM_URL] = "http://test.m3u8";
         contentInfo[CIS_SSDK_PLAYER_FRAMEWORK_NAME] = "frameworkname";
         contentInfo[CIS_SSDK_PLAYER_FRAMEWORK_VERSION] = "frameworkversion";
+        contentInfo["key1"] = "val1";
+        contentInfo["key2"] = "val2";
         
-        let tags = NSMutableDictionary();
-        tags["key1"] = "val1";
-        tags["key2"] = "val2";
-        contentInfo["tags"] = tags;
-    
         return contentInfo;
     }
         
@@ -332,13 +329,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         adInfo[CIS_SSDK_METADATA_STREAM_URL] = "http://test.m3u8";
         adInfo[CIS_SSDK_PLAYER_FRAMEWORK_NAME] = "frameworkname";
         adInfo[CIS_SSDK_PLAYER_FRAMEWORK_VERSION] = "frameworkversion";
+        adInfo["key1"] = "val1";
+        adInfo["key2"] = "val2";
         
-        
-        let tags = NSMutableDictionary();
-        tags["key1"] = "val1";
-        tags["key2"] = "val2";
-        adInfo["tags"] = tags;
-    
         return adInfo;
     }
     
