@@ -34,6 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) BOOL adPlaying;
 @property(nonatomic) AdStream adStream;
 @property(nonatomic) AdPlayer adPlayer;
+@property(nonatomic) AdPosition adPosition;
 
 // Proxy state
 @property(nonatomic) PlayerState contentPlayerState;
@@ -80,6 +81,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) NSInteger encodedFps;
 
 @property(nonatomic, assign) SessionType sessionType;
+
+@property (nonatomic,strong) CISAppAnalyticsHandler *appAnalyticsHandler;
 
 @end
 

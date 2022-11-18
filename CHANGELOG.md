@@ -1,5 +1,17 @@
 # Changelog
 
+## 4.0.33 (11/18/2022)
+* Fixed an issue for metrics collection when setPlayer is called before having a valid playerItem on AVPlayer.
+* Fixed an issue for bitrate reporting on switching from one content to another using AVQueuePlayer.
+* Support to collect playback events from AppAnalytics SDK provided by conviva. For non AppAnalytics customers, there is not impact.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
+## 4.0.32 (11/18/2022)
+* Fixed an issue for metrics collection when setPlayer is called before having a valid playerItem on AVPlayer.
+* Fixed an issue for bitrate reporting on switching from one content to another using AVQueuePlayer.
+* Support to collect playback events from AppAnalytics SDK provided by conviva. For non AppAnalytics customers, there is not impact.
+* Supports Advertising identifier collection.
+
 ## 4.0.31 (09/21/2022)
 * Supports iOS 16.
 * Does not collect Advertising Identifier to comply with Apple guide lines.

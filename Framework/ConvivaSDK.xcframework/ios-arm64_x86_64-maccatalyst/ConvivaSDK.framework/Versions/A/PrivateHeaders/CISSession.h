@@ -54,4 +54,8 @@
 
 -(void)updateConnectionType:(NSString *)newConnectionType;
 
+- (NSNumber*) getSessionStartTime;
+
+- (CISContentMetadata*) getMetadata;
+
 @end

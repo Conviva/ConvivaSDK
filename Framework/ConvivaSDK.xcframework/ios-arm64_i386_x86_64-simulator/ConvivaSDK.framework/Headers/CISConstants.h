@@ -106,7 +106,9 @@ typedef NS_ENUM(NSInteger,AdPosition){
     /** The ad is a midroll, kicking in during content. */
     ADPOSITION_MIDROLL,
     /** The ad is a postroll, kicking in after content. */
-    ADPOSITION_POSTROLL
+    ADPOSITION_POSTROLL,
+    /** The ad player is unknown. */
+    ADPOSITION_UNKNOWN = 99
 };
 
 /**

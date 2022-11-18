@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/CISConstants.h</key>
 		<data>
-		a8gPDcp4jlLDHilBLLbwfnVmYTY=
+		FP6eb4abqxe0A/T55y4lVKvGVtk=
 		</data>
 		<key>Headers/CISContentMetadata.h</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XQezqQW1Ajnvj1jdUbZwAviaYyk=
+		+LtMlboZqf7m6pZtvJGK7RQimHY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -270,11 +270,11 @@
 		</data>
 		<key>PrivateHeaders/CISMonitor+Internal.h</key>
 		<data>
-		H4qxlaARGC6G0UDukxkmB6l7BN8=
+		TpoEcJEbmSU9M08KLngtq/xw50c=
 		</data>
 		<key>PrivateHeaders/CISMonitor.h</key>
 		<data>
-		sVm1k4Zd+jmSQnAuYnhSxPEQFHE=
+		hs5YxDO6xMZbIHODLVSLm8IktPw=
 		</data>
 		<key>PrivateHeaders/CISNetworkUtil.h</key>
 		<data>
@@ -302,7 +302,7 @@
 		</data>
 		<key>PrivateHeaders/CISSession.h</key>
 		<data>
-		XWdpzy3ypvHOjDqjXTlRQn0VHF0=
+		IM4h+POQiSqU+UjQ43MJsSCR7AA=
 		</data>
 		<key>PrivateHeaders/CISSessionFactory.h</key>
 		<data>
@@ -485,11 +485,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a8gPDcp4jlLDHilBLLbwfnVmYTY=
+			FP6eb4abqxe0A/T55y4lVKvGVtk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ed2uddRr3H4G2NH2y9xCiaWtj2zCRrOTl/qGK8KHAY8=
+			vfXyWej9ocioNvSGQPbW6r8pDvx2Pvu1cQvOOGbhReI=
 			</data>
 		</dict>
 		<key>Headers/CISContentMetadata.h</key>
@@ -1090,22 +1090,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H4qxlaARGC6G0UDukxkmB6l7BN8=
+			TpoEcJEbmSU9M08KLngtq/xw50c=
 			</data>
 			<key>hash2</key>
 			<data>
-			zxsLe0ab42A3A16sp0PrN5LpVgt5Bwcs5KZl51w4Eio=
+			uG/nomSDWD37OznBIf3kX8Ul5oGU5JqJLB4pHZQRZXA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISMonitor.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sVm1k4Zd+jmSQnAuYnhSxPEQFHE=
+			hs5YxDO6xMZbIHODLVSLm8IktPw=
 			</data>
 			<key>hash2</key>
 			<data>
-			roF0YGybMxdPnvq2rCHub0CC3hV0aqmCbBshqFWyzck=
+			e2tSujZKJOhpKvv8GpLzuQL9+RN4rOcnYCyJ26HtpNc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISNetworkUtil.h</key>
@@ -1178,11 +1178,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XWdpzy3ypvHOjDqjXTlRQn0VHF0=
+			IM4h+POQiSqU+UjQ43MJsSCR7AA=
 			</data>
 			<key>hash2</key>
 			<data>
-			hT0+t7TVJWG7hawSAOl8LI4g3W9HYojcP/VkJjAUSmw=
+			pAA+yaZpRFZQBFpBSXxysAZ+QltQS0KM05oo7YkdCAc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISSessionFactory.h</key>

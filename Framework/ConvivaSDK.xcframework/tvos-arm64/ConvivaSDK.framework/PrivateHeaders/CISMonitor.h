@@ -13,6 +13,7 @@
 #import "CISConstants.h"
 #import "CISNetworkUtil.h"
 #import "CISClientSetting.h"
+@class CISAppAnalyticsHandler;
 
 FOUNDATION_EXPORT NSString *const METADATA_DURATION;
 FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
@@ -118,4 +119,6 @@ FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
 -(CISPlayerStateManager*) getAttachedPlayer;
 
 - (void) markOfflinePlayback;
+
+- (void) initializeAppAnalyticsHandler:(CISAppAnalyticsHandler*)appAnalyticsHandler;
 @end
