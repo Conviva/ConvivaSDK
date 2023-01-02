@@ -2,12 +2,12 @@
 
 ## 4.0.35 (01/02/2023)
 * Fixed an issue where connection type is not reported properly for mobile netwoek.
-* Changes to support latest video events schema for App Analytics. Use 0.2.6 version of app analytics library for compatability. For non AppAnalytics customers, there is not impact.
+* Changes to support latest video events schema(1-0-4) for App Analytics. Use 0.2.6 version of app analytics library for compatability. For non AppAnalytics customers, there is not impact.
 * Does not collect Advertising Identifier to comply with Apple guide lines.
 
 ## 4.0.34 (01/02/2023)
 * Fixed an issue where connection type is not reported properly for mobile netwoek.
-* Changes to support latest video events schema for App Analytics. Use 0.2.6 version of app analytics library for compatability. For non AppAnalytics customers, there is not impact.
+* Changes to support latest video events schema(1-0-4) for App Analytics. Use 0.2.6 version of app analytics library for compatability. For non AppAnalytics customers, there is not impact.
 * Supports Advertising identifier collection.
 
 ## 4.0.33 (11/18/2022)
