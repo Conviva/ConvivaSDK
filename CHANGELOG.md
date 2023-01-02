@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.0.35 (01/02/2023)
+* Fixed an issue where connection type is not reported properly for mobile netwoek.
+* Changes to support latest video events schema for App Analytics. Use 0.2.6 version of app analytics library for compatability. For non AppAnalytics customers, there is not impact.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
+## 4.0.34 (01/02/2023)
+* Fixed an issue where connection type is not reported properly for mobile netwoek.
+* Changes to support latest video events schema for App Analytics. Use 0.2.6 version of app analytics library for compatability. For non AppAnalytics customers, there is not impact.
+* Supports Advertising identifier collection.
+
 ## 4.0.33 (11/18/2022)
 * Fixed an issue for metrics collection when setPlayer is called before having a valid playerItem on AVPlayer.
 * Fixed an issue for bitrate reporting on switching from one content to another using AVQueuePlayer.
