@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.37 (04/04/2023)
+* Introduces new keys CIS_SSDK_PLAYBACK_METRIC_AUDIO_LANGUAGE, CIS_SSDK_PLAYBACK_METRIC_SUBTITLES_LANGUAGE, CIS_SSDK_PLAYBACK_METRIC_CLOSED_CAPTIONS_LANGUAGE within reportPlaybackMetric() API for setting audio track changes, subtitle track changes and closed caption track changes respectively.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
 ## 4.0.36 (04/04/2023)
 * Introduces new keys CIS_SSDK_PLAYBACK_METRIC_AUDIO_LANGUAGE, CIS_SSDK_PLAYBACK_METRIC_SUBTITLES_LANGUAGE, CIS_SSDK_PLAYBACK_METRIC_CLOSED_CAPTIONS_LANGUAGE within reportPlaybackMetric() API for setting audio track changes, subtitle track changes and closed caption track changes respectively.
 * Supports Advertising identifier collection.
