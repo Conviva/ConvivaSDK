@@ -121,4 +121,11 @@ FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
 - (void) markOfflinePlayback;
 
 - (void) initializeAppAnalyticsHandler:(CISAppAnalyticsHandler*)appAnalyticsHandler;
+
+- (void)setAudioLanguage:(NSString *)audioLanguage;
+
+- (void)setClosedCaptionLanguage:(NSString *)closedCaptionLanguage;
+
+- (void)setSubtitleLanguage:(NSString *)subtitleLanguage;
+
 @end

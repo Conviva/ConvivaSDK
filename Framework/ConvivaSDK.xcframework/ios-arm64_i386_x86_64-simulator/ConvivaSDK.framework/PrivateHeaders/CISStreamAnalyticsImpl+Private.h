@@ -50,6 +50,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) reportDroppedFramesTotalCount:(int64_t)droppedFramesTotal;
 
+- (void) reportAudioLanguage:(NSString *)audioLanguage;
+
+- (void) reportClosedCaptionLanguage:(NSString *)closedCaptionLanguage;
+
+- (void) reportSubtitleLanguage:(NSString *)subtitleLanguage;
+
 - (void)reportAirPlayEvents;
 
 @end

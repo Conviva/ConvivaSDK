@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/CISAnalytics.h</key>
 		<data>
-		gGV6Kn/GITR0WHGj2cWWoPcK3FE=
+		1limMLiikPIIe6PF+GHKUWSl5xQ=
 		</data>
 		<key>Headers/CISAnalyticsCreator.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/CISPlayerEventsListenerProtocol.h</key>
 		<data>
-		mpqeZN9YYl7z2t1HrKV5/THllc4=
+		goxJ8ucQbbe52zXIu3Qw/6ptT6w=
 		</data>
 		<key>Headers/CISPlayerStateManagerProtocol.h</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Headers/CSSConstants.h</key>
 		<data>
-		ry/yYoLzobjb4SfTTTM+N6r9bPs=
+		NAXqswUjL4sDxKHrWbgIUjMsM4M=
 		</data>
 		<key>Headers/ConvivaSDK-iOS-umbrella.h</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SmC10HbzUP6X0rpsg82YIFg7pC8=
+		HfeQp2d/n2mQ6BOI41Nut38uqzc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>PrivateHeaders/CISCWSProtocol.h</key>
 		<data>
-		wCxCdN/0vL8fQD5aX4YqG2pa74w=
+		27X1IgdKsZBgyAyaN3NoRnNV1HI=
 		</data>
 		<key>PrivateHeaders/CISCWSProtocolHelper.h</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>PrivateHeaders/CISClient.h</key>
 		<data>
-		2A/9/x/XiE7rhUF/rGIRYK+/c7I=
+		MJiOxpNEBAgS/hPHQqdjNvpsygI=
 		</data>
 		<key>PrivateHeaders/CISClientSetting.h</key>
 		<data>
@@ -270,11 +270,11 @@
 		</data>
 		<key>PrivateHeaders/CISMonitor+Internal.h</key>
 		<data>
-		TpoEcJEbmSU9M08KLngtq/xw50c=
+		ejUp+CtdvAcIG2KQOxdEFs7wTF0=
 		</data>
 		<key>PrivateHeaders/CISMonitor.h</key>
 		<data>
-		hs5YxDO6xMZbIHODLVSLm8IktPw=
+		5qHbRyJzY0PH/ZN8+ivokrd9JeA=
 		</data>
 		<key>PrivateHeaders/CISNetworkUtil.h</key>
 		<data>
@@ -286,11 +286,11 @@
 		</data>
 		<key>PrivateHeaders/CISPlayerMonitor.h</key>
 		<data>
-		TFSBbysj3Xz/hcCx+s8AUEEJDa0=
+		jst+Lovh0ga4hKuzOW7SxEhhUq4=
 		</data>
 		<key>PrivateHeaders/CISPlayerStateManager.h</key>
 		<data>
-		58ZhjHbU/LjZSwo5CcPmdIhk4Q4=
+		nKYk2scvPwoCzNp/cNIJHXY+EAs=
 		</data>
 		<key>PrivateHeaders/CISRandom.h</key>
 		<data>
@@ -318,7 +318,7 @@
 		</data>
 		<key>PrivateHeaders/CISStreamAnalyticsImpl+Private.h</key>
 		<data>
-		GcxLQTmmJOLU4dDLRgVdUZ1Xw7I=
+		iiiP8pcLqiDs541pHIqom+zydoQ=
 		</data>
 		<key>PrivateHeaders/CISStreamAnalyticsImpl.h</key>
 		<data>
@@ -386,11 +386,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gGV6Kn/GITR0WHGj2cWWoPcK3FE=
+			1limMLiikPIIe6PF+GHKUWSl5xQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			amMjdamv+5VvCvp8o7y4Rz/8ciRIwdkEd0fCoBsvF+o=
+			8x4VpeU7mOIFGZPpzf/zJ7CCvLa5NAlvR2YAbQQ2OSA=
 			</data>
 		</dict>
 		<key>Headers/CISAnalyticsCreator.h</key>
@@ -573,11 +573,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mpqeZN9YYl7z2t1HrKV5/THllc4=
+			goxJ8ucQbbe52zXIu3Qw/6ptT6w=
 			</data>
 			<key>hash2</key>
 			<data>
-			BsvUYWhtUfGV6pDAZ0mt3pEvzC1z451pJw0zqK9mDtA=
+			6jScgg5svx6O6/VbTx3FTooOz8l42FLTH7Et1CloZsM=
 			</data>
 		</dict>
 		<key>Headers/CISPlayerStateManagerProtocol.h</key>
@@ -749,11 +749,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ry/yYoLzobjb4SfTTTM+N6r9bPs=
+			NAXqswUjL4sDxKHrWbgIUjMsM4M=
 			</data>
 			<key>hash2</key>
 			<data>
-			jbpQuDGPJiAQtSCKNAwrv7LJZQMow3llft8Uwz7zFQA=
+			v7jrEDesXeBaOpal4ssx58uNJhm/xyvHHQ45yBHCBEU=
 			</data>
 		</dict>
 		<key>Headers/ConvivaSDK-iOS-umbrella.h</key>
@@ -914,11 +914,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wCxCdN/0vL8fQD5aX4YqG2pa74w=
+			27X1IgdKsZBgyAyaN3NoRnNV1HI=
 			</data>
 			<key>hash2</key>
 			<data>
-			YI/JSqkKDXjoyIVTt3M1rXonOog0yHwbhwCVVgU9X2Y=
+			VXs+ROhMVn2w/pbqHuL05pfWAzBQf/qLjcKyNA24yZo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISCWSProtocolHelper.h</key>
@@ -947,11 +947,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2A/9/x/XiE7rhUF/rGIRYK+/c7I=
+			MJiOxpNEBAgS/hPHQqdjNvpsygI=
 			</data>
 			<key>hash2</key>
 			<data>
-			GPnqsmgAg7CKZTfWsuyODxyemKq2KDhzFByGzdqJ4wc=
+			VofruyYUuPPoI99gr7J8Bal8yCPrLce2MU8nIf+j/EI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISClientSetting.h</key>
@@ -1090,22 +1090,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TpoEcJEbmSU9M08KLngtq/xw50c=
+			ejUp+CtdvAcIG2KQOxdEFs7wTF0=
 			</data>
 			<key>hash2</key>
 			<data>
-			uG/nomSDWD37OznBIf3kX8Ul5oGU5JqJLB4pHZQRZXA=
+			t+SCcLt9marsV1QLwwPZjexHrmPNJ57deRr3H8dv4tE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISMonitor.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hs5YxDO6xMZbIHODLVSLm8IktPw=
+			5qHbRyJzY0PH/ZN8+ivokrd9JeA=
 			</data>
 			<key>hash2</key>
 			<data>
-			e2tSujZKJOhpKvv8GpLzuQL9+RN4rOcnYCyJ26HtpNc=
+			rOtYVr4E3IUHHpdR30Zd5GwcOdOfdqOEsJgS0RjWbvI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISNetworkUtil.h</key>
@@ -1134,22 +1134,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TFSBbysj3Xz/hcCx+s8AUEEJDa0=
+			jst+Lovh0ga4hKuzOW7SxEhhUq4=
 			</data>
 			<key>hash2</key>
 			<data>
-			0hQRUNuInZaGcBf9lBpc2W0gER0xjzsUU6bSRejbKWQ=
+			0fD0zyU1O/L/WndgD1AkGzCWcSwfMXNfOiRebyLvaX0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISPlayerStateManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			58ZhjHbU/LjZSwo5CcPmdIhk4Q4=
+			nKYk2scvPwoCzNp/cNIJHXY+EAs=
 			</data>
 			<key>hash2</key>
 			<data>
-			VHgtfScYD0eneqN/dGsbbElkxkZfMsMFNTxEabqGBVw=
+			NSfRJnZE18tzSNWSn4kqel+QujLrQzqX5mxYJNV48p4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISRandom.h</key>
@@ -1222,11 +1222,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GcxLQTmmJOLU4dDLRgVdUZ1Xw7I=
+			iiiP8pcLqiDs541pHIqom+zydoQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			8nDk8Mj35AGAoC98VaCr8cFTMezXoFLkpHn+co6WPKE=
+			QH+mjsYzQJBekNVCwSEhJYMBNGkq2iWqxy652B7G7d4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISStreamAnalyticsImpl.h</key>

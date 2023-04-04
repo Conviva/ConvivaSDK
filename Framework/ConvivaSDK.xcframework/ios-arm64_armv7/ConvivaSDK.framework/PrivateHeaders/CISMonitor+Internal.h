@@ -84,6 +84,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) CISAppAnalyticsHandler *appAnalyticsHandler;
 
+@property(nonatomic, copy) NSString *audioLang;
+@property(nonatomic, copy) NSString *closedCaptionLang;
+@property(nonatomic, copy) NSString *subtitleLang;
+
 @end
 
 NS_ASSUME_NONNULL_END

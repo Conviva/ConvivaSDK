@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.36 (04/04/2023)
+* Introduces new keys CIS_SSDK_PLAYBACK_METRIC_AUDIO_LANGUAGE, CIS_SSDK_PLAYBACK_METRIC_SUBTITLES_LANGUAGE, CIS_SSDK_PLAYBACK_METRIC_CLOSED_CAPTIONS_LANGUAGE within reportPlaybackMetric() API for setting audio track changes, subtitle track changes and closed caption track changes respectively.
+* Supports Advertising identifier collection.
+
 ## 4.0.35 (01/02/2023)
 * Fixed an issue where connection type is not reported properly for mobile netwoek.
 * Changes to support latest video events schema(1-0-4) for App Analytics. Use 0.2.6 version of app analytics library for compatability. For non AppAnalytics customers, there is not impact.

@@ -45,5 +45,8 @@
 
 -(void)detachPlayer:(int)sessionKey monitorMetrics:(BOOL) monitorMetrics;
 
+- (int) getGlobalSessionId;
+- (int) getipv4SessionId;
+- (int) getipv6SessionId;
 
 @end

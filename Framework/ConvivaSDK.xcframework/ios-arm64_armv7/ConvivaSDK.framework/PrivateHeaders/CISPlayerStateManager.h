@@ -118,4 +118,38 @@
 -(void) enableAVLegacyIntegration:(BOOL)legacy;
 
 
+/**
+ * Reports the audio language.
+ * @param audioLanguage Audio Language.
+ */
+- (void)setAudioLanguage:(NSString *)audioLanguage;
+
+/**
+ * Reports the closed caption language.
+ * @param closedCaptionLanguage Closed Caption Language.
+ */
+- (void)setClosedCaptionLanguage:(NSString *)closedCaptionLanguage;
+
+/**
+ * Reports the Edge Server CDN IP Address for the video stream played.
+ * @param subtitleLanguage Subtitle Language.
+ */
+- (void)setSubtitleLanguage:(NSString *)subtitleLanguage;
+
+/**
+* Gets audio language.
+*/
+-(NSString *)getAudioLanguage;
+
+/**
+* Gets closed caption language.
+*/
+-(NSString *)getClosedCaptionLanguage;
+
+/**
+* Gets subtitle language.
+*/
+-(NSString *)getSubtitleLanguage;
+
+
 @end

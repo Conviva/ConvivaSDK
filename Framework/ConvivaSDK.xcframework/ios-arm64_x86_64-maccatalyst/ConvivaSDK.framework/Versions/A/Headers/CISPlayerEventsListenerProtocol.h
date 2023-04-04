@@ -131,6 +131,17 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (BOOL) isAirPlaying;
 
+/// @brief  sets the audio language
+///
+/// \param audioLanguage audio language
+-(void)setAudioLanguage:(NSString*)audioLanguage;
+
+/// @brief  sets the cc/subtitle language
+///
+/// \param language cc/subtitle language
+/// \param closedCaption cc (or) subtitles YES or NO
+-(void)setSubtitleLanguage:(NSString*)language isClosedCaption:(BOOL)closedCaption;
+
 @end
 
 typedef id<CISPlayerEventsListenerProtocol> CISPlayerEventsListener;

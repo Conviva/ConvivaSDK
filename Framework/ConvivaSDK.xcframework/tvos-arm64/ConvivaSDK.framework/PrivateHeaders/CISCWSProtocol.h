@@ -65,6 +65,10 @@ FOUNDATION_EXPORT int const CAPABILITY_OFFLINE_VIDEO ;
 -(void)setSessionTime:(NSNumber *)sessionTime hbdict:(NSDictionary **)hbDict;
 -(void)setClientTime:(NSTimeInterval)clientTime hbdict:(NSDictionary **)hbDict;
 
+-(void)setAudioLanguage:(NSString *)audioLanguage hbdict:(NSDictionary **)hbDict;
+-(void)setClosedCaptionLanguage:(NSString *)closedCaptionLanguage hbdict:(NSDictionary **)hbDict;
+-(void)setSubtitleLanguage:(NSString *)subtitleLanguage hbdict:(NSDictionary **)hbDict;
+
 -(void)setPlayerState:(int)playerStateValue hbdict:(NSDictionary **)hbDict;
 -(void)setPauseJoin:(NSString *)pauseJoinState hbdict:(NSDictionary **)hbDict;
 -(void)setSessionFlag:(int)sessionFlagValue  hbdict:(NSDictionary **)hbDict;

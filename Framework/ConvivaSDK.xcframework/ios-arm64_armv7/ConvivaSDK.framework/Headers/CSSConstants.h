@@ -99,6 +99,25 @@ Expected value: [NSNumber intValue]
 */
 FOUNDATION_EXPORT NSString *const CIS_SSDK_PLAYBACK_METRIC_DROPPED_FRAMES_TOTAL;
 
+/*
+//Key for Audio Language.
+//Expected value: NSString - language code
+*/
+FOUNDATION_EXPORT NSString *const CIS_SSDK_PLAYBACK_METRIC_AUDIO_LANGUAGE;
+
+/*
+//Key for Closed Caption Language.
+//Expected value: NSString - language code.
+*/
+FOUNDATION_EXPORT NSString *const CIS_SSDK_PLAYBACK_METRIC_CLOSED_CAPTIONS_LANGUAGE;
+
+/*
+//Key for Subtitle language.
+//Expected value: NSString - language code.
+ */
+FOUNDATION_EXPORT NSString *const CIS_SSDK_PLAYBACK_METRIC_SUBTITLES_LANGUAGE;
+
+
 /*------------------------ END OF PLAYBACK METRIC KEYS ----------------------------*/
 
 /*------------------------- METADATA CONSTANTS -------------------------*/

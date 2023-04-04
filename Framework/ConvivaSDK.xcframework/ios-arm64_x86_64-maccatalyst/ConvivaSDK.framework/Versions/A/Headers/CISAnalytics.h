@@ -94,6 +94,26 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (void) cleanup;
 
+
+/**
+* Returns global session id.
+* @return global session id.
+*/
+- (int) getGlobalSessionId;
+
+
+/**
+* Returns ipv4 session id.
+* @return ipv4 session id.
+*/
+- (int) getipv4SessionId;
+
+/**
+* Returns ipv6 session id.
+* @return ipv6 session id.
+*/
+- (int) getipv6SessionId;
+
 @end
 
 typedef id<CISAnalyticsProtocol> CISAnalytics;

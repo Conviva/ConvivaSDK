@@ -59,6 +59,10 @@
 
 @property (assign,nonatomic) NSInteger frameRate;
 
+@property (copy) NSString *audioLanguage;
+@property (copy) NSString *closedCaptionLanguage;
+@property (copy) NSString *subtitleLanguage;
+
 @property (assign,nonatomic) CISPlayerMonitor* videoPlayerMonitor;
 
 //@property (assign) NSInteger frameRate;
@@ -124,6 +128,18 @@
 - (NSInteger) getVideoFrameRate;
 
 - (void) updateVideoFrameRate:(NSInteger)frameRate;
+
+- (NSString*) getAudioLanguage;
+
+- (void) updateAudioLanguage:(NSString*)audioLanguage;
+
+- (NSString*) getClosedCaptionLanguage;
+
+- (void) updateClosedCaptionLanguage:(NSString*)closedCaptionLanguage;
+
+- (NSString*) getSubtitleLanguage;
+
+- (void) updateSubtitleLanguage:(NSString*)subtitleLanguage;
 
 - (int) getSessionId;
 
