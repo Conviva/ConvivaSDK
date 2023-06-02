@@ -1,5 +1,13 @@
 # Changelog
 
+## 4.0.39 (06/02/2023)
+* Changed pod position constant values to Pre-roll, Mid-roll & Post-roll.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
+## 4.0.38 (06/02/2023)
+* Changed pod position constant values to Pre-roll, Mid-roll & Post-roll.
+* Supports Advertising identifier collection.
+
 ## 4.0.37 (04/04/2023)
 * Introduces new keys CIS_SSDK_PLAYBACK_METRIC_AUDIO_LANGUAGE, CIS_SSDK_PLAYBACK_METRIC_SUBTITLES_LANGUAGE, CIS_SSDK_PLAYBACK_METRIC_CLOSED_CAPTIONS_LANGUAGE within reportPlaybackMetric() API for setting audio track changes, subtitle track changes and closed caption track changes respectively.
 * Does not collect Advertising Identifier to comply with Apple guide lines.
