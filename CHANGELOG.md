@@ -1,5 +1,13 @@
 # Changelog
 
+## 4.0.41 (10/09/2023)
+* Supports iOS 17.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
+## 4.0.40 (10/09/2023)
+* Supports iOS 17.
+* Supports Advertising identifier collection.
+
 ## 4.0.39 (06/02/2023)
 * Changed pod position constant values to Pre-roll, Mid-roll & Post-roll.
 * Does not collect Advertising Identifier to comply with Apple guide lines.
