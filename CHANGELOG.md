@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.43 (01/11/2023)
+* Privacy manifest file support is added.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
 ## 4.0.41 (10/09/2023)
 * Supports iOS 17.
 * Does not collect Advertising Identifier to comply with Apple guide lines.
