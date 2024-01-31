@@ -24,7 +24,7 @@ release 2.141.0. Please follow these steps to migrate to 2.141.0 version
     Add the following line to your pod file and run 'pod install'
     
     // Without Advertising Identifier(IDFA) support
-    pod 'ConvivaSDK','4.0.43'
+    pod 'ConvivaSDK','4.0.45'
     
     OR 
     
@@ -48,7 +48,7 @@ release 2.141.0. Please follow these steps to migrate to 2.141.0 version
 To add the ConvivaSDK library to your project manually:
 
 1.	Download the latest ConvivaSDK from below path.
-      * [Without Advertising Identifier(IDFA) support](https://github.com/Conviva/ConvivaSDK/archive/4.0.43.zip)
+      * [Without Advertising Identifier(IDFA) support](https://github.com/Conviva/ConvivaSDK/archive/4.0.45.zip)
       OR
      *  [With Advertising Identifier(IDFA) support](https://github.com/Conviva/ConvivaSDK/archive/4.0.40.zip)
 
