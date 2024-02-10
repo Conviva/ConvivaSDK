@@ -1,7 +1,7 @@
 # Changelog
 
 ## 4.0.47 (02/10/2024)
-* Clearing the cached values of audio Language, subtitles/closed captions language on the start of new session.
+* Clearing the cached values of audio Language, subtitles/closed captions language at the end of session.
 * Does not collect Advertising Identifier to comply with Apple guide lines.
 
 ## 4.0.45 (01/31/2024)
