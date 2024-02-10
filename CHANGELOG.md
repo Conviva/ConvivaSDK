@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.47 (02/10/2024)
+* Clearing the cached values of audio Language, subtitles/closed captions language on the start of new session.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
 ## 4.0.45 (01/31/2024)
 * Supports VisionOS 1.0.
 * Does not collect Advertising Identifier to comply with Apple guide lines.
