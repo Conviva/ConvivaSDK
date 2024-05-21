@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.0.49 (05/21/2024)
+* Fixed an issue for average bitrate reporting on switching from one content to another.
+* Fixes an inconsistent crash on subtitles/audio language change. 
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
 ## 4.0.47 (02/10/2024)
 * Clearing the cached values of audio Language, subtitles/closed captions language at the end of session.
 * Does not collect Advertising Identifier to comply with Apple guide lines.

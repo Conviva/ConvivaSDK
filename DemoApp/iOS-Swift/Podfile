@@ -7,6 +7,6 @@ target 'SDKSwiftApp' do
   use_frameworks!
 
   # Pods for SDKSwiftApp
-pod 'ConvivaSDK','4.0.47'
+pod 'ConvivaSDK','4.0.49'
 
 end
