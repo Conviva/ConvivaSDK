@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.0.52 (01/29/2025)
+* Enhances collection by sending urgent heartbeats on following events:
+    - First PLAYING state for Content Sessions
+    - Application Background for Content/Ad Sessions(autocollected by Conviva)
+    - FATAL Errors for Content/Ad Sessions
+
+## 4.0.51 (09/13/2024)
+* Minor improvements.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
 ## 4.0.49 (05/21/2024)
 * Fixed an issue for average bitrate reporting on switching from one content to another.
 * Fixes an inconsistent crash on subtitles/audio language change. 

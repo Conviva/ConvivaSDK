@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 @property(nonatomic, assign) int sessionID;
+@property(nonatomic, strong) CISSessionFactory *cisSessionFactory;
 @property(nonatomic, strong) CISEventQueue *cisEventQueue;
 @property(nonatomic, strong) CISContentMetadata *cisContentMetadata;
 @property(nonatomic, weak) CISSystemFactory *cisSystemFactory;
@@ -23,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, assign) NSTimeInterval startTimeMs;
 @property(nonatomic, assign) BOOL hasJoined;
+@property(nonatomic, assign) BOOL sendUrgentHB;
 @property(nonatomic, assign) BOOL pauseJoin;
 @property(nonatomic, assign) BOOL preloading;
 @property(nonatomic, assign) BOOL ignorePlayerState;
