@@ -12,4 +12,5 @@
 @interface CISRandom : NSObject
 +(int) genrateClientID;
 +(int) genrateSessionID;
++(int)generateRandomDelay:(int)min max:(int)max;
 @end

@@ -182,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PpzvBvKUbtN5HKzMUYuREJXz5M4=
+		j1pk/RqwyNilYH/AW6Sa5zQL48c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -200,13 +200,17 @@
 		<data>
 		FaK1WuS2of00dGC96wRxg+u/V0A=
 		</data>
+		<key>PrivateHeaders/CISBackgroundTask.h</key>
+		<data>
+		iQr15q54j5UKNsBkLlODXeJeehA=
+		</data>
 		<key>PrivateHeaders/CISBasePlayerMonitor.h</key>
 		<data>
 		MlK5/KZykCGDYekDZ8sc/P7PQEM=
 		</data>
 		<key>PrivateHeaders/CISCWSProtocol.h</key>
 		<data>
-		27X1IgdKsZBgyAyaN3NoRnNV1HI=
+		k+ilJ6lx/yfl1qEWYMRPK7aKd7w=
 		</data>
 		<key>PrivateHeaders/CISCWSProtocolHelper.h</key>
 		<data>
@@ -218,7 +222,7 @@
 		</data>
 		<key>PrivateHeaders/CISClient.h</key>
 		<data>
-		MJiOxpNEBAgS/hPHQqdjNvpsygI=
+		FaTNB6V0OjRfShYH9EtdPu50cuw=
 		</data>
 		<key>PrivateHeaders/CISClientSetting.h</key>
 		<data>
@@ -270,11 +274,11 @@
 		</data>
 		<key>PrivateHeaders/CISMonitor+Internal.h</key>
 		<data>
-		ejUp+CtdvAcIG2KQOxdEFs7wTF0=
+		udMp3Cj9ELADr9Zy0sPBoXSyPYs=
 		</data>
 		<key>PrivateHeaders/CISMonitor.h</key>
 		<data>
-		5qHbRyJzY0PH/ZN8+ivokrd9JeA=
+		EnKxFBVRjCT9XDxGnt/rXqCPA6w=
 		</data>
 		<key>PrivateHeaders/CISNetworkUtil.h</key>
 		<data>
@@ -294,7 +298,7 @@
 		</data>
 		<key>PrivateHeaders/CISRandom.h</key>
 		<data>
-		AN18XpPGGkd+TUiZE30NFax1zJ4=
+		SPgebmzcfPFnhwv1c7gpZQlJub0=
 		</data>
 		<key>PrivateHeaders/CISReachability.h</key>
 		<data>
@@ -302,7 +306,7 @@
 		</data>
 		<key>PrivateHeaders/CISSession.h</key>
 		<data>
-		IM4h+POQiSqU+UjQ43MJsSCR7AA=
+		+YFBX8W4h+tG31Jg0NugbxFl918=
 		</data>
 		<key>PrivateHeaders/CISSessionFactory.h</key>
 		<data>
@@ -326,7 +330,7 @@
 		</data>
 		<key>PrivateHeaders/CISStreamerError.h</key>
 		<data>
-		o2CYdPbEfbSqZtab/U+PqrACHWI=
+		FTBgaYkxwzDTJHUCp/7kQgnrFbM=
 		</data>
 		<key>PrivateHeaders/CISSystemFactory.h</key>
 		<data>
@@ -367,6 +371,10 @@
 		<key>PrivateHeaders/CSSInternalConstants.h</key>
 		<data>
 		7XR0dVi5O+GLp9z44+wCCvOo5yI=
+		</data>
+		<key>PrivateHeaders/NSString+CISString.h</key>
+		<data>
+		20X7BPaMLz9t9d7OsrBUKoD71H0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -899,6 +907,17 @@
 			I/TKoW6d6t0BiIo78RL/rH+E/Q/Xt32DqzvLQIR5EcQ=
 			</data>
 		</dict>
+		<key>PrivateHeaders/CISBackgroundTask.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iQr15q54j5UKNsBkLlODXeJeehA=
+			</data>
+			<key>hash2</key>
+			<data>
+			mrNmBWYCSZjHeCRSBLOSKeadAofk5LCnEUsT7wd0y9A=
+			</data>
+		</dict>
 		<key>PrivateHeaders/CISBasePlayerMonitor.h</key>
 		<dict>
 			<key>hash</key>
@@ -914,11 +933,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			27X1IgdKsZBgyAyaN3NoRnNV1HI=
+			k+ilJ6lx/yfl1qEWYMRPK7aKd7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			VXs+ROhMVn2w/pbqHuL05pfWAzBQf/qLjcKyNA24yZo=
+			U8Owm7a9ISXuXpjPDMwn474wUWf8AwcHWd8S40pDcD0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISCWSProtocolHelper.h</key>
@@ -947,11 +966,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MJiOxpNEBAgS/hPHQqdjNvpsygI=
+			FaTNB6V0OjRfShYH9EtdPu50cuw=
 			</data>
 			<key>hash2</key>
 			<data>
-			VofruyYUuPPoI99gr7J8Bal8yCPrLce2MU8nIf+j/EI=
+			Sk1OlrMSgmcNAa4y21OII0lNJYg8zB4xHBvubsUjZMg=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISClientSetting.h</key>
@@ -1090,22 +1109,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ejUp+CtdvAcIG2KQOxdEFs7wTF0=
+			udMp3Cj9ELADr9Zy0sPBoXSyPYs=
 			</data>
 			<key>hash2</key>
 			<data>
-			t+SCcLt9marsV1QLwwPZjexHrmPNJ57deRr3H8dv4tE=
+			8WYJwuyAB63pFe3k5oOTyyqrfTtQa+j2iuf6XzkgRro=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISMonitor.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5qHbRyJzY0PH/ZN8+ivokrd9JeA=
+			EnKxFBVRjCT9XDxGnt/rXqCPA6w=
 			</data>
 			<key>hash2</key>
 			<data>
-			rOtYVr4E3IUHHpdR30Zd5GwcOdOfdqOEsJgS0RjWbvI=
+			IeEAtA3puhNmpUZ408rJAkO0XifGQbs6RIaN7Bl8Rcs=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISNetworkUtil.h</key>
@@ -1156,11 +1175,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AN18XpPGGkd+TUiZE30NFax1zJ4=
+			SPgebmzcfPFnhwv1c7gpZQlJub0=
 			</data>
 			<key>hash2</key>
 			<data>
-			gLNwy0P0qhsnnMxoZJGWCmwXQOi8sCwIbYBf8hSmZ9s=
+			ptlN1W2hRF2eiY6kwoOrF/dDzicZr6FgvUQMY2OQvwU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISReachability.h</key>
@@ -1178,11 +1197,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IM4h+POQiSqU+UjQ43MJsSCR7AA=
+			+YFBX8W4h+tG31Jg0NugbxFl918=
 			</data>
 			<key>hash2</key>
 			<data>
-			pAA+yaZpRFZQBFpBSXxysAZ+QltQS0KM05oo7YkdCAc=
+			tAJl6vE8Cx/JZK9IYLbrWwI509XJgDEVhVl6o2n8eAg=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISSessionFactory.h</key>
@@ -1244,11 +1263,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o2CYdPbEfbSqZtab/U+PqrACHWI=
+			FTBgaYkxwzDTJHUCp/7kQgnrFbM=
 			</data>
 			<key>hash2</key>
 			<data>
-			CGZ0zn/Ybn3nZhess4Wadf241kVDFHvz4JG5UlE/AhM=
+			gi8fezMEliaO/SyanWMB+h9PnkDxhKy3zsM3ggh+JME=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISSystemFactory.h</key>
@@ -1359,6 +1378,17 @@
 			<key>hash2</key>
 			<data>
 			oQcL0UHn3fbI6cU58ma1V0k90zsYRto3m6HZyF2fQqM=
+			</data>
+		</dict>
+		<key>PrivateHeaders/NSString+CISString.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			20X7BPaMLz9t9d7OsrBUKoD71H0=
+			</data>
+			<key>hash2</key>
+			<data>
+			MQtf3+AEHWbPaf+AAZ32ZK8sPgu03q5vlJmwXmt9qxs=
 			</data>
 		</dict>
 	</dict>

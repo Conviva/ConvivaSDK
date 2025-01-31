@@ -18,6 +18,11 @@
 
 @interface CISSession : NSObject
 
+@property (nonatomic, copy) NSString *fwName;
+@property (nonatomic, copy) NSString *fwVersion;
+@property (nonatomic, copy) NSString *moduleName;
+@property (nonatomic, copy) NSString *moduleVersion;
+
 -(instancetype)init NS_UNAVAILABLE;
 -(instancetype)initWithSessionID:(int)sessionId cisEventQueue:(CISEventQueue *)eventQueue cisContentMetaData:(CISContentMetadata *)contentMetadata cisMonitor:(CISMonitor *)monitor cisClient:(CISClient *)client  clientSetting:(CISClientSetting *)clientSettings  cisConfig:(CISConfig *)config  cisSystemFactory:(CISSystemFactory *)systemFactory networkUtil:(CISNetworkUtil *)networkUtil sessionType:(SessionType)sessionType NS_DESIGNATED_INITIALIZER;
 -(void)start;
@@ -57,5 +62,7 @@
 - (NSNumber*) getSessionStartTime;
 
 - (CISContentMetadata*) getMetadata;
+
+- (void)checkClientIdAndsendUrgentHeartBeat;
 
 @end

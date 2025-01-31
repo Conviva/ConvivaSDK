@@ -24,6 +24,7 @@ FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
 //@property(nonatomic, copy) NSString *contentResource;
 @property(nonatomic, assign) BOOL cdnEdgeServerIPReportingDisabled;
 @property(nonatomic, copy) NSString *cdnServerIPAddress;
+@property (nonatomic, weak) CISSession *cisSession;
 
 - (instancetype)init NS_UNAVAILABLE;
 -(instancetype)initWithSessionID:(int)sessionId
@@ -61,6 +62,15 @@ FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
 
 /// @brief Signal new metadata
 -(void)onMetadata:(NSDictionary *)metadata;
+
+/// @brief Signal a change in the player type.
+-(void)onPlayerTypeChanged:(NSString *)playerType;
+
+/// @brief Signal a change in the player version.
+-(void)onPlayerVersionChanged:(NSString *)playerVersion;
+
+/// @brief Signal a change in the module name and version.
+-(void)onModuleNameAndVersionChanged:(NSString *)name version:(NSString *)version;
 
 -(void)releasePlayerStateManager;
 
