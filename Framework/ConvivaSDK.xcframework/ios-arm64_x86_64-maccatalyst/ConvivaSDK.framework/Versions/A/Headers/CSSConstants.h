@@ -326,4 +326,11 @@ FOUNDATION_EXPORT NSString *const CIS_SDK_OPTION_EXTERNAL_BITRATE_REPORTING;
 */
 FOUNDATION_EXPORT NSString *const CIS_SDK_OPTION_EXTERNAL_STREAMURL_REPORTING;
 
+
+/**
+ Use this if you want to continue monitoring even after fatal error occured, Pass true to enable video retry. Currently, Applicable for AVPlayer.
+ Expected value: [NSNumber numberWithBool]
+*/
+FOUNDATION_EXPORT NSString *const CIS_SDK_OPTION_SHOULD_CONTINUE_ON_VIDEO_FAILURE;
+
 /*---------------------------------- END OF USER OPTIONS -----------------------------*/

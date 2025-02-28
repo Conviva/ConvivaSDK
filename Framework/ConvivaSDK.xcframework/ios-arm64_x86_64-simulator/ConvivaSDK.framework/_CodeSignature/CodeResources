@@ -98,7 +98,7 @@
 		</data>
 		<key>Headers/CISStreamerProxyFactoryProtocol.h</key>
 		<data>
-		tOIxuQJevW7YFnij/fYFQfoi4x8=
+		Mu4/OeEU0rgHe/QMcN8Bl6uk0K4=
 		</data>
 		<key>Headers/CISStreamerProxyProtocol.h</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Headers/CSSConstants.h</key>
 		<data>
-		NAXqswUjL4sDxKHrWbgIUjMsM4M=
+		0hiuKJ//nG/D2wWtwE7fzvJMw7Y=
 		</data>
 		<key>Headers/ConvivaSDK-iOS-umbrella.h</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3y1Kas407oeBnRJpXOqIviVSaUs=
+		lB+SiL4UmY1c1x95CW017AM9o4I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -636,11 +636,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tOIxuQJevW7YFnij/fYFQfoi4x8=
+			Mu4/OeEU0rgHe/QMcN8Bl6uk0K4=
 			</data>
 			<key>hash2</key>
 			<data>
-			gQTpL0WAnaZWLCPzKg4AQtg8AtFXY7bA74vm02kzvdw=
+			sUBXgNfavV5241z7R8rW5xLmdE9VtZ5MHWg4QSMRl/E=
 			</data>
 		</dict>
 		<key>Headers/CISStreamerProxyProtocol.h</key>
@@ -757,11 +757,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NAXqswUjL4sDxKHrWbgIUjMsM4M=
+			0hiuKJ//nG/D2wWtwE7fzvJMw7Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			v7jrEDesXeBaOpal4ssx58uNJhm/xyvHHQ45yBHCBEU=
+			xfVPNbEnbu5FvD8SfN1vxiqZTod21kRt7RNm3k2LdZI=
 			</data>
 		</dict>
 		<key>Headers/ConvivaSDK-iOS-umbrella.h</key>

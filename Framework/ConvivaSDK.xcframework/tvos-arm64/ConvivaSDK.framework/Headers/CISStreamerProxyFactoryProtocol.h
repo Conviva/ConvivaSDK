@@ -17,7 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 - (CISStreamerProxy)createStreamerProxy:(id)streamer
                    playerEventsListener:(CISPlayerEventsListener)playerEventsListener
-                                 logger:(id<CISLoggerProtocol>)logger;
+                                 logger:(id<CISLoggerProtocol>)logger
+                  shouldAllowVideoRetry:(BOOL)shouldAllowVideoRetry;
 
 - (CISStreamerProxy)createStreamerProxy:(CISPlayerEventsListener)playerEventsListener
                                  logger:(id<CISLoggerProtocol>)logger;

@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.1.0 (02/28/2025)
+* Minor improvements.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
 ## 4.0.52 (01/29/2025)
 * Enhances collection by sending urgent heartbeats on following events:
     - First PLAYING state for Content Sessions
