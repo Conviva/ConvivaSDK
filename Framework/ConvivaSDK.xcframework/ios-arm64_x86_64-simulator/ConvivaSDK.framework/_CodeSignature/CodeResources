@@ -134,7 +134,7 @@
 		</data>
 		<key>Headers/CISUtility.h</key>
 		<data>
-		VnedfZg7cJOVP7el4VUOeus1/Rw=
+		m1DUHb3um8wgoME//wfZD1ZRkxE=
 		</data>
 		<key>Headers/CISVideoAnalytics.h</key>
 		<data>
@@ -182,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lB+SiL4UmY1c1x95CW017AM9o4I=
+		/9SpCnPYNiagULS6fdq8IHNpwXI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -371,10 +371,6 @@
 		<key>PrivateHeaders/CSSInternalConstants.h</key>
 		<data>
 		7XR0dVi5O+GLp9z44+wCCvOo5yI=
-		</data>
-		<key>PrivateHeaders/NSString+CISString.h</key>
-		<data>
-		20X7BPaMLz9t9d7OsrBUKoD71H0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -735,11 +731,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VnedfZg7cJOVP7el4VUOeus1/Rw=
+			m1DUHb3um8wgoME//wfZD1ZRkxE=
 			</data>
 			<key>hash2</key>
 			<data>
-			lAO3HLrK1BoMjv8GRj2qj6o7sXIHyVgs4Jcnyhu6azE=
+			5qJppU4cL6ZkXWwBhtxDkczHOpUnRAOON4hBbOnyZP8=
 			</data>
 		</dict>
 		<key>Headers/CISVideoAnalytics.h</key>
@@ -1378,17 +1374,6 @@
 			<key>hash2</key>
 			<data>
 			oQcL0UHn3fbI6cU58ma1V0k90zsYRto3m6HZyF2fQqM=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NSString+CISString.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			20X7BPaMLz9t9d7OsrBUKoD71H0=
-			</data>
-			<key>hash2</key>
-			<data>
-			MQtf3+AEHWbPaf+AAZ32ZK8sPgu03q5vlJmwXmt9qxs=
 			</data>
 		</dict>
 	</dict>

@@ -27,5 +27,7 @@ FOUNDATION_EXPORT int const CIS_SIGNAL_STRENGTH_INVALID_VALUE;
 
 + (id)getClientId;
 + (void)setClientId:(NSString *)newClientId;
++ (BOOL)isNotEmpty:(NSString *)string;
++ (BOOL)isNilOrEmpty:(NSString *)string;
 @end
 
