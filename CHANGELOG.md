@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.1.2 (03/28/2025)
+* Ad session optimizations to reduce cost with config control support to enable or disable. By default optimizations are off.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
 ## 4.1.1 (03/21/2025)
 * Minor improvements.
 * Does not collect Advertising Identifier to comply with Apple guide lines.
