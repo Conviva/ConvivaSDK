@@ -182,7 +182,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aAGB+4vfuZikCf4cvKTnpbyNUtM=
+		Z2y92Z3CUiRrP3lEgPtmenf0fO8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -195,6 +195,10 @@
 		<key>PrivateHeaders/CISAdPlayerMonitor.h</key>
 		<data>
 		TBZk0/AO6d/dH0iKwn5Jfl75fhE=
+		</data>
+		<key>PrivateHeaders/CISAdSession.h</key>
+		<data>
+		0mm7rmVHXIHikAhWDYuaKDjNVdA=
 		</data>
 		<key>PrivateHeaders/CISAnalyticsImpl.h</key>
 		<data>
@@ -230,7 +234,7 @@
 		</data>
 		<key>PrivateHeaders/CISConfig.h</key>
 		<data>
-		HumHlXKgep/GTdW6R5N/qwruSAI=
+		exI2+64R/WGOrDe54whdbzAdVR0=
 		</data>
 		<key>PrivateHeaders/CISEventQueue.h</key>
 		<data>
@@ -250,7 +254,7 @@
 		</data>
 		<key>PrivateHeaders/CISInternalConstant.h</key>
 		<data>
-		P7GTVlAJUdZloiYWs6SNM/hzHX8=
+		9kPnF2sH5knpRVtPK0dh3GlBk70=
 		</data>
 		<key>PrivateHeaders/CISJSONDecoder.h</key>
 		<data>
@@ -303,6 +307,10 @@
 		<key>PrivateHeaders/CISReachability.h</key>
 		<data>
 		81s0ywBXTHegJETIl4g5I0nnDIA=
+		</data>
+		<key>PrivateHeaders/CISSession+Private.h</key>
+		<data>
+		7gAt5WLmANjxGscSePY/aCNjgh8=
 		</data>
 		<key>PrivateHeaders/CISSession.h</key>
 		<data>
@@ -892,6 +900,17 @@
 			4K7r/9TBtu0JWYzixjpsebt1BfNoJjr/V0uvU8Vgqag=
 			</data>
 		</dict>
+		<key>PrivateHeaders/CISAdSession.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0mm7rmVHXIHikAhWDYuaKDjNVdA=
+			</data>
+			<key>hash2</key>
+			<data>
+			yfUy2N51sPQvaJn6x1X7Rp1C1ffPDVvI+E+AbLuqqFE=
+			</data>
+		</dict>
 		<key>PrivateHeaders/CISAnalyticsImpl.h</key>
 		<dict>
 			<key>hash</key>
@@ -984,11 +1003,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HumHlXKgep/GTdW6R5N/qwruSAI=
+			exI2+64R/WGOrDe54whdbzAdVR0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vn6l5fUVSS2Twy6qIohM/X8QoDauvgC4n8CG2o1aZzU=
+			N8GoWwaYyilUrITpymXa8aE/aJcwT5lozmNcFWTjL5w=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISEventQueue.h</key>
@@ -1039,11 +1058,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P7GTVlAJUdZloiYWs6SNM/hzHX8=
+			9kPnF2sH5knpRVtPK0dh3GlBk70=
 			</data>
 			<key>hash2</key>
 			<data>
-			s9IIm0T6qOrYIOcAn9l7h3uCXCynffnY8s0FJRoIhp0=
+			Tmbim03wxrHm02UmBNFFFHvLbhiMyoKuKIBkkaVapaE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISJSONDecoder.h</key>
@@ -1187,6 +1206,17 @@
 			<key>hash2</key>
 			<data>
 			IjTO89ulSpyWygmmFq+h1m0MjVK1lrX857uqC0e+0r8=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISSession+Private.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7gAt5WLmANjxGscSePY/aCNjgh8=
+			</data>
+			<key>hash2</key>
+			<data>
+			BETdRsyMkLEeYmrUmMLfkwRErJ7fumA61kXpIXWQLf0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISSession.h</key>

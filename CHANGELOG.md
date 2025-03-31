@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.1.2 (03/31/2025)
+* Internal improvements.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
 ## 4.1.1 (03/21/2025)
 * Minor improvements.
 * Does not collect Advertising Identifier to comply with Apple guide lines.

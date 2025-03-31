@@ -53,6 +53,14 @@ typedef NS_ENUM(NSInteger,SessionType){
     HINTED_IPV6
 };
 
+/**
+ * Possible types of ad sessions.
+ */
+typedef NS_ENUM(NSUInteger, CISAdSessionMode) {
+    CISAdSessionModeNormal, /** Normal Mode. */
+    CISAdSessionModeSingleHB, /** Single HB Mode. */
+};
+
 @interface CISInternalConstant : NSObject
 
 @end

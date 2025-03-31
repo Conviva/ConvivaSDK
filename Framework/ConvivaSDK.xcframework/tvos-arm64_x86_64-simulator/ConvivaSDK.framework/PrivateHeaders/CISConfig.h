@@ -32,5 +32,12 @@ FOUNDATION_EXPORT NSString *const SEND_LOG; //  sendLogs
 - (NSInteger) getInstanceId;
 - (void) removeInstanceId;
 
--(void)save;
+- (CISAdSessionMode) getAdSessionMode;
+- (void) setAdSessionMode:(CISAdSessionMode)adSessionMode;
+
+- (NSTimeInterval) getHBInterval;
+- (void) setHBInterval:(NSTimeInterval)hbInterval;
+
+- (void)save;
+
 @end
