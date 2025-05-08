@@ -6,7 +6,8 @@
 //  Copyright © 2016 Conviva. All rights reserved.
 //
 
-#import "CISSystemSettings.h"
+//#import "CISSystemSettings.h"
+#import "CISConstants.h"
 /*
  * Used by the Conviva library to log messages to debug console.
  */

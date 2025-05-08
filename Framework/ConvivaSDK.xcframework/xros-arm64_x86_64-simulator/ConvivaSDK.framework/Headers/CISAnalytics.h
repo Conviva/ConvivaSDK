@@ -8,9 +8,6 @@
 #import <Foundation/Foundation.h>
 #import "CISVideoAnalytics.h"
 #import "CISAdAnalytics.h"
-#import "CISClientSettingProtocol.h"
-#import "CISSystemInterfaceProtocol.h"
-#import "CISClientProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

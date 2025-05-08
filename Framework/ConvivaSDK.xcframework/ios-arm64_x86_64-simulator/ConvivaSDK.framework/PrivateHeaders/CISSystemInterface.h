@@ -8,6 +8,13 @@
 #import <Foundation/Foundation.h>
 #import "CISSystemInterfaceProtocol.h"
 
+#import "CISHTTPProtocol.h"
+#import "CISTimeProtocol.h"
+#import "CISTimerProtocol.h"
+#import "CISLoggingProtocol.h"
+#import "CISMetadataProtocol.h"
+#import "CISStorageProtocol.h"
+
 @interface CISSystemInterface : NSObject<CISSystemInterfaceProtocol>
 
 @property(nonatomic,strong) id<CISHTTPProtocol> httpProtocol;

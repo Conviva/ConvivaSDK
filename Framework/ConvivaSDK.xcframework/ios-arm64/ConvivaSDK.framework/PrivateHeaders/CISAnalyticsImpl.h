@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "CISAnalytics.h"
 
+#import "CISSystemInterfaceProtocol.h"
+
+#import "CISClientSettingProtocol.h"
 #import "CISSystemFactoryProtocol.h"
+#import "CISClientProtocol.h"
 
 @class CISSystemFactory;
 

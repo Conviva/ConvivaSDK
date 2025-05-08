@@ -10,87 +10,31 @@
 		</data>
 		<key>Headers/CISAnalytics.h</key>
 		<data>
-		1limMLiikPIIe6PF+GHKUWSl5xQ=
+		4PGTN+Mb1PUv1EjY+ZDlCODGTxI=
 		</data>
 		<key>Headers/CISAnalyticsCreator.h</key>
 		<data>
-		Q55MXqhfnzg3DgmAQU+eAWYxas4=
-		</data>
-		<key>Headers/CISCallbackProtocol.h</key>
-		<data>
-		qczbJ9o8DytiNVtZcvTDX6HcgMI=
-		</data>
-		<key>Headers/CISCallback_RunnableProtocol.h</key>
-		<data>
-		6Oce6Y+1b+At1ML7humNL/N+9fw=
+		+xgpshL9zry9AtPWUD/8WvNwCvI=
 		</data>
 		<key>Headers/CISCancelProtocol.h</key>
 		<data>
 		DL8vm4WBgE9G4Kr8KaQNivf2MUs=
 		</data>
-		<key>Headers/CISClientCreator.h</key>
-		<data>
-		9g7lrN5pXHBWOuckeg9Lv3MUnFM=
-		</data>
-		<key>Headers/CISClientProtocol.h</key>
-		<data>
-		c5KoIwrnOqjZQ/HVRY6q3FqwtvM=
-		</data>
-		<key>Headers/CISClientSettingCreator.h</key>
-		<data>
-		/z3VR9NwiPB8/LRptD1nCdWaoRc=
-		</data>
-		<key>Headers/CISClientSettingProtocol.h</key>
-		<data>
-		FUcce+3aqK+4ZRh8ksZSMcbyMus=
-		</data>
 		<key>Headers/CISConstants.h</key>
 		<data>
 		FP6eb4abqxe0A/T55y4lVKvGVtk=
 		</data>
-		<key>Headers/CISContentMetadata.h</key>
-		<data>
-		TnkQLPYR38tPZvnzDylFxvGjjdU=
-		</data>
-		<key>Headers/CISHTTPProtocol.h</key>
-		<data>
-		BPo/ebvRSzMxxAmTdx4qmO6MSC4=
-		</data>
-		<key>Headers/CISIClientMeasureInterface.h</key>
-		<data>
-		0G2+MKCFHgeEHdWJCbiv7ewcbwk=
-		</data>
-		<key>Headers/CISIModuleVersion.h</key>
-		<data>
-		iQdR69pb1Actt695k7il+xlxRCc=
-		</data>
 		<key>Headers/CISLoggerProtocol.h</key>
 		<data>
-		bKuaOJBp21WZSYmSp9i4HsYZ4Bs=
+		Ma5ZkbK7w0AYpmr4KduZ0aEVmKs=
 		</data>
 		<key>Headers/CISLoggingProtocol.h</key>
 		<data>
-		ZMPsCDn/ZN/uCOJVV+gx5WBCYXM=
-		</data>
-		<key>Headers/CISMetadataProtocol.h</key>
-		<data>
-		To023Ah1znexxPFvNXengCOXHDA=
+		dfgW50SmNc8MdQrV4AlPk6jDMmw=
 		</data>
 		<key>Headers/CISPlayerEventsListenerProtocol.h</key>
 		<data>
 		goxJ8ucQbbe52zXIu3Qw/6ptT6w=
-		</data>
-		<key>Headers/CISPlayerStateManagerProtocol.h</key>
-		<data>
-		ADW5jAy+tPFJVbc4TcBnGksL7zQ=
-		</data>
-		<key>Headers/CISRunnableProtocol.h</key>
-		<data>
-		ycz+GomITBMEFjUCc3uOUb/GM30=
-		</data>
-		<key>Headers/CISStorageProtocol.h</key>
-		<data>
-		wjV6aUTpRFimmI2Kjg+zPanx0dU=
 		</data>
 		<key>Headers/CISStreamAnalytics.h</key>
 		<data>
@@ -103,34 +47,6 @@
 		<key>Headers/CISStreamerProxyProtocol.h</key>
 		<data>
 		XedH3XpElfBiuYNtOs5fBYZnLpI=
-		</data>
-		<key>Headers/CISSystemFactoryCreator.h</key>
-		<data>
-		YWvEKOZBQsJcbOsttStgSb/H5iA=
-		</data>
-		<key>Headers/CISSystemFactoryProtocol.h</key>
-		<data>
-		7DFy4k+9JozWA5uGqp2lQ1mMlM8=
-		</data>
-		<key>Headers/CISSystemInterfaceCreator.h</key>
-		<data>
-		oSnCSxJ7vXijcBQ71yxbQueSEUk=
-		</data>
-		<key>Headers/CISSystemInterfaceProtocol.h</key>
-		<data>
-		XZZMlisJZF7aCeBIzOWRbA0rdrE=
-		</data>
-		<key>Headers/CISSystemSettings.h</key>
-		<data>
-		IGEa5JyNo/QAQON9Wj8ZAj1hTvY=
-		</data>
-		<key>Headers/CISTimeProtocol.h</key>
-		<data>
-		ET1HG1I5XI2BwhKAs32A2oiakRM=
-		</data>
-		<key>Headers/CISTimerProtocol.h</key>
-		<data>
-		VX65jRHuy2p0TeyZcFG+8pNtXlQ=
 		</data>
 		<key>Headers/CISUtility.h</key>
 		<data>
@@ -146,43 +62,15 @@
 		</data>
 		<key>Headers/ConvivaSDK-tvOS-umbrella.h</key>
 		<data>
-		WAWd7CWneSFuT+sePZRkw8GF1pQ=
-		</data>
-		<key>Headers/IOSHttpInterface.h</key>
-		<data>
-		G4anftIDNVSrU37JIKmg9TK5a/s=
-		</data>
-		<key>Headers/IOSLoggingInterface.h</key>
-		<data>
-		fZD8cL0eoo97rUGhdWXHrlpzsh0=
-		</data>
-		<key>Headers/IOSMetadataInterface.h</key>
-		<data>
-		dQfIXpQgpP+HHU4gJ6nxsc+yipQ=
-		</data>
-		<key>Headers/IOSStorageInterface.h</key>
-		<data>
-		MxxLdG3RC05SGhvadLFz+uHqMqg=
-		</data>
-		<key>Headers/IOSSystemInterfaceFactory.h</key>
-		<data>
-		d1EH+gQHiJwkwttAZtlgguKhURU=
+		x9bfex7wzyNdVWaihVjVEH6YDoc=
 		</data>
 		<key>Headers/IOSSystemTimer.h</key>
 		<data>
 		pUbZyO/rG5CMfGLDZPmdAQX/Ao4=
 		</data>
-		<key>Headers/IOSTimeInterface.h</key>
-		<data>
-		2pHHeuuS9T5pX+08prJfG5NLQmQ=
-		</data>
-		<key>Headers/IOSTimerInterface.h</key>
-		<data>
-		mZ5bHAIRwBgRMhHvAgKcG11F9Hg=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		YyF0nA0AxxIfXMi5tfvVs9mFp54=
+		Rr2RBhBglhf3B/8vNZqWyqBMgeA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -202,7 +90,7 @@
 		</data>
 		<key>PrivateHeaders/CISAnalyticsImpl.h</key>
 		<data>
-		FaK1WuS2of00dGC96wRxg+u/V0A=
+		Juv2uakLVi0q+G6Mn2yM5CMikBg=
 		</data>
 		<key>PrivateHeaders/CISBackgroundTask.h</key>
 		<data>
@@ -220,21 +108,49 @@
 		<data>
 		pBTmRzhveoUg0QtNg0Lo6hO/wHY=
 		</data>
+		<key>PrivateHeaders/CISCallbackProtocol.h</key>
+		<data>
+		qczbJ9o8DytiNVtZcvTDX6HcgMI=
+		</data>
 		<key>PrivateHeaders/CISCallbackWithTimeout.h</key>
 		<data>
 		v2gaZu8FMkylJC3La/4lQifZGjw=
+		</data>
+		<key>PrivateHeaders/CISCallback_RunnableProtocol.h</key>
+		<data>
+		6Oce6Y+1b+At1ML7humNL/N+9fw=
 		</data>
 		<key>PrivateHeaders/CISClient.h</key>
 		<data>
 		FaTNB6V0OjRfShYH9EtdPu50cuw=
 		</data>
+		<key>PrivateHeaders/CISClientCreator.h</key>
+		<data>
+		9g7lrN5pXHBWOuckeg9Lv3MUnFM=
+		</data>
+		<key>PrivateHeaders/CISClientProtocol.h</key>
+		<data>
+		c5KoIwrnOqjZQ/HVRY6q3FqwtvM=
+		</data>
 		<key>PrivateHeaders/CISClientSetting.h</key>
 		<data>
 		9C9uNzG02vi0bNVSVhVrTqCchQ0=
 		</data>
+		<key>PrivateHeaders/CISClientSettingCreator.h</key>
+		<data>
+		/z3VR9NwiPB8/LRptD1nCdWaoRc=
+		</data>
+		<key>PrivateHeaders/CISClientSettingProtocol.h</key>
+		<data>
+		FUcce+3aqK+4ZRh8ksZSMcbyMus=
+		</data>
 		<key>PrivateHeaders/CISConfig.h</key>
 		<data>
 		exI2+64R/WGOrDe54whdbzAdVR0=
+		</data>
+		<key>PrivateHeaders/CISContentMetadata.h</key>
+		<data>
+		TnkQLPYR38tPZvnzDylFxvGjjdU=
 		</data>
 		<key>PrivateHeaders/CISEventQueue.h</key>
 		<data>
@@ -244,6 +160,10 @@
 		<data>
 		DfN8bvo0m7mb1N2Sn/yh3t7qxAw=
 		</data>
+		<key>PrivateHeaders/CISHTTPProtocol.h</key>
+		<data>
+		BPo/ebvRSzMxxAmTdx4qmO6MSC4=
+		</data>
 		<key>PrivateHeaders/CISHelper.h</key>
 		<data>
 		kiifGOrskK7x6FbzN3fNPl7MNuI=
@@ -251,6 +171,14 @@
 		<key>PrivateHeaders/CISHttpClient.h</key>
 		<data>
 		23rN6y1xu4UNtBeDv4R8pgkrDyY=
+		</data>
+		<key>PrivateHeaders/CISIClientMeasureInterface.h</key>
+		<data>
+		0G2+MKCFHgeEHdWJCbiv7ewcbwk=
+		</data>
+		<key>PrivateHeaders/CISIModuleVersion.h</key>
+		<data>
+		iQdR69pb1Actt695k7il+xlxRCc=
 		</data>
 		<key>PrivateHeaders/CISInternalConstant.h</key>
 		<data>
@@ -276,6 +204,10 @@
 		<data>
 		wmkc201oG9909cG/Jr0GTc6ErMw=
 		</data>
+		<key>PrivateHeaders/CISMetadataProtocol.h</key>
+		<data>
+		To023Ah1znexxPFvNXengCOXHDA=
+		</data>
 		<key>PrivateHeaders/CISMonitor+Internal.h</key>
 		<data>
 		udMp3Cj9ELADr9Zy0sPBoXSyPYs=
@@ -300,6 +232,10 @@
 		<data>
 		nKYk2scvPwoCzNp/cNIJHXY+EAs=
 		</data>
+		<key>PrivateHeaders/CISPlayerStateManagerProtocol.h</key>
+		<data>
+		ADW5jAy+tPFJVbc4TcBnGksL7zQ=
+		</data>
 		<key>PrivateHeaders/CISRandom.h</key>
 		<data>
 		SPgebmzcfPFnhwv1c7gpZQlJub0=
@@ -307,6 +243,10 @@
 		<key>PrivateHeaders/CISReachability.h</key>
 		<data>
 		81s0ywBXTHegJETIl4g5I0nnDIA=
+		</data>
+		<key>PrivateHeaders/CISRunnableProtocol.h</key>
+		<data>
+		ycz+GomITBMEFjUCc3uOUb/GM30=
 		</data>
 		<key>PrivateHeaders/CISSession+Private.h</key>
 		<data>
@@ -323,6 +263,10 @@
 		<key>PrivateHeaders/CISStorage.h</key>
 		<data>
 		Tl2DQ6FYatFGdwZo6ppEGmDkRZI=
+		</data>
+		<key>PrivateHeaders/CISStorageProtocol.h</key>
+		<data>
+		wjV6aUTpRFimmI2Kjg+zPanx0dU=
 		</data>
 		<key>PrivateHeaders/CISStoreClient.h</key>
 		<data>
@@ -344,17 +288,41 @@
 		<data>
 		tr923LeZkD1kme5aYOPknU/S4KQ=
 		</data>
+		<key>PrivateHeaders/CISSystemFactoryCreator.h</key>
+		<data>
+		YWvEKOZBQsJcbOsttStgSb/H5iA=
+		</data>
+		<key>PrivateHeaders/CISSystemFactoryProtocol.h</key>
+		<data>
+		7DFy4k+9JozWA5uGqp2lQ1mMlM8=
+		</data>
 		<key>PrivateHeaders/CISSystemInterface.h</key>
 		<data>
-		JnfiABJe5oqKR6xFcbYo8E/rhJU=
+		MQFcBBHws1WdRvrqmMxhaY7f/dY=
+		</data>
+		<key>PrivateHeaders/CISSystemInterfaceCreator.h</key>
+		<data>
+		iyTEMZ785pwfYewGKTTL36Z8arE=
+		</data>
+		<key>PrivateHeaders/CISSystemInterfaceProtocol.h</key>
+		<data>
+		OqziSjJUPJKC6fwE02ySTmUtkBg=
 		</data>
 		<key>PrivateHeaders/CISSystemMetadata.h</key>
 		<data>
 		w2Sd3KnaQ7nC7giyYCxQTEUST0I=
 		</data>
+		<key>PrivateHeaders/CISSystemSettings.h</key>
+		<data>
+		IGEa5JyNo/QAQON9Wj8ZAj1hTvY=
+		</data>
 		<key>PrivateHeaders/CISTime.h</key>
 		<data>
 		inYOzja2jPjoV0ye7ZdAF3wr+YI=
+		</data>
+		<key>PrivateHeaders/CISTimeProtocol.h</key>
+		<data>
+		ET1HG1I5XI2BwhKAs32A2oiakRM=
 		</data>
 		<key>PrivateHeaders/CISTimeUtil.h</key>
 		<data>
@@ -363,6 +331,10 @@
 		<key>PrivateHeaders/CISTimer.h</key>
 		<data>
 		4VLVljNvRfe9l/BRa7Uvku7iQYY=
+		</data>
+		<key>PrivateHeaders/CISTimerProtocol.h</key>
+		<data>
+		VX65jRHuy2p0TeyZcFG+8pNtXlQ=
 		</data>
 		<key>PrivateHeaders/CISVideoAnalyticsImpl+Private.h</key>
 		<data>
@@ -379,6 +351,34 @@
 		<key>PrivateHeaders/CSSInternalConstants.h</key>
 		<data>
 		7XR0dVi5O+GLp9z44+wCCvOo5yI=
+		</data>
+		<key>PrivateHeaders/IOSHttpInterface.h</key>
+		<data>
+		G4anftIDNVSrU37JIKmg9TK5a/s=
+		</data>
+		<key>PrivateHeaders/IOSLoggingInterface.h</key>
+		<data>
+		fZD8cL0eoo97rUGhdWXHrlpzsh0=
+		</data>
+		<key>PrivateHeaders/IOSMetadataInterface.h</key>
+		<data>
+		dQfIXpQgpP+HHU4gJ6nxsc+yipQ=
+		</data>
+		<key>PrivateHeaders/IOSStorageInterface.h</key>
+		<data>
+		MxxLdG3RC05SGhvadLFz+uHqMqg=
+		</data>
+		<key>PrivateHeaders/IOSSystemInterfaceFactory.h</key>
+		<data>
+		d1EH+gQHiJwkwttAZtlgguKhURU=
+		</data>
+		<key>PrivateHeaders/IOSTimeInterface.h</key>
+		<data>
+		2pHHeuuS9T5pX+08prJfG5NLQmQ=
+		</data>
+		<key>PrivateHeaders/IOSTimerInterface.h</key>
+		<data>
+		mZ5bHAIRwBgRMhHvAgKcG11F9Hg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -398,44 +398,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1limMLiikPIIe6PF+GHKUWSl5xQ=
+			4PGTN+Mb1PUv1EjY+ZDlCODGTxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			8x4VpeU7mOIFGZPpzf/zJ7CCvLa5NAlvR2YAbQQ2OSA=
+			LDTQhxYKi6/ZuiFgrhQKpgaxvQK/wurptwJ2mMphK7k=
 			</data>
 		</dict>
 		<key>Headers/CISAnalyticsCreator.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q55MXqhfnzg3DgmAQU+eAWYxas4=
+			+xgpshL9zry9AtPWUD/8WvNwCvI=
 			</data>
 			<key>hash2</key>
 			<data>
-			SFftjR7clZNv5sYW1drvxA9rR/LOpQ5SAsqHtZNANWY=
-			</data>
-		</dict>
-		<key>Headers/CISCallbackProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qczbJ9o8DytiNVtZcvTDX6HcgMI=
-			</data>
-			<key>hash2</key>
-			<data>
-			vrV+WompdjcYP1PMyDj8R4YP8Y6liNbWoFNteN1Aw5I=
-			</data>
-		</dict>
-		<key>Headers/CISCallback_RunnableProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6Oce6Y+1b+At1ML7humNL/N+9fw=
-			</data>
-			<key>hash2</key>
-			<data>
-			IT4V3OBU+xz+cnZAaHwzhj4U51STlDP4DmOv8rckSeQ=
+			RslS2oMUQbGby+TjcjR4PsRZDiJ1JbV8/3Jq/JZza5M=
 			</data>
 		</dict>
 		<key>Headers/CISCancelProtocol.h</key>
@@ -449,50 +427,6 @@
 			Wpglwt5vy/UUtwv8PLTOSx9p6FksfkYpzUsW4aM7E0s=
 			</data>
 		</dict>
-		<key>Headers/CISClientCreator.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9g7lrN5pXHBWOuckeg9Lv3MUnFM=
-			</data>
-			<key>hash2</key>
-			<data>
-			aQ5CJO0KXyGPYqJWRfBysWEWQaYJEXji+LfOlUyvUMg=
-			</data>
-		</dict>
-		<key>Headers/CISClientProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			c5KoIwrnOqjZQ/HVRY6q3FqwtvM=
-			</data>
-			<key>hash2</key>
-			<data>
-			hfXsLr2bZ/WZKw5lOx0cWrH81eRtVlc5y8osARx2uK0=
-			</data>
-		</dict>
-		<key>Headers/CISClientSettingCreator.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/z3VR9NwiPB8/LRptD1nCdWaoRc=
-			</data>
-			<key>hash2</key>
-			<data>
-			+s0QaKo3DCbkXkTF5HieRXz/2EplSqbTdLI0hVUm/jk=
-			</data>
-		</dict>
-		<key>Headers/CISClientSettingProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FUcce+3aqK+4ZRh8ksZSMcbyMus=
-			</data>
-			<key>hash2</key>
-			<data>
-			dj826zt6yGBz1EdPrZ8pP3/NP+3gtgdbmcytwuv0oFw=
-			</data>
-		</dict>
 		<key>Headers/CISConstants.h</key>
 		<dict>
 			<key>hash</key>
@@ -504,81 +438,26 @@
 			vfXyWej9ocioNvSGQPbW6r8pDvx2Pvu1cQvOOGbhReI=
 			</data>
 		</dict>
-		<key>Headers/CISContentMetadata.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TnkQLPYR38tPZvnzDylFxvGjjdU=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ceb8mSKoWzLOkiOLOL0oIHlzweBiHHN1UcQYV4UQsO4=
-			</data>
-		</dict>
-		<key>Headers/CISHTTPProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BPo/ebvRSzMxxAmTdx4qmO6MSC4=
-			</data>
-			<key>hash2</key>
-			<data>
-			2s/GTL31RajNxmXE1PN6J2baB+PxOKkkQK7DBBN1Jhk=
-			</data>
-		</dict>
-		<key>Headers/CISIClientMeasureInterface.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0G2+MKCFHgeEHdWJCbiv7ewcbwk=
-			</data>
-			<key>hash2</key>
-			<data>
-			PtdL5jzCfvJP9/luoM/eW8Cd8WB5FnosSSLTYuXhpy8=
-			</data>
-		</dict>
-		<key>Headers/CISIModuleVersion.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			iQdR69pb1Actt695k7il+xlxRCc=
-			</data>
-			<key>hash2</key>
-			<data>
-			PGyk+FV7K6WTwf/l0obLLzVmeBZifKyb7R7Le8UmAos=
-			</data>
-		</dict>
 		<key>Headers/CISLoggerProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bKuaOJBp21WZSYmSp9i4HsYZ4Bs=
+			Ma5ZkbK7w0AYpmr4KduZ0aEVmKs=
 			</data>
 			<key>hash2</key>
 			<data>
-			wd8ncVhnLNXr8iN+FTDt+e8mTUjfSXofkDuohu8rJsM=
+			Y8tEaHqsFJG26HVnx5Aj0psiUrKThRLI0uM0D7rs19E=
 			</data>
 		</dict>
 		<key>Headers/CISLoggingProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZMPsCDn/ZN/uCOJVV+gx5WBCYXM=
+			dfgW50SmNc8MdQrV4AlPk6jDMmw=
 			</data>
 			<key>hash2</key>
 			<data>
-			vvdIsJ2bdEPoGuvdYKZ0kWf2c0fivtcKvoufAY69Txs=
-			</data>
-		</dict>
-		<key>Headers/CISMetadataProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			To023Ah1znexxPFvNXengCOXHDA=
-			</data>
-			<key>hash2</key>
-			<data>
-			ypAJn25XPBaYuevX9yavgTilqSJGcvuG6c6jqRzyEhY=
+			Ekr78onsg9Pn0nEplarTt0sCX7ZPerEMHbww2u7dJfI=
 			</data>
 		</dict>
 		<key>Headers/CISPlayerEventsListenerProtocol.h</key>
@@ -590,39 +469,6 @@
 			<key>hash2</key>
 			<data>
 			6jScgg5svx6O6/VbTx3FTooOz8l42FLTH7Et1CloZsM=
-			</data>
-		</dict>
-		<key>Headers/CISPlayerStateManagerProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ADW5jAy+tPFJVbc4TcBnGksL7zQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			PmTdhzpuYN/NiR+DCh0hs0ELC71cTKVZapZ0KVc71FA=
-			</data>
-		</dict>
-		<key>Headers/CISRunnableProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ycz+GomITBMEFjUCc3uOUb/GM30=
-			</data>
-			<key>hash2</key>
-			<data>
-			KryyvB90157fyoaTDhmyOtmAJJ9dD5oU1LNLc4YELTY=
-			</data>
-		</dict>
-		<key>Headers/CISStorageProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wjV6aUTpRFimmI2Kjg+zPanx0dU=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZdiapgroTuUJzWkSri7/9YYpRtwo/ZyrEqdRa85UFiI=
 			</data>
 		</dict>
 		<key>Headers/CISStreamAnalytics.h</key>
@@ -656,83 +502,6 @@
 			<key>hash2</key>
 			<data>
 			PIr2HzLApb4GS2KmOQemLaI6AxfPSKF4uR2SUm+mAB4=
-			</data>
-		</dict>
-		<key>Headers/CISSystemFactoryCreator.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YWvEKOZBQsJcbOsttStgSb/H5iA=
-			</data>
-			<key>hash2</key>
-			<data>
-			ascYS0iHiw+8FZhTTfzTLjFyLYt5+8PimRTRxkhIy2U=
-			</data>
-		</dict>
-		<key>Headers/CISSystemFactoryProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7DFy4k+9JozWA5uGqp2lQ1mMlM8=
-			</data>
-			<key>hash2</key>
-			<data>
-			BBGaP8lPb/dj5a+dfpp9x5QXbJjjOluBbvJilXVMtqE=
-			</data>
-		</dict>
-		<key>Headers/CISSystemInterfaceCreator.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oSnCSxJ7vXijcBQ71yxbQueSEUk=
-			</data>
-			<key>hash2</key>
-			<data>
-			rtumMWRnoEwNOSR6wm+RDcPYPTl8Hc/u9Nuce787XXI=
-			</data>
-		</dict>
-		<key>Headers/CISSystemInterfaceProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XZZMlisJZF7aCeBIzOWRbA0rdrE=
-			</data>
-			<key>hash2</key>
-			<data>
-			oRrGT/fpcgHCDc+8/YTizEZ+mpufIXBcrN8dObblAMs=
-			</data>
-		</dict>
-		<key>Headers/CISSystemSettings.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IGEa5JyNo/QAQON9Wj8ZAj1hTvY=
-			</data>
-			<key>hash2</key>
-			<data>
-			slc8OdJAl2cHS41cLhDQFeZgMPkDmXuMc3gQsLYX0eY=
-			</data>
-		</dict>
-		<key>Headers/CISTimeProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ET1HG1I5XI2BwhKAs32A2oiakRM=
-			</data>
-			<key>hash2</key>
-			<data>
-			uvzBMvkUqr9a21lh3XmyxlOo0Gy99xyZOzrBWcSidYg=
-			</data>
-		</dict>
-		<key>Headers/CISTimerProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VX65jRHuy2p0TeyZcFG+8pNtXlQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			ySnW3OTjG07a2oAgYnoVpcux3BHep3txmYVkjvsWUcw=
 			</data>
 		</dict>
 		<key>Headers/CISUtility.h</key>
@@ -772,66 +541,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WAWd7CWneSFuT+sePZRkw8GF1pQ=
+			x9bfex7wzyNdVWaihVjVEH6YDoc=
 			</data>
 			<key>hash2</key>
 			<data>
-			LHJ2hjpgyvua4xLhh4Ddlf8xZo5SLgwhhy56QARN8Tk=
-			</data>
-		</dict>
-		<key>Headers/IOSHttpInterface.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			G4anftIDNVSrU37JIKmg9TK5a/s=
-			</data>
-			<key>hash2</key>
-			<data>
-			SxZAcIU9LUteGgWb2s1wEY/YVGcFQbtO///aLr7K/HI=
-			</data>
-		</dict>
-		<key>Headers/IOSLoggingInterface.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fZD8cL0eoo97rUGhdWXHrlpzsh0=
-			</data>
-			<key>hash2</key>
-			<data>
-			EhYIHMwqXrxtgnn47gcKZsYpSUGEHyIiqeEqf9cSJQw=
-			</data>
-		</dict>
-		<key>Headers/IOSMetadataInterface.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dQfIXpQgpP+HHU4gJ6nxsc+yipQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			RzXb64xy6CwLbxijFniMCrnta6eTuJjGst4IaYb4ptk=
-			</data>
-		</dict>
-		<key>Headers/IOSStorageInterface.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MxxLdG3RC05SGhvadLFz+uHqMqg=
-			</data>
-			<key>hash2</key>
-			<data>
-			AJNsmpcBBGaYOzDHxDdANBb+GPShbCVmUM6bTC8bzdE=
-			</data>
-		</dict>
-		<key>Headers/IOSSystemInterfaceFactory.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			d1EH+gQHiJwkwttAZtlgguKhURU=
-			</data>
-			<key>hash2</key>
-			<data>
-			XgfD1tCZv/u/2TH4Q+o0WMaJ60HX0QU7RE1wegGCSAo=
+			LCKQKCbZnWVrZ5WeO3qHpQn2sEgH777xJzmH3b2mcoU=
 			</data>
 		</dict>
 		<key>Headers/IOSSystemTimer.h</key>
@@ -843,28 +557,6 @@
 			<key>hash2</key>
 			<data>
 			6AYZ9g6YddzevU7fGl2wr/r+A30ZojvTSEEXZ771PTw=
-			</data>
-		</dict>
-		<key>Headers/IOSTimeInterface.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2pHHeuuS9T5pX+08prJfG5NLQmQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			rRrik+1/QNMHeBPuI4MVuq9va7YjwwCf7zmu4Mvmcic=
-			</data>
-		</dict>
-		<key>Headers/IOSTimerInterface.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mZ5bHAIRwBgRMhHvAgKcG11F9Hg=
-			</data>
-			<key>hash2</key>
-			<data>
-			KNcXQtrucmFhHEsZT0DGXqdpGLgwV6jG+47gpo3f+5o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -915,11 +607,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FaK1WuS2of00dGC96wRxg+u/V0A=
+			Juv2uakLVi0q+G6Mn2yM5CMikBg=
 			</data>
 			<key>hash2</key>
 			<data>
-			I/TKoW6d6t0BiIo78RL/rH+E/Q/Xt32DqzvLQIR5EcQ=
+			zB4pGVyEjDdt9KxI7tD1ReSK0T+KOX2CnYH0rAYnMws=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISBackgroundTask.h</key>
@@ -966,6 +658,17 @@
 			rRHa/789I5OR473XAzU91jsXYsddV6kg381BlU/Lzio=
 			</data>
 		</dict>
+		<key>PrivateHeaders/CISCallbackProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qczbJ9o8DytiNVtZcvTDX6HcgMI=
+			</data>
+			<key>hash2</key>
+			<data>
+			vrV+WompdjcYP1PMyDj8R4YP8Y6liNbWoFNteN1Aw5I=
+			</data>
+		</dict>
 		<key>PrivateHeaders/CISCallbackWithTimeout.h</key>
 		<dict>
 			<key>hash</key>
@@ -975,6 +678,17 @@
 			<key>hash2</key>
 			<data>
 			md6GmWIKoO2wil7H0r2yEXXMJEDCfYI5cBgFPLUr3gA=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISCallback_RunnableProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6Oce6Y+1b+At1ML7humNL/N+9fw=
+			</data>
+			<key>hash2</key>
+			<data>
+			IT4V3OBU+xz+cnZAaHwzhj4U51STlDP4DmOv8rckSeQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISClient.h</key>
@@ -988,6 +702,28 @@
 			Sk1OlrMSgmcNAa4y21OII0lNJYg8zB4xHBvubsUjZMg=
 			</data>
 		</dict>
+		<key>PrivateHeaders/CISClientCreator.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9g7lrN5pXHBWOuckeg9Lv3MUnFM=
+			</data>
+			<key>hash2</key>
+			<data>
+			aQ5CJO0KXyGPYqJWRfBysWEWQaYJEXji+LfOlUyvUMg=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISClientProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c5KoIwrnOqjZQ/HVRY6q3FqwtvM=
+			</data>
+			<key>hash2</key>
+			<data>
+			hfXsLr2bZ/WZKw5lOx0cWrH81eRtVlc5y8osARx2uK0=
+			</data>
+		</dict>
 		<key>PrivateHeaders/CISClientSetting.h</key>
 		<dict>
 			<key>hash</key>
@@ -999,6 +735,28 @@
 			ASTy2OWKh+UJ8o7/JG6HKjEMgWSPXGvrJ/kDGJoWgl4=
 			</data>
 		</dict>
+		<key>PrivateHeaders/CISClientSettingCreator.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/z3VR9NwiPB8/LRptD1nCdWaoRc=
+			</data>
+			<key>hash2</key>
+			<data>
+			+s0QaKo3DCbkXkTF5HieRXz/2EplSqbTdLI0hVUm/jk=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISClientSettingProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FUcce+3aqK+4ZRh8ksZSMcbyMus=
+			</data>
+			<key>hash2</key>
+			<data>
+			dj826zt6yGBz1EdPrZ8pP3/NP+3gtgdbmcytwuv0oFw=
+			</data>
+		</dict>
 		<key>PrivateHeaders/CISConfig.h</key>
 		<dict>
 			<key>hash</key>
@@ -1008,6 +766,17 @@
 			<key>hash2</key>
 			<data>
 			N8GoWwaYyilUrITpymXa8aE/aJcwT5lozmNcFWTjL5w=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISContentMetadata.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TnkQLPYR38tPZvnzDylFxvGjjdU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ceb8mSKoWzLOkiOLOL0oIHlzweBiHHN1UcQYV4UQsO4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISEventQueue.h</key>
@@ -1032,6 +801,17 @@
 			I646eASNuuYWIbgowox6Cujk6bmTNEF5GQhQsenFjDI=
 			</data>
 		</dict>
+		<key>PrivateHeaders/CISHTTPProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BPo/ebvRSzMxxAmTdx4qmO6MSC4=
+			</data>
+			<key>hash2</key>
+			<data>
+			2s/GTL31RajNxmXE1PN6J2baB+PxOKkkQK7DBBN1Jhk=
+			</data>
+		</dict>
 		<key>PrivateHeaders/CISHelper.h</key>
 		<dict>
 			<key>hash</key>
@@ -1052,6 +832,28 @@
 			<key>hash2</key>
 			<data>
 			QzyxPrP9+MVp9vzsx1hh2bsR9wYnxq3L+lTfr2S5qxo=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISIClientMeasureInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0G2+MKCFHgeEHdWJCbiv7ewcbwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			PtdL5jzCfvJP9/luoM/eW8Cd8WB5FnosSSLTYuXhpy8=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISIModuleVersion.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iQdR69pb1Actt695k7il+xlxRCc=
+			</data>
+			<key>hash2</key>
+			<data>
+			PGyk+FV7K6WTwf/l0obLLzVmeBZifKyb7R7Le8UmAos=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISInternalConstant.h</key>
@@ -1120,6 +922,17 @@
 			XA25khpRyaGPNv0lejntBdSyqJzYuTZ0CKP9DlQngso=
 			</data>
 		</dict>
+		<key>PrivateHeaders/CISMetadataProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			To023Ah1znexxPFvNXengCOXHDA=
+			</data>
+			<key>hash2</key>
+			<data>
+			ypAJn25XPBaYuevX9yavgTilqSJGcvuG6c6jqRzyEhY=
+			</data>
+		</dict>
 		<key>PrivateHeaders/CISMonitor+Internal.h</key>
 		<dict>
 			<key>hash</key>
@@ -1186,6 +999,17 @@
 			NSfRJnZE18tzSNWSn4kqel+QujLrQzqX5mxYJNV48p4=
 			</data>
 		</dict>
+		<key>PrivateHeaders/CISPlayerStateManagerProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ADW5jAy+tPFJVbc4TcBnGksL7zQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			PmTdhzpuYN/NiR+DCh0hs0ELC71cTKVZapZ0KVc71FA=
+			</data>
+		</dict>
 		<key>PrivateHeaders/CISRandom.h</key>
 		<dict>
 			<key>hash</key>
@@ -1206,6 +1030,17 @@
 			<key>hash2</key>
 			<data>
 			IjTO89ulSpyWygmmFq+h1m0MjVK1lrX857uqC0e+0r8=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISRunnableProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ycz+GomITBMEFjUCc3uOUb/GM30=
+			</data>
+			<key>hash2</key>
+			<data>
+			KryyvB90157fyoaTDhmyOtmAJJ9dD5oU1LNLc4YELTY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISSession+Private.h</key>
@@ -1250,6 +1085,17 @@
 			<key>hash2</key>
 			<data>
 			jw5X+xg1ot6QpcUQGvzG3s+v8eJ0kHvo2/Y0ojqX4S0=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISStorageProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wjV6aUTpRFimmI2Kjg+zPanx0dU=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZdiapgroTuUJzWkSri7/9YYpRtwo/ZyrEqdRa85UFiI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISStoreClient.h</key>
@@ -1307,15 +1153,59 @@
 			QdciQK7S8/wyfoNuVZVZ6XZq79hJTt3ugRyTutrtU7I=
 			</data>
 		</dict>
+		<key>PrivateHeaders/CISSystemFactoryCreator.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YWvEKOZBQsJcbOsttStgSb/H5iA=
+			</data>
+			<key>hash2</key>
+			<data>
+			ascYS0iHiw+8FZhTTfzTLjFyLYt5+8PimRTRxkhIy2U=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISSystemFactoryProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7DFy4k+9JozWA5uGqp2lQ1mMlM8=
+			</data>
+			<key>hash2</key>
+			<data>
+			BBGaP8lPb/dj5a+dfpp9x5QXbJjjOluBbvJilXVMtqE=
+			</data>
+		</dict>
 		<key>PrivateHeaders/CISSystemInterface.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JnfiABJe5oqKR6xFcbYo8E/rhJU=
+			MQFcBBHws1WdRvrqmMxhaY7f/dY=
 			</data>
 			<key>hash2</key>
 			<data>
-			c3BSG8GP/OaWMxuuQ8heNevxnh9j4ZRUVUrMvlI5K2M=
+			baxcvhbgz2yteaezo6SFgDyoasQuCOFeZDB0qCwLfiI=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISSystemInterfaceCreator.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iyTEMZ785pwfYewGKTTL36Z8arE=
+			</data>
+			<key>hash2</key>
+			<data>
+			8T8ax9tsT9E5To6nifyOgBKcWitN36uhVP+Pde3AKCQ=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISSystemInterfaceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OqziSjJUPJKC6fwE02ySTmUtkBg=
+			</data>
+			<key>hash2</key>
+			<data>
+			x+76oct+aRh3YkbebSbsIHLnulJXCl4+ZdCkEgCQD4c=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISSystemMetadata.h</key>
@@ -1329,6 +1219,17 @@
 			9O5KC69GsHGVH4vPdcaBUTLHtf28vt52tU7XNbl64o0=
 			</data>
 		</dict>
+		<key>PrivateHeaders/CISSystemSettings.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IGEa5JyNo/QAQON9Wj8ZAj1hTvY=
+			</data>
+			<key>hash2</key>
+			<data>
+			slc8OdJAl2cHS41cLhDQFeZgMPkDmXuMc3gQsLYX0eY=
+			</data>
+		</dict>
 		<key>PrivateHeaders/CISTime.h</key>
 		<dict>
 			<key>hash</key>
@@ -1338,6 +1239,17 @@
 			<key>hash2</key>
 			<data>
 			wVLJ3TKlQN1IhQCQNHb7XKXrmYvfwzkReaeTPUlH9Zs=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISTimeProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ET1HG1I5XI2BwhKAs32A2oiakRM=
+			</data>
+			<key>hash2</key>
+			<data>
+			uvzBMvkUqr9a21lh3XmyxlOo0Gy99xyZOzrBWcSidYg=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISTimeUtil.h</key>
@@ -1360,6 +1272,17 @@
 			<key>hash2</key>
 			<data>
 			6+IdVcjCpwtomK6sAyCJmo2zOW4ppUO4UR6y+JxwRMA=
+			</data>
+		</dict>
+		<key>PrivateHeaders/CISTimerProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VX65jRHuy2p0TeyZcFG+8pNtXlQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ySnW3OTjG07a2oAgYnoVpcux3BHep3txmYVkjvsWUcw=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CISVideoAnalyticsImpl+Private.h</key>
@@ -1404,6 +1327,83 @@
 			<key>hash2</key>
 			<data>
 			oQcL0UHn3fbI6cU58ma1V0k90zsYRto3m6HZyF2fQqM=
+			</data>
+		</dict>
+		<key>PrivateHeaders/IOSHttpInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			G4anftIDNVSrU37JIKmg9TK5a/s=
+			</data>
+			<key>hash2</key>
+			<data>
+			SxZAcIU9LUteGgWb2s1wEY/YVGcFQbtO///aLr7K/HI=
+			</data>
+		</dict>
+		<key>PrivateHeaders/IOSLoggingInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fZD8cL0eoo97rUGhdWXHrlpzsh0=
+			</data>
+			<key>hash2</key>
+			<data>
+			EhYIHMwqXrxtgnn47gcKZsYpSUGEHyIiqeEqf9cSJQw=
+			</data>
+		</dict>
+		<key>PrivateHeaders/IOSMetadataInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dQfIXpQgpP+HHU4gJ6nxsc+yipQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			RzXb64xy6CwLbxijFniMCrnta6eTuJjGst4IaYb4ptk=
+			</data>
+		</dict>
+		<key>PrivateHeaders/IOSStorageInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MxxLdG3RC05SGhvadLFz+uHqMqg=
+			</data>
+			<key>hash2</key>
+			<data>
+			AJNsmpcBBGaYOzDHxDdANBb+GPShbCVmUM6bTC8bzdE=
+			</data>
+		</dict>
+		<key>PrivateHeaders/IOSSystemInterfaceFactory.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d1EH+gQHiJwkwttAZtlgguKhURU=
+			</data>
+			<key>hash2</key>
+			<data>
+			XgfD1tCZv/u/2TH4Q+o0WMaJ60HX0QU7RE1wegGCSAo=
+			</data>
+		</dict>
+		<key>PrivateHeaders/IOSTimeInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2pHHeuuS9T5pX+08prJfG5NLQmQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			rRrik+1/QNMHeBPuI4MVuq9va7YjwwCf7zmu4Mvmcic=
+			</data>
+		</dict>
+		<key>PrivateHeaders/IOSTimerInterface.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mZ5bHAIRwBgRMhHvAgKcG11F9Hg=
+			</data>
+			<key>hash2</key>
+			<data>
+			KNcXQtrucmFhHEsZT0DGXqdpGLgwV6jG+47gpo3f+5o=
 			</data>
 		</dict>
 	</dict>
