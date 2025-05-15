@@ -1,6 +1,6 @@
 # Changelog
 
-## 4.2.1 (05/13/2025)
+## 4.2.1 (05/15/2025)
 * Fixed compilation issues due to deprecated api's.
 * Does not collect Advertising Identifier to comply with Apple guide lines.
 
