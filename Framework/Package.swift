@@ -21,7 +21,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ConvivaSDK",
-            url: "https://github.com/Conviva/ConvivaSDK/raw/4.2.1/Framework/ConvivaSDK.xcframework.zip",
-            checksum: "3ccaeff5afa217c791d2d1bf36faad7f7f76cb3436364ee3bfa0e746c52602e3")
+            url: "https://github.com/Conviva/ConvivaSDK/raw/4.2.2/Framework/ConvivaSDK.xcframework.zip",
+            checksum: "49e3aea9df405132cecd4d73c2648399340553a6a8ba3192699549a5947e2159")
     ]
 )
