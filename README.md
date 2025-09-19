@@ -24,12 +24,12 @@ release 2.141.0. Please follow these steps to migrate to 2.141.0 version
     Add the following line to your pod file and run 'pod install'
     
     // Without Advertising Identifier(IDFA) support
-    pod 'ConvivaSDK','4.2.4'
+    pod 'ConvivaSDK','4.2.3'
     
 ## Swift Package Manager Installation
 1. Add the Package Dependency repository URL as https://github.com/Conviva/conviva-ios-sdk-spm
 2. Select version as:
-    * 4.2.4
+    * 4.2.3
 
 
 ## Manual Installation
