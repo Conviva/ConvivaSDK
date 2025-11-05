@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.2.4 (11/05/2025)
+* Handling multiple unbalanced ad start/end or user wait start/end calls gracefully.
+* Does not collect Advertising Identifier to comply with Apple guide lines.
+
 ## 4.2.3 (05/23/2025)
 * Removed deprecated api's.
 * Does not collect Advertising Identifier to comply with Apple guide lines.
