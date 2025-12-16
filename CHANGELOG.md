@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.3.0 (12/16/2025)
+* Added support to report Ad session events to DPI (Attempt, End, etc.).
+
 ## 4.2.4 (11/05/2025)
 * Handling multiple unbalanced ad start/end or user wait start/end calls gracefully.
 * Does not collect Advertising Identifier to comply with Apple guide lines.
