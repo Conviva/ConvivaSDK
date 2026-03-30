@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.3.1 (03/30/2026)
+* Updating SPM Package to use artifacts from Github release CDN.
+
 ## 4.3.0 (12/16/2025)
 * Supports reporting the Ad session events such as, Attempt, End, etc., to DPI.
 
