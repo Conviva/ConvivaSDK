@@ -139,7 +139,7 @@ typedef NS_ENUM(NSInteger,AdTechnology){
 /**
  * Possible types of ad type.
  */
-typedef NS_ENUM(NSInteger,AdType) {
+typedef NS_ENUM(NSInteger,CISAdType) {
     /**Blackout slate. */
     BLACKOUT_SLATE = 0,
     /** Technical Difficulties slate. */
@@ -284,7 +284,7 @@ FOUNDATION_EXPORT int const NO_SESSION_KEY;
  */
 @interface CISConstants : NSObject 
 +(NSString *)getAdTechnologyStringValue:(AdTechnology)adTechnology;
-+(NSString *)getAdTypeStringValue:(AdType)adType;
++(NSString *)getAdTypeStringValue:(CISAdType)adType;
 +(NSString *)getAdServingTypeStringValue:(AdServingType)adServingType;
 +(NSString *)getErrorTypeStringValue:(ErrorType)errorType;
 +(NSString *)getEventsStringValue:(Events)events;

@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.3.2 (06/02/2026)
+* Modified AdType enum to CISAdType.
+
 ## 4.3.1 (03/30/2026)
 * Updating SPM Package to use artifacts from Github release CDN.
 
