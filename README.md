@@ -24,19 +24,19 @@ release 2.141.0. Please follow these steps to migrate to 2.141.0 version
     Add the following line to your pod file and run 'pod install'
     
     // Without Advertising Identifier(IDFA) support
-    pod 'ConvivaSDK','4.3.3'
+    pod 'ConvivaSDK','4.3.4'
     
 ## Swift Package Manager Installation
 1. Add the Package Dependency repository URL as https://github.com/Conviva/conviva-ios-sdk-spm
 2. Select version as:
-    * 4.3.3
+    * 4.3.4
 
 
 ## Manual Installation
 To add the ConvivaSDK library to your project manually:
 
 1.	Download the latest ConvivaSDK from below path.
-      * [Added support to report Ad events](https://github.com/Conviva/ConvivaSDK/archive/4.3.3.zip)
+      * [Added support to report Ad events](https://github.com/Conviva/ConvivaSDK/archive/4.3.4.zip)
         
 2.	Unzip the package and add ConvivaSDK.xcframework to “Link Binary with Libraries” under build phase.
 
