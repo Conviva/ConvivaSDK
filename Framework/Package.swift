@@ -5,8 +5,8 @@ import PackageDescription
 let package = Package(
     name: "ConvivaSDK",
     platforms: [
-        .iOS(.v12),
-        .tvOS(.v12)
+        .iOS(.v13),
+        .tvOS(.v13)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -21,7 +21,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ConvivaSDK",
-            url: "https://github.com/Conviva/ConvivaSDK/raw/4.3.2/Framework/ConvivaSDK.xcframework.zip",
-            checksum: "3b39fb7dbc0d62372d4e7bfa594a470fbbe065c5a9d3e11813248419e2fe4226")
+            url: "https://github.com/Conviva/ConvivaSDK/raw/4.3.3/Framework/ConvivaSDK.xcframework.zip",
+            checksum: "95f8f6533994c2c4149830622df79b7a5aee8c65f263ffae11ab9720a40cb31a")
     ]
 )

@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.3.3 (07/07/2026)
+* Internal improvements.
+
 ## 4.3.2 (06/02/2026)
 * Modified AdType enum to CISAdType.
 
