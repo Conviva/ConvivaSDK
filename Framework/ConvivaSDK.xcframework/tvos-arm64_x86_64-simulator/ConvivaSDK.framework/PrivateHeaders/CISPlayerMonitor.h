@@ -125,6 +125,19 @@
 
 - (void) updateDroppedFramesTotalCount:(NSInteger)droppedFramesTotalCount;
 
+//  Live Latency is a push-through sample: it is forwarded straight to the player state manager and
+//  no value is stored on the monitor (deliberately unlike every other metric here), so nothing can be
+//  read back for a moment that was not measured.
+- (void) updateLiveLatency:(int64_t)liveLatencyMs;
+
+//  Is At Live Edge is stored on the monitor (unlike Live Latency) and re-applied when a player state manager
+//  (re)attaches, so a freshly attached PSM receives the current flag. The session de-duplicates it.
+- (void) updateIsAtLiveEdge:(BOOL)isAtLiveEdge;
+
+//  Last-known Is At Live Edge flag (nil = Unknown / never reported). Used to seed a freshly created SSAI
+//  ad session from its content session (ST-1924), since ule is stateful and would not otherwise be re-sent.
+- (NSNumber*) getIsAtLiveEdge;
+
 - (NSInteger) getVideoFrameRate;
 
 - (void) updateVideoFrameRate:(NSInteger)frameRate;

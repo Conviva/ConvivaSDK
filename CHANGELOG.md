@@ -1,5 +1,43 @@
 # Changelog
 
+## 4.4.1 (09/17/2026)
+* Introduces the Time Behind Live feature (BETA): reporting of live latency (BETA) as a playback metric and an is-at-live-edge flag (BETA) through the existing `reportPlaybackMetric` API. (CWS 2.9)
+
+### Live Latency and Is At Live Edge (CWS 2.9)
+* Protocol version raised from 2.8 to 2.9.
+* Two new playback metric keys, reported through the existing `reportPlaybackMetric` API. They are independent: neither call requires, orders itself against, or gates the other.
+
+Swift:
+```swift
+videoAnalytics.reportPlaybackMetric(CIS_SSDK_PLAYBACK_METRIC_LIVE_LATENCY, value: NSNumber(value: 8200))
+videoAnalytics.reportPlaybackMetric(CIS_SSDK_PLAYBACK_METRIC_IS_AT_LIVE_EDGE, value: NSNumber(value: true))
+```
+
+Objective-C:
+```objc
+[videoAnalytics reportPlaybackMetric:CIS_SSDK_PLAYBACK_METRIC_LIVE_LATENCY value:@(8200)];
+[videoAnalytics reportPlaybackMetric:CIS_SSDK_PLAYBACK_METRIC_IS_AT_LIVE_EDGE value:@(YES)];
+```
+
+#### CIS_SSDK_PLAYBACK_METRIC_LIVE_LATENCY - wire key "lat" in HB.
+* A single positive integer: milliseconds behind the live edge, computed and pushed by the application as wall clock now minus the programDateTime of the fragment on screen.
+* Accepts a positive integer only. Zero, negatives, boolean values (`@(YES)` / `true`), and fractional values (`@(12.5)` / `12.5`) are discarded with a log. Under the expected wall-clock-minus-programDateTime derivation zero latency is not achievable, so a zero indicates a broken derivation rather than a viewer at the edge.
+* Carried on a `CwsDataSamplesEvent` inside `evs`. It never appears at heartbeat top level: a sample describes one measured instant, so restating it in a later heartbeat would assert a moment nobody measured. When heartbeats are lost the backend sees a gap rather than a stale value.
+* Each accepted call emits exactly one sample. Values are not de-duplicated, because an unchanged value is evidence the viewer is still that far behind, and no value is stored between calls.
+* Report it every 5 seconds whenever the number is valid, at the live edge or deep in the DVR window. It is not restricted to live-edge viewing; distinguishing the two is Is At Live Edge's job.
+* Reporting stops by not calling. There is no "off" call, no sentinel and no flag.
+
+#### CIS_SSDK_PLAYBACK_METRIC_IS_AT_LIVE_EDGE - wire key "ule"
+* A single boolean (`@YES` / `@NO` in Objective-C, `true` / `false` in Swift): whether the viewer is tracking the live edge, by the application's definition, as opposed to having deliberately time-shifted (DVR, start-over, scrub-back). Only boolean values are accepted; anything else (including a numeric `1`/`0`) is discarded with a log rather than coerced.
+* Stateful and carried in `new`/`old` on a `CwsStateChangeEvent`, and restated at heartbeat top level once known, so a lost transition event is recoverable.
+* Emitted only on a change. Repeating the current value is a successful no-op.
+* The default is Unknown, and Unknown is expressed by the absence of `"ule"` rather than by a sentinel. It is not a reportable value, so a session that never calls stays Unknown for its whole life. Report IS_AT_LIVE_EDGE once at the start of every live session and then on every transition.
+
+#### Common to both
+* Live content only. On a session known to be VOD the value is rejected and an error is logged once per session, per metric. While the stream type is still unresolved the value is accepted. Switching to VOD mid-session stops new reports and omits beacon `"ule"` until the session is live again (last-known is kept in memory).
+* Discarded during a client-side ad break, since the player has left the live stream. Reported normally under server-side ad insertion, where the player never leaves it — so both split across a client-side break and are continuous across a server-side one. A client-side break does not clear the last known IS_AT_LIVE_EDGE flag. A new SSAI ad session copies last-known IS_AT_LIVE_EDGE. After content becomes VOD, live metrics are not mirrored.
+* Reporting either key through `reportAdMetric` (the ad analytics object) is a documented no-op.
+
 ## 4.3.4 (07/07/2026)
 * Internal improvements.
 

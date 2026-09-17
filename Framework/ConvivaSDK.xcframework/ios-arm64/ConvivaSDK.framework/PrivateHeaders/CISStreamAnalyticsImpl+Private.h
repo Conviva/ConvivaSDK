@@ -50,6 +50,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) reportDroppedFramesTotalCount:(int64_t)droppedFramesTotal;
 
+//  Cross-file entry points for Live Latency and Is At Live Edge: the video wrapper (and the SSAI ad mirror)
+//  deliver an already-on-shared-queue value here for validation + synchronous delivery. Internal helpers
+//  they rely on live in the file-local class extension in CISStreamAnalyticsImpl.m.
+- (void) reportLiveLatencyValue:(id)value;
+
+- (void) reportIsAtLiveEdgeValue:(id)value;
+
 - (void) reportAudioLanguage:(NSString *)audioLanguage;
 
 - (void) reportClosedCaptionLanguage:(NSString *)closedCaptionLanguage;
