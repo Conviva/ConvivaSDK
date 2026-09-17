@@ -126,6 +126,18 @@ FOUNDATION_EXPORT NSString *const METADATA_ENCODED_FRAMERATE;
  
 -(void)setDroppedFramesTotalCount:(NSInteger)newDroppedFrames;
 
+//  Live Latency sample (milliseconds). Applies the live/VOD gate on this session's own metadata
+//  (video sessions only; ad sessions still emit for the SSAI mirror) and, when accepted, enqueues exactly
+//  one CwsDataSamplesEvent carrying lat. Nothing is stored. The client-side-ad (CSAI) gate is applied
+//  upstream in CISVideoAnalyticsImpl.
+-(void)setLiveLatency:(int64_t)liveLatencyMs;
+
+//  Is At Live Edge state (boolean). Applies the same live/VOD gate as Live Latency (independently), then,
+//  when the value changes from the stored flag (including from the Unknown default), enqueues exactly one
+//  CwsStateChangeEvent carrying ule in new / old. The flag is stored and restated at beacon level once
+//  known. The client-side-ad (CSAI) gate is applied upstream in CISVideoAnalyticsImpl.
+-(void)setIsAtLiveEdge:(BOOL)isAtLiveEdge;
+
 -(CISPlayerStateManager*) getAttachedPlayer;
 
 - (void) markOfflinePlayback;

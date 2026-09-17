@@ -115,6 +115,12 @@
 
 -(void)setDroppedFramesTotalCount:(NSInteger)droppedFramesTotalCount;
 
+//  Live Latency sample, in milliseconds. Pass-through only; the player state manager keeps no value.
+-(void)setLiveLatency:(int64_t)liveLatencyMs;
+
+//  Is At Live Edge state (boolean). Pass-through to the monitor notifier, which stores and de-duplicates it.
+-(void)setIsAtLiveEdge:(BOOL)isAtLiveEdge;
+
 -(void) enableAVLegacyIntegration:(BOOL)legacy;
 
 

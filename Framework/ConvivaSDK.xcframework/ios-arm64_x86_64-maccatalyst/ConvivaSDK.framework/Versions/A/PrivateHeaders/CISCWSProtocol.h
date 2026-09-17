@@ -73,6 +73,10 @@ FOUNDATION_EXPORT int const CAPABILITY_OFFLINE_VIDEO ;
 
 -(void)setPlayerState:(int)playerStateValue hbdict:(NSDictionary **)hbDict;
 -(void)setPauseJoin:(NSString *)pauseJoinState hbdict:(NSDictionary **)hbDict;
+//  Beacon-level restatement of Is At Live Edge (ule). Pass the CWS_TRUE / CWS_FALSE sentinel so the encoder
+//  emits a real boolean. Written only once the flag is known; while Unknown the key is omitted so its
+//  absence reads as Unknown.
+-(void)setIsAtLiveEdge:(NSString *)isAtLiveEdgeState hbdict:(NSDictionary **)hbDict;
 -(void)setSessionFlag:(int)sessionFlagValue  hbdict:(NSDictionary **)hbDict;
 -(void)setPlatformMetadata:(NSDictionary *)metaDictionary hbdict:(NSDictionary **)hbDict;
 -(void)setFrameworkName :(NSString *)frameworkName  hbdict:(NSDictionary **)hbDict;

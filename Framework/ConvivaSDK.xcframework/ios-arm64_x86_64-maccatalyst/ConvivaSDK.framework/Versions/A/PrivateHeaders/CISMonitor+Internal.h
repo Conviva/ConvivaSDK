@@ -38,6 +38,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) AdPlayer adPlayer;
 @property(nonatomic) AdPosition adPosition;
 
+//  One-time guards for the on-VOD error logs (per session, one per metric, mirroring Android).
+@property(nonatomic, assign) BOOL liveLatencyVodErrorLogged;
+@property(nonatomic, assign) BOOL isAtLiveEdgeVodErrorLogged;
+
+//  Is At Live Edge stored flag. nil = Unknown (the default), @YES / @NO once the customer reports. Drives
+//  de-duplication (emit only on change) and the beacon-level restatement in updateHb:. Unlike Live
+//  Latency, which is a stateless push-through sample and is never stored. Named isAtLiveEdgeState (not
+//  isAtLiveEdge) so its synthesized setter does not collide with the -setIsAtLiveEdge:(BOOL) entry point.
+@property(nonatomic, strong) NSNumber *isAtLiveEdgeState;
+
 // Proxy state
 @property(nonatomic) PlayerState contentPlayerState;
 @property(nonatomic, assign) NSInteger playerBitrateKbps;

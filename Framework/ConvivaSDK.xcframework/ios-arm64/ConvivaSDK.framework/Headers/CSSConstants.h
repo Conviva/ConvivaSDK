@@ -117,6 +117,32 @@ FOUNDATION_EXPORT NSString *const CIS_SSDK_PLAYBACK_METRIC_CLOSED_CAPTIONS_LANGU
  */
 FOUNDATION_EXPORT NSString *const CIS_SSDK_PLAYBACK_METRIC_SUBTITLES_LANGUAGE;
 
+/*
+Key for Live Latency.
+How far behind the live edge the viewer currently is, in milliseconds, computed and pushed by the
+application (expected: wall clock now minus the programDateTime of the fragment on screen). Report it
+while it is meaningful, typically on a 5 second timer; stop calling to stop reporting - there is no
+"off" call. Not gated by live-edge: report it whether the viewer is at the edge or in the DVR window -
+distinguishing edge from time-shifted viewing is Is At Live Edge's job. Live content only. Each accepted
+call emits exactly one sample and nothing is stored, so reporting the same value again is meaningful.
+Not reported through the ad analytics object.
+Expected value: [NSNumber] a positive integer. Zero, negative and non-integer values are ignored -
+zero latency is not achievable under the expected derivation, so a zero indicates a broken derivation.
+*/
+FOUNDATION_EXPORT NSString *const CIS_SSDK_PLAYBACK_METRIC_LIVE_LATENCY;
+
+/*
+Key for Is At Live Edge.
+Whether the viewer is tracking the live edge (true) or has intentionally time-shifted - DVR, start-over,
+scrub-back (false). Companion to Live Latency but fully independent: report it once at session start and
+then on every transition. Stateful and de-duplicated - repeating the current value is a no-op, and the
+current value is restated at beacon level once known so a lost heartbeat can recover it. Defaults to
+Unknown until the first accepted call; Unknown is never assumed true or false. Live content only. Not
+reported through the ad analytics object.
+Expected value: [NSNumber] a boolean (@YES / @NO). Non-boolean values are ignored.
+*/
+FOUNDATION_EXPORT NSString *const CIS_SSDK_PLAYBACK_METRIC_IS_AT_LIVE_EDGE;
+
 
 /*------------------------ END OF PLAYBACK METRIC KEYS ----------------------------*/
 
